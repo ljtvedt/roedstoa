@@ -1,0 +1,1277 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Download Manager Pro v2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-12 13:30+0600\n"
+"PO-Revision-Date: 2018-09-09 01:49+0200\n"
+"Language-Team: Shaon <proshaon@yahoo.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nb_NO\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class.WordPressDownloadManagerAdmin.php:147
+#: admin/tpls/metaboxes/package-settings.php:6
+msgid "Package Settings"
+msgstr "Pakkeinnstillinger"
+
+#: admin/class.WordPressDownloadManagerAdmin.php:148
+msgid "Attach File"
+msgstr "Legg til fil"
+
+#: admin/menus/class.Addons.php:21
+msgid "Add-Ons &lsaquo; Download Manager"
+msgstr "Tillegg &lsaquo; Download Manager"
+
+#: admin/menus/class.Addons.php:21
+msgid "Add-Ons"
+msgstr "Tillegg"
+
+#: admin/menus/class.Categories.php:48 admin/menus/class.Categories.php:77
+msgid "Access:"
+msgstr "Tilgang:"
+
+#: admin/menus/class.Categories.php:49 admin/menus/class.Categories.php:80
+msgid ""
+"Select the roles who should have access to the packages under this category"
+msgstr "Velg rollene som skal ha tilgang til pakkene i denne kategorien"
+
+#: admin/menus/class.Categories.php:52 admin/menus/class.Categories.php:91
+#: admin/tpls/metaboxes/package-settings.php:67
+msgid "All Visitors"
+msgstr "Alle besøkende"
+
+#: admin/menus/class.Packages.php:186
+msgid "Direct Download"
+msgstr "Direkte nedlasting"
+
+#: admin/menus/class.Settings.php:18
+msgid "Settings &lsaquo; Download Manager"
+msgstr "Innstillinger &lsaquo; Download Manager"
+
+#: admin/menus/class.Settings.php:18
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: admin/menus/class.Settings.php:108 admin/menus/class.Settings.php:135
+#: admin/menus/class.Settings.php:190 admin/menus/class.Settings.php:205
+msgid "Invalid Token!"
+msgstr "Ugyldig polett!"
+
+#: admin/menus/class.Stats.php:25
+msgid "History &lsaquo; Download Manager"
+msgstr "Historie &lsaquo; Download Manager"
+
+#: admin/menus/class.Stats.php:25
+msgid "History"
+msgstr "Historie"
+
+#: admin/tpls/addons-list.php:226
+msgid "WPDM Add-Ons"
+msgstr "WPDM Tillegg"
+
+#: admin/tpls/addons-list.php:292
+msgid "Failed to connect with server!"
+msgstr "Kunne ikkje koble til tjener!"
+
+#: admin/tpls/metaboxes/attach-file.php:6
+msgid "attached file is missing/deleted"
+msgstr "vedlagt fil mangler eller er slettet"
+
+#: admin/tpls/metaboxes/attach-file.php:30
+msgid "No file uploaded yet!"
+msgstr "Foreløpig er ingen fil lastet opp!"
+
+#: admin/tpls/metaboxes/attach-file.php:36
+msgid "Upload"
+msgstr "Last opp"
+
+#: admin/tpls/metaboxes/attach-file.php:38 libs/class.FileList.php:305
+msgid "Browse"
+msgstr "Bla gjennom"
+
+#: admin/tpls/metaboxes/attach-file.php:40
+msgid "URL"
+msgstr "URL"
+
+#: admin/tpls/metaboxes/attach-file.php:47
+msgid "Drop files here"
+msgstr "Slipp filer her"
+
+#: admin/tpls/metaboxes/attach-file.php:69
+msgid "Allowed Files"
+msgstr "Tillatte filer"
+
+#: admin/tpls/metaboxes/attach-file.php:146
+msgid "Invalid File Type!"
+msgstr "Ugyldig filtype!\""
+
+#: admin/tpls/metaboxes/attach-file.php:148
+msgid "Unauthorized Access!"
+msgstr "Ingen tilgang!"
+
+#: admin/tpls/metaboxes/attach-file.php:152
+msgid "Delete Current File"
+msgstr "Slett valgt fil"
+
+#: admin/tpls/metaboxes/attach-file.php:196
+msgid "Are you sure?"
+msgstr "Er du sikker?"
+
+#: admin/tpls/metaboxes/attach-file.php:198
+msgid ""
+"<div class=\"w3eden\"><div class=\"text-danger\"><i class=\"fa fa-check-"
+"circle\"></i> Removed!</div></div>"
+msgstr ""
+"<div class=\"w3eden\"><div class=\"text-danger\"><i class=\"fa fa-check-"
+"circle\"></i> Slettet!</div></div>"
+
+#: admin/tpls/metaboxes/icons.php:6
+msgid "Icon URL"
+msgstr "Ikon-URL"
+
+#: admin/tpls/metaboxes/lock-options.php:2
+msgid ""
+"You can use one or more of following methods to lock your package download:"
+msgstr ""
+"Du kan bruke en eller flere av de følgende metodene for å låse "
+"nedlastingspakken din:"
+
+#: admin/tpls/metaboxes/lock-options.php:8
+msgid "Must Agree with Terms"
+msgstr "Må akseptere betingelsene"
+
+#: admin/tpls/metaboxes/lock-options.php:11
+msgid "Terms Title:"
+msgstr "Vilkårtittel:"
+
+#: admin/tpls/metaboxes/lock-options.php:13
+msgid "Terms and Conditions:"
+msgstr "Vilkår og betingelser:"
+
+#: admin/tpls/metaboxes/lock-options.php:15
+msgid "Terms Checkbox Label:"
+msgstr "Overskrift på vilkårs&nbsp;sjekkboks:"
+
+#: admin/tpls/metaboxes/lock-options.php:23
+msgid "Enable Password Lock"
+msgstr "Aktiver passsordlås"
+
+#: admin/tpls/metaboxes/lock-options.php:26
+msgid "Password:"
+msgstr "Passord:"
+
+#: admin/tpls/metaboxes/lock-options.php:29
+msgid ""
+"If you want to use multiple passwords, keep each one inside [], like [123]"
+"[456][789]"
+msgstr ""
+"Viss du vil bruke flere passord, skriv hvert enkelt i [], [123][456][789]"
+
+#: admin/tpls/metaboxes/lock-options.php:38
+msgid "Enable Captcha Lock"
+msgstr "Aktiver Captcha-lås"
+
+#: admin/tpls/metaboxes/lock-options.php:41
+msgid "Please configure reCAPTCHA"
+msgstr "Konfigurer reCAPTCHA"
+
+#: admin/tpls/metaboxes/lock-options.php:42
+msgid "Users will be asked for reCAPTCHA verification before download."
+msgstr "Brukere vil bli spurt om reCAPTCHA&nbsp;verifikasjon før nedlasting."
+
+#: admin/tpls/metaboxes/package-settings.php:7
+msgid "Lock Options"
+msgstr "Låsealternativer"
+
+#: admin/tpls/metaboxes/package-settings.php:8
+msgid "Icons"
+msgstr "Ikoner"
+
+#: admin/tpls/metaboxes/package-settings.php:22
+msgid "Version:"
+msgstr "Versjon:"
+
+#: admin/tpls/metaboxes/package-settings.php:27
+msgid "Link Label:"
+msgstr "Lenketitttel:"
+
+#: admin/tpls/metaboxes/package-settings.php:32
+msgid "File&nbsp;Size:"
+msgstr "Filstørrelse:"
+
+#: admin/tpls/metaboxes/package-settings.php:38
+msgid "Stock&nbsp;Limit:"
+msgstr "Lagerbegrensning:"
+
+#: admin/tpls/metaboxes/package-settings.php:45
+msgid "View&nbsp;Count:"
+msgstr "Antall oppslag:"
+
+#: admin/tpls/metaboxes/package-settings.php:50
+msgid "Download&nbsp;Count:"
+msgstr "Anntall nedlastinger:"
+
+#: admin/tpls/metaboxes/package-settings.php:56
+msgid "Allow Access:"
+msgstr "Tillat tilgang:"
+
+#: admin/tpls/metaboxes/package-settings.php:58
+msgid "Who should be able to download?"
+msgstr "Kven skal kunne laste ned?"
+
+#: admin/tpls/metaboxes/package-settings.php:87
+msgid "Page Template:"
+msgstr "Sidemal:"
+
+#: admin/tpls/metaboxes/package-settings.php:98
+msgid "Master Key"
+msgstr "Hovednøkkel"
+
+#: admin/tpls/metaboxes/package-settings.php:99
+msgid "Regenerate Master Key for Download"
+msgstr "Regenerer hovednøkkel for nedlasting"
+
+#: admin/tpls/metaboxes/package-settings.php:99
+msgid "This key can be used for direct download"
+msgstr "Denne nøkkelen kan brukes for direkte nedlasting"
+
+#: admin/tpls/settings.php:7 admin/tpls/settings.php:35
+msgid "Save Settings"
+msgstr "Lagre innstillinger"
+
+#: admin/tpls/settings.php:7
+msgid "Download Manager Settings"
+msgstr "Innstillinger for Download Manager"
+
+#: admin/tpls/settings/addon-update.php:3
+msgid "Check For Updates"
+msgstr "Se etter oppdateringer"
+
+#: admin/tpls/settings/addon-update.php:3 libs/class.UserDashboard.php:19
+#: tpls/wpdm-login-form.php:41
+msgid "Logout"
+msgstr "Logg&nbsp;ut"
+
+#: admin/tpls/settings/addon-update.php:4
+msgid "Add-on Update"
+msgstr "Oppdatering av tillegg"
+
+#: admin/tpls/settings/addon-update.php:10
+#, php-format
+msgid "Enter your %s login info"
+msgstr "Registrer din %s innloggings&nbsp;info"
+
+#: admin/tpls/settings/addon-update.php:34
+msgid "Purchased Add-ons"
+msgstr "Betalte tillegg"
+
+#: admin/tpls/settings/addon-update.php:35
+msgid "Free Add-ons"
+msgstr "Gratistillegg"
+
+#: admin/tpls/settings/addon-update.php:42
+#: admin/tpls/settings/addon-update.php:87
+msgid "Product Name"
+msgstr "Produktnavn"
+
+#: admin/tpls/settings/addon-update.php:43
+#: admin/tpls/settings/addon-update.php:88
+msgid "Active(v)"
+msgstr "Aktive(v)"
+
+#: admin/tpls/settings/addon-update.php:44
+#: admin/tpls/settings/addon-update.php:89
+msgid "Latest(v)"
+msgstr "Siste(v)"
+
+#: admin/tpls/settings/addon-update.php:45
+#: admin/tpls/settings/addon-update.php:90 libs/class.FileList.php:96
+#: libs/class.FileList.php:98 libs/class.FileList.php:134
+#: libs/class.FileList.php:136 libs/class.FileList.php:201
+#: libs/class.FileList.php:248 libs/class.FileList.php:303
+#: libs/class.Package.php:72 libs/class.Package.php:150
+#: libs/class.Package.php:589 libs/class.Package.php:614
+#: libs/class.Package.php:681 libs/class.Package.php:764
+#: libs/class.Package.php:789 libs/class.Package.php:816
+#: libs/class.Package.php:1156 libs/class.PackageLocks.php:59
+#: libs/class.PackageLocks.php:94 tpls/lock-options-iframe.php:204
+#: tpls/wpdm-all-downloads.php:146 wpdm-functions.php:100
+#: wpdm-functions.php:125 wpdm-functions.php:191
+msgid "Download"
+msgstr "Nedlasting"
+
+#: admin/tpls/settings/addon-update.php:69
+#: admin/tpls/settings/addon-update.php:110
+msgid "Install"
+msgstr "Installer"
+
+#: admin/tpls/settings/addon-update.php:71
+#: admin/tpls/settings/addon-update.php:112
+msgid "Update"
+msgstr "Oppdater"
+
+#: admin/tpls/settings/addon-update.php:72
+#: admin/tpls/settings/addon-update.php:113
+msgid "Updated"
+msgstr "Oppdatert"
+
+#: admin/tpls/settings/addon-update.php:74
+msgid "Expired"
+msgstr "Utgått"
+
+#: admin/tpls/settings/addon-update.php:128 tpls/wpdm-reg-form.php:135
+msgid "Please Wait..."
+msgstr "Vennligs vent..."
+
+#: admin/tpls/settings/addon-update.php:130
+msgid "Success!"
+msgstr "Vellykket!"
+
+#: admin/tpls/settings/basic.php:29
+msgid "Messages"
+msgstr "Meldinger"
+
+#: admin/tpls/settings/basic.php:34
+msgid "Permission Denied Message for Packages:"
+msgstr "Melding ved avvist tilgang til pakke:"
+
+#: admin/tpls/settings/basic.php:43
+msgid "Login Required Message:"
+msgstr "Melding når pålogging er nødvendig:"
+
+#: admin/tpls/settings/basic.php:51
+msgid "Server File Browser"
+msgstr "Filutforsker på tjener"
+
+#: admin/tpls/settings/basic.php:55
+msgid "Server File Browser Base Dir:"
+msgstr "Startkatalog for filutforsker på server:"
+
+#: admin/tpls/settings/basic.php:59
+msgid "Reset Base Dir"
+msgstr "Tilbakestille startkatalog"
+
+#: admin/tpls/settings/basic.php:65
+msgid "File Browser Access:"
+msgstr "Tilgang til filutforsker:"
+
+#: admin/tpls/settings/basic.php:66
+msgid "Who will have access to server file browser"
+msgstr "Hvem vil ha tilgang til filutforsker på server"
+
+#: admin/tpls/settings/basic.php:98
+msgid "Upload Settings"
+msgstr "Innstillinger for filopplasting"
+
+#: admin/tpls/settings/basic.php:102
+msgid "Sanitize Filename"
+msgstr "Rense filnavn"
+
+#: admin/tpls/settings/basic.php:103
+msgid ""
+"Check the option if you want to sanitize uploaded file names to remove "
+"illegal chars"
+msgstr ""
+"Kryss av dette alternativet dersom du vil rense navnet på opplastete filer "
+"for ugyldige tegn"
+
+#: admin/tpls/settings/basic.php:110
+msgid "Chunk Upload"
+msgstr "Oppdelt opplasting"
+
+#: admin/tpls/settings/basic.php:111
+msgid ""
+"Check the option if you want to enable chunk upload to override http upload "
+"limits"
+msgstr ""
+"Kryss av dette alternativet dersom du vil aktivere oppdeling av filer for å "
+"omgå begrensinger i opplastingsstørrelse"
+
+#: admin/tpls/settings/basic.php:116
+msgid "Chunk Size"
+msgstr "Oppdelingsstørrelse"
+
+#: admin/tpls/settings/basic.php:129
+msgid "File Download"
+msgstr "Filnedlasting"
+
+#: admin/tpls/settings/basic.php:133
+msgid "Download Speed:"
+msgstr "Nedlastingshastighet:"
+
+#: admin/tpls/settings/basic.php:141
+msgid "Blocked IPs"
+msgstr "Svartelistede IP-adresser"
+
+#: admin/tpls/settings/basic.php:143
+msgid "One IP per line"
+msgstr "En IP-adresse pr linje"
+
+#: admin/tpls/settings/basic.php:144
+msgid ""
+"List IP Addresses to blacklist. One IP per line ( Ex: IPv4 - 192.168.23.12 "
+"or 192.168.23.1/24 or 192.168.23.* , IPv6 - 2a01:8760:2:3001::1 or "
+"2620:112:3000::/44 )"
+msgstr ""
+"IP-adresser som skal svartelistes. En IP-adresse pr linje ( F.eks. IPv4 - "
+"192.168.23.12 eller 192.168.23.1/24 eller 192.168.23.* , IPv6 - "
+"2a01:8760:2:3001::1 eller 2620:112:3000::/44 )"
+
+#: admin/tpls/settings/basic.php:147
+msgid "Write a Message for Blocked IPs"
+msgstr "Skriv en melding for svartelistede IP-adresser"
+
+#: admin/tpls/settings/basic.php:148
+msgid "Message for Blocked IPs"
+msgstr "Melding for svartelistede IP-adresser"
+
+#: admin/tpls/settings/basic.php:152
+msgid ""
+"If you get broken download, then try enabling/disabling following options, "
+"as sometimes server may not support output buffering or partial downloads"
+msgstr ""
+"Dersom du opplever at nedlastinger feiler, prøv å slå av eller på de "
+"følgende alternativene. Dette fordi enkelte tjenere ikkje støtter buffret "
+"eller partiell nedlasting"
+
+#: admin/tpls/settings/basic.php:155
+msgid "Resumable Downloads"
+msgstr "Gjenopptagbare nedlastinger"
+
+#: admin/tpls/settings/basic.php:157 admin/tpls/settings/basic.php:164
+msgid "Enabled"
+msgstr "Aktivert"
+
+#: admin/tpls/settings/basic.php:158 admin/tpls/settings/basic.php:165
+msgid "Disabled"
+msgstr "Deaktivert"
+
+#: admin/tpls/settings/basic.php:162
+msgid "Output Buffering"
+msgstr "Resultat-buffring"
+
+#: admin/tpls/settings/basic.php:171
+msgid "Open in Browser"
+msgstr "Opne i nettleser"
+
+#: admin/tpls/settings/basic.php:172
+msgid ""
+"Try to Open in Browser instead of download when someone clicks on download "
+"link"
+msgstr ""
+"Forsøk å åpne i nettleser i stedet for å laste ned når noen klikker på "
+"nedlastingslenken"
+
+#: admin/tpls/settings/basic.php:178
+msgid "reCAPTCHA Lock Settings"
+msgstr "reCAPTCHA låseinnstillinger"
+
+#: admin/tpls/settings/basic.php:180
+msgid "reCAPTCHA Site Key"
+msgstr "reCAPTCHA nettstednøkkel"
+
+#: admin/tpls/settings/basic.php:182
+msgid ""
+"Register a new site for reCAPTCHA from <a target=\"_blank\" href=\"https://"
+"www.google.com/recaptcha/admin#list\">here</a>"
+msgstr ""
+"<a target=\"_blank\" href=\"https://www.google.com/recaptcha/admin#list"
+"\">Herfra</a> kan du registrere et nytt nettsted for reCAPTCHA"
+
+#: admin/tpls/settings/basic.php:185
+msgid "reCAPTCHA Secret Key"
+msgstr "Hemmelig nøkkel for reCAPTCHA"
+
+#: admin/tpls/settings/basic.php:198
+msgid "Misc Settings"
+msgstr "Andre innstillinger"
+
+#: admin/tpls/settings/basic.php:204
+msgid "Disable Style & Script"
+msgstr "Deaktiver stilsett og skript"
+
+#: admin/tpls/settings/basic.php:206
+msgid "Bootstrap JS"
+msgstr ""
+
+#: admin/tpls/settings/basic.php:207
+msgid "Bootstrap CSS"
+msgstr ""
+
+#: admin/tpls/settings/basic.php:208
+msgid "Font Awesome"
+msgstr ""
+
+#: admin/tpls/settings/basic.php:209
+msgid "Front CSS"
+msgstr ""
+
+#: admin/tpls/settings/basic.php:211
+msgid ""
+"Because, sometimes your theme may have those scripts/styles enqueued already"
+msgstr "Fordi temaene dine allerede kan ha lastet inn disse"
+
+#: admin/tpls/settings/basic.php:215
+msgid "Login Page"
+msgstr "Innloggingsside"
+
+#: admin/tpls/settings/basic.php:216 admin/tpls/settings/basic.php:222
+#: admin/tpls/settings/basic.php:227
+msgid "None Selected"
+msgstr "Ingen er valgt"
+
+#: admin/tpls/settings/basic.php:217 admin/tpls/settings/basic.php:223
+#: admin/tpls/settings/basic.php:228
+#, php-format
+msgid "The page where you used short-code %s"
+msgstr "Siden der du brukte kortkoden %s"
+
+#: admin/tpls/settings/basic.php:221
+msgid "Register Page"
+msgstr "Registreringsside"
+
+#: admin/tpls/settings/basic.php:226
+msgid "Dashboard Page"
+msgstr "Oversikttside"
+
+#: admin/tpls/settings/basic.php:233
+msgid "Include Packages in Main RSS Feed"
+msgstr "Inkluder pakker i hoved-RSS-strømmen"
+
+#: admin/tpls/settings/basic.php:234
+#, php-format
+msgid ""
+"Check this option if you want to show wpdm packages in your main <a target="
+"\"_blank\" href=\"%s\">RSS Feed</a>"
+msgstr ""
+"Aktiver dette alternativet dersom du vil vise wpdm-pakker i hoved-<a target="
+"\"_blank\" href=\"%s\">RSS-strømmen</a>din"
+
+#: admin/tpls/stats.php:6
+msgid "Clear History"
+msgstr "Slett historikk"
+
+#: admin/tpls/stats.php:7
+msgid "Export History"
+msgstr "Eksporter historikk"
+
+#: admin/tpls/stats.php:8 libs/class.UserDashboard.php:17
+msgid "Download History"
+msgstr "Nedlastingshistorikk"
+
+#: admin/tpls/stats.php:31
+msgid "Are you sure? There is no going back!"
+msgstr "Er du sikker? Det er ingen mulighet til å reversere!"
+
+#: admin/tpls/stats.php:35
+msgid "Clearing..."
+msgstr "Sletter..."
+
+#: admin/tpls/stats.php:38
+msgid "Download History is Empty"
+msgstr "Nedlastingshistorikken er tom"
+
+#: admin/tpls/stats/history.php:6 tpls/user-dashboard/download-history.php:9
+#: tpls/user-dashboard/profile.php:79
+msgid "Package Name"
+msgstr "Pakkenavn"
+
+#: admin/tpls/stats/history.php:7 tpls/user-dashboard/download-history.php:10
+#: tpls/user-dashboard/profile.php:80
+msgid "Download Time"
+msgstr "Nedlastingstid"
+
+#: admin/tpls/stats/history.php:8
+msgid "User/IP"
+msgstr "Bruker/IP"
+
+#: download-manager.php:135 download-manager.php:147 wpdm-functions.php:641
+#: wpdm-functions.php:660
+msgid "Downloads"
+msgstr "Nedlastinger"
+
+#: download-manager.php:136 libs/class.FileList.php:67
+msgid "File"
+msgstr "Fil"
+
+#: download-manager.php:137
+msgid "Add New"
+msgstr "Legg til"
+
+#: download-manager.php:138
+msgid "Add New File"
+msgstr "Legg til fil"
+
+#: download-manager.php:139
+msgid "Edit File"
+msgstr "Rediger fil"
+
+#: download-manager.php:140
+msgid "New File"
+msgstr "Ny fil"
+
+#: download-manager.php:141
+msgid "All Files"
+msgstr "Alle filer"
+
+#: download-manager.php:142
+msgid "View File"
+msgstr "Vis fil"
+
+#: download-manager.php:143
+msgid "Search Files"
+msgstr "Søk etter filer"
+
+#: download-manager.php:144
+msgid "No File Found"
+msgstr "Finner ingen filer"
+
+#: download-manager.php:145
+msgid "No Files found in Trash"
+msgstr "Ingen filer funnet i søppelbøtten"
+
+#: download-manager.php:176 download-manager.php:186
+#: tpls/wpdm-all-downloads.php:144
+msgid "Categories"
+msgstr "Kategorier"
+
+#: download-manager.php:177
+msgid "Category"
+msgstr "Kategori"
+
+#: download-manager.php:178
+msgid "Search Categories"
+msgstr "Søk i kategorier"
+
+#: download-manager.php:179
+msgid "All Categories"
+msgstr "Alle kategorier"
+
+#: download-manager.php:180
+msgid "Parent Category"
+msgstr "Forelderkategori"
+
+#: download-manager.php:181
+msgid "Parent Category:"
+msgstr "Forelderkategori:"
+
+#: download-manager.php:182
+msgid "Edit Category"
+msgstr "Rediger kategori"
+
+#: download-manager.php:183
+msgid "Update Category"
+msgstr "Oppdater kategori"
+
+#: download-manager.php:184
+msgid "Add New Category"
+msgstr "Ny kategori"
+
+#: download-manager.php:185
+msgid "New Category Name"
+msgstr "Navn på ny kategori"
+
+#: libs/class.Apply.php:174 wpdm-functions.php:279
+msgid "Captcha Verification Failed!"
+msgstr "Kan ikke verifisere Captcha!"
+
+#: libs/class.Apply.php:182 libs/class.Apply.php:183
+msgid "Error: User registration is disabled!"
+msgstr "Feil: Brukerregistrering er ikke aktivert!"
+
+#: libs/class.Apply.php:193
+msgid "Username is Empty!"
+msgstr "Brukernavn er blank!"
+
+#: libs/class.Apply.php:202
+msgid "Invalid Email Address!"
+msgstr "Ugyldig e-post-adresse!"
+
+#: libs/class.Apply.php:268
+msgid "Email already exists."
+msgstr "E-post-adresse finnes allereie."
+
+#: libs/class.Apply.php:277
+msgid "User already exists."
+msgstr "Bruker finnes allereie."
+
+#: libs/class.Apply.php:403
+msgid "You don't have permission to download this file"
+msgstr "Du har ikke tillatelse til å laste ned denne filen"
+
+#: libs/class.Apply.php:410
+msgid "Download link is expired. Please get new download link."
+msgstr "Nedlastingslenken er utdatert. Du må skaffe en ny lenke."
+
+#: libs/class.Apply.php:412
+msgid "Download link is expired or not valid. Please get new download link."
+msgstr "Nedlastingslenken er utdatert eller ugyldig. Du må skaffe en ny lenke."
+
+#: libs/class.Apply.php:419
+msgid "Stock Limit Reached"
+msgstr "Begrensning på lagerstørrelsen er nådd"
+
+#: libs/class.Apply.php:425
+msgid "Invalid download link."
+msgstr "Ugyldig nedlastingslenke."
+
+#: libs/class.Apply.php:519
+msgid "Price"
+msgstr "Pris"
+
+#: libs/class.Email.php:17
+msgid "General Email Template"
+msgstr "Generell e-post-mal"
+
+#: libs/class.Email.php:26
+msgid "User Signup Notification"
+msgstr "Melding om brukerregistrering"
+
+#: libs/class.Email.php:28
+#, php-format
+msgid "Welcome to %s"
+msgstr "Velkommen til %s"
+
+#: libs/class.Email.php:35
+msgid "Password Reset Notification"
+msgstr "Melding om tilbakestilling av passord"
+
+#: libs/class.Email.php:37
+#, php-format
+msgid "Request to reset your %s password"
+msgstr "Forespørsel om å tilbakestille ditt %s passord"
+
+#: libs/class.Email.php:43
+msgid "Email Lock Notification"
+msgstr "Melding om låsing av e-post"
+
+#: libs/class.Email.php:45
+msgid "Download [#package_name#]"
+msgstr "Last ned [#package_name#]"
+
+#: libs/class.Email.php:52 wpdm-core.php:188
+msgid "New Package Notification"
+msgstr "Melding om ny pakke"
+
+#: libs/class.Email.php:54
+msgid "New Package is Added By [#name#]"
+msgstr "Ny pakke er lagt til av [#name#]"
+
+#: libs/class.Email.php:153
+msgid "Sample Package Name"
+msgstr "Eksempelnavn på pakke"
+
+#: libs/class.FileList.php:62 libs/class.FileList.php:94
+#: libs/class.FileList.php:132 libs/class.FileList.php:200
+#: tpls/wpdm-login-form.php:67 tpls/wpdm-reg-form.php:68
+msgid "Password"
+msgstr "Passord"
+
+#: libs/class.FileList.php:63
+msgid "Action"
+msgstr "Handling"
+
+#: libs/class.Messages.php:32
+msgid "Operation Failed!"
+msgstr "Operasjon feilet!"
+
+#: libs/class.Messages.php:44
+msgid "Warning!"
+msgstr "Advarsel!"
+
+#: libs/class.Messages.php:56
+msgid "Attention!"
+msgstr "Observer!"
+
+#: libs/class.Messages.php:68
+msgid "Awesome!"
+msgstr "Bra!"
+
+#: libs/class.Package.php:26
+msgid "ID missing!"
+msgstr "Mangler ID!"
+
+#: libs/class.Package.php:125 libs/class.Package.php:128
+#: libs/class.Package.php:130
+msgid "Icon"
+msgstr "Ikon"
+
+#: libs/class.Package.php:133 libs/class.Package.php:140
+msgid "Thumbnail"
+msgstr "Miniatyrbilde"
+
+#: libs/class.Package.php:162 libs/class.Package.php:598
+#: libs/class.Package.php:798 wpdm-functions.php:109 wpdm-start-download.php:23
+msgid "Download Limit Exceeded"
+msgstr "Nedlastingsbegrensning er nådd"
+
+#: libs/class.Package.php:165 libs/class.Package.php:173
+#: libs/class.Package.php:181 libs/class.Package.php:189
+msgid "DOWNLOAD ERROR"
+msgstr "NEDLASTINGSFEIL"
+
+#: libs/class.Package.php:170 libs/class.Package.php:602
+#: libs/class.Package.php:802 wpdm-functions.php:113
+msgid "Download was expired on"
+msgstr "Nedlasting ble utdatert den"
+
+#: libs/class.Package.php:178 libs/class.Package.php:609
+#: libs/class.Package.php:810 wpdm-functions.php:120
+msgid "Download will be available from "
+msgstr "Nedlasting vil være tilgjengelig fra "
+
+#: libs/class.Package.php:212
+msgid "Terms and Conditions"
+msgstr "Vilkår og betingelser"
+
+#: libs/class.Package.php:213
+msgid "I Agree"
+msgstr "Jeg aksepterer"
+
+#: libs/class.Package.php:445
+msgid "No File Attached!"
+msgstr "Ingen fil er vedlagt!"
+
+#: libs/class.Package.php:604 libs/class.Package.php:611
+#: libs/class.Package.php:621 wpdm-functions.php:115 wpdm-functions.php:122
+#: wpdm-functions.php:132
+msgid "Download:"
+msgstr "Last ned:"
+
+#: libs/class.Package.php:703 wpdm-functions.php:213
+msgid "Download limit exceeded!"
+msgstr "Nedlastingsbegrensning er nådd!"
+
+#: libs/class.Package.php:730
+msgid "Verify CAPTCHA to Download"
+msgstr "Verifiser CAPTCHA for å laste ned"
+
+#: libs/class.Package.php:805 libs/class.Package.php:813
+#: libs/class.Package.php:823
+msgid "DOWNLOAD ERROR:"
+msgstr "NEDLASTINGSFEIL:"
+
+#: libs/class.Package.php:880
+msgid "Limit Over!"
+msgstr "Begrensning er nådd!"
+
+#: libs/class.PackageLocks.php:29
+msgid "Enter Correct Password to Download"
+msgstr "Oppgi korrekt passord for å laste ned"
+
+#: libs/class.PackageLocks.php:32 libs/class.PackageLocks.php:48
+#: tpls/wpdm-all-downloads.php:115
+msgid "Processing..."
+msgstr "Behandler..."
+
+#: libs/class.PackageLocks.php:39
+msgid "Enter Password"
+msgstr "Oppgi passord"
+
+#: libs/class.PackageLocks.php:40
+msgid "Submit"
+msgstr "Sende inn"
+
+#: libs/class.Pagination.php:64 tpls/wpdm-all-downloads.php:121
+#: tpls/wpdm-all-downloads.php:313
+msgid "Previous"
+msgstr "Forrige"
+
+#: libs/class.Pagination.php:65 tpls/wpdm-all-downloads.php:120
+#: tpls/wpdm-all-downloads.php:314
+msgid "Next"
+msgstr "Neste"
+
+#: libs/class.ShortCodes.php:121
+msgid "User registration is disabled"
+msgstr "Brukerregistrering er deaktivert"
+
+#: libs/class.StreamMedia.php:34
+msgid "Failed To Open File!"
+msgstr "Kan ikke åpne fil!"
+
+#: libs/class.UserDashboard.php:16
+msgid "Profile"
+msgstr "Profil"
+
+#: libs/class.UserDashboard.php:18
+msgid "Edit Profile"
+msgstr "Rediger profil"
+
+#: modules/server-file-browser.php:8
+msgid "Not Allowed!"
+msgstr "Ikkje tillatt!"
+
+#: modules/server-file-browser.php:81
+msgid "Add file(s) from server"
+msgstr "Legg til fil(er) fra tjener"
+
+#: modules/widgets.php:35
+msgid "WPDM Affiliate ID:"
+msgstr "WPDM-kontrollert ID:"
+
+#: modules/widgets.php:108 modules/widgets.php:164 modules/widgets.php:229
+#: modules/widgets.php:319 modules/widgets.php:435
+msgid "Title:"
+msgstr "Tittel:"
+
+#: modules/widgets.php:168 modules/widgets.php:233 modules/widgets.php:329
+msgid "Number of packages to show:"
+msgstr "Antall pakker å vise:"
+
+#: modules/widgets.php:172 modules/widgets.php:238 modules/widgets.php:334
+msgid "Link Template:"
+msgstr "Lenke-mal:"
+
+#: modules/widgets.php:323
+msgid "Select Category:"
+msgstr "Velg kategori:"
+
+#: modules/widgets.php:358 tpls/user-dashboard/profile.php:19
+msgid "Total Downloads"
+msgstr "Totalt antall nedlastinger"
+
+#: modules/widgets.php:359
+msgid "Total Views"
+msgstr "Totalt antall visninger"
+
+#: modules/widgets.php:360 modules/widgets.php:444 wpdm-functions.php:661
+msgid "Publish Date"
+msgstr "Publiseringsdato"
+
+#: modules/widgets.php:361
+msgid "Last Updated"
+msgstr "Sist oppdatert"
+
+#: modules/widgets.php:362
+msgid "Size"
+msgstr "Størrelse"
+
+#: modules/widgets.php:439
+msgid "Fields to Show:"
+msgstr "Felt å vise:"
+
+#: modules/widgets.php:442
+msgid "Download Count"
+msgstr "Antall nedlastinger"
+
+#: modules/widgets.php:443
+msgid "View Count"
+msgstr "Vis antall"
+
+#: modules/widgets.php:445 wpdm-functions.php:662
+msgid "Update Date"
+msgstr "Oppdatert"
+
+#: modules/widgets.php:446
+msgid "File Size"
+msgstr "Filstørrrelse"
+
+#: modules/widgets.php:447
+msgid "Download Link"
+msgstr "Nedlastingslenke"
+
+#: modules/widgets.php:448
+msgid "Style"
+msgstr "Stil"
+
+#: modules/widgets.php:448
+msgid "Tabular View"
+msgstr "Tabellvisning"
+
+#: tpls/lock-options-iframe.php:204
+msgid "Buy"
+msgstr "Kjøp"
+
+#: tpls/simple-search-form.php:5
+msgid "Search Package"
+msgstr "Søk etter pakke"
+
+#: tpls/simple-search-form.php:18
+msgid "Search Result For"
+msgstr "Søkeresultat for"
+
+#: tpls/simple-search-form.php:19 tpls/simple-search-form.php:23
+msgid "Loading"
+msgstr "Laster"
+
+#: tpls/user-dashboard/download-history.php:11
+#: tpls/user-dashboard/profile.php:81
+msgid "IP"
+msgstr "IP"
+
+#: tpls/user-dashboard/edit-profile.php:21
+msgid "Basic Profile"
+msgstr "Basisprofil"
+
+#: tpls/user-dashboard/profile.php:7
+msgid "User Level"
+msgstr "Brukernivå"
+
+#: tpls/user-dashboard/profile.php:27
+msgid "Today's Download"
+msgstr "Dagens nedlastinger"
+
+#: tpls/user-dashboard/profile.php:35
+msgid "Recommended Downloads"
+msgstr "Anbefalte nedlastinger"
+
+#: tpls/user-dashboard/profile.php:75
+msgid "Last 5 Downloads"
+msgstr "Siste 5 nedlastinger"
+
+#: tpls/wpdm-all-downloads.php:106
+msgid "Display _MENU_ downloads per page"
+msgstr "Vis _MENU_ nedlastinger pr side"
+
+#: tpls/wpdm-all-downloads.php:107
+msgid "Nothing _START_ to - sorry"
+msgstr "Ingen _START_ til - beklager"
+
+#: tpls/wpdm-all-downloads.php:108
+msgid "Showing _START_ to _END_ of _TOTAL_ downloads"
+msgstr "Viser _START_ til _END_ av _TOTAL_ nedlastinger"
+
+#: tpls/wpdm-all-downloads.php:109
+msgid "No downloads available"
+msgstr "Ingen nedlastinger er tilgjengelige"
+
+#: tpls/wpdm-all-downloads.php:110
+msgid "(filtered from _MAX_ total downloads)"
+msgstr "(filtrert av totalt _MAX_ nedlastinger)"
+
+#: tpls/wpdm-all-downloads.php:111
+msgid "No data available in table"
+msgstr "Ingen data er tilgjengelig i tabellen"
+
+#: tpls/wpdm-all-downloads.php:114
+msgid "Loading..."
+msgstr "Laster..."
+
+#: tpls/wpdm-all-downloads.php:116
+msgid "Search:"
+msgstr "Søk:"
+
+#: tpls/wpdm-all-downloads.php:118
+msgid "First"
+msgstr "Første"
+
+#: tpls/wpdm-all-downloads.php:119
+msgid "Last"
+msgstr "Siste"
+
+#: tpls/wpdm-all-downloads.php:124
+msgid "activate to sort column ascending"
+msgstr "aktiver for å sortere kolonnen i stigende rekkefølge"
+
+#: tpls/wpdm-all-downloads.php:125
+msgid "activate to sort column descending"
+msgstr "aktiver for å sortere kolonnen i synkende rekkefølge"
+
+#: tpls/wpdm-all-downloads.php:129
+msgid "All"
+msgstr "Alle"
+
+#: tpls/wpdm-all-downloads.php:145
+msgid "Create Date"
+msgstr "Opprett dato"
+
+#: tpls/wpdm-all-downloads.php:240
+msgid "file(s)"
+msgstr "fil(er)"
+
+#: tpls/wpdm-all-downloads.php:246
+msgid "downloads"
+msgstr "nedlastinger"
+
+#: tpls/wpdm-all-downloads.php:246
+msgid "download"
+msgstr "nedlasting"
+
+#: tpls/wpdm-all-downloads.php:252
+msgid "views"
+msgstr "visninger"
+
+#: tpls/wpdm-all-downloads.php:252
+msgid "view"
+msgstr "visning"
+
+#: tpls/wpdm-all-downloads.php:292
+msgid "No Packages Found"
+msgstr "Fant ingen pakker"
+
+#: tpls/wpdm-generate-password.php:17
+msgid "Select Options"
+msgstr "Velg alternativer"
+
+#: tpls/wpdm-generate-password.php:19
+msgid "Number of passwords:"
+msgstr "Antall passord:"
+
+#: tpls/wpdm-generate-password.php:23
+msgid "Number of chars for each password:"
+msgstr "Antall tegn pr passsord:"
+
+#: tpls/wpdm-generate-password.php:27
+msgid "Valid chars:"
+msgstr "Gyldige tegn:"
+
+#: tpls/wpdm-generate-password.php:36
+msgid "Generated Passwords"
+msgstr "Generert passord:"
+
+#: tpls/wpdm-generate-password.php:40
+msgid "Generate"
+msgstr "Generer"
+
+#: tpls/wpdm-login-form.php:41
+msgid "You are already logged in."
+msgstr "Du er allereie logget inn."
+
+#: tpls/wpdm-login-form.php:41
+msgid "Go To Dashboard"
+msgstr "Gå til oversikt"
+
+#: tpls/wpdm-login-form.php:53
+msgid "Login Failed!"
+msgstr "Mislykket innlogging!"
+
+#: tpls/wpdm-login-form.php:61 tpls/wpdm-reg-form.php:51
+msgid "Username"
+msgstr "Brukernavn"
+
+#: tpls/wpdm-login-form.php:75
+msgid "Remember Me"
+msgstr "Husk meg"
+
+#: tpls/wpdm-login-form.php:76
+msgid "Forgot Password?"
+msgstr "Glemt passord?"
+
+#: tpls/wpdm-login-form.php:76
+msgid "Request Reset"
+msgstr "Anmod om tilbakestilling"
+
+#: tpls/wpdm-login-form.php:79 tpls/wpdm-reg-form.php:116
+msgid "Login"
+msgstr "Logg inn"
+
+#: tpls/wpdm-login-form.php:81
+msgid "Sign Up"
+msgstr "Registrer"
+
+#: tpls/wpdm-login-form.php:96
+msgid "Logging In..."
+msgstr "Logger inn..."
+
+#: tpls/wpdm-login-form.php:101
+msgid "ERROR!"
+msgstr "FEIL!"
+
+#: tpls/wpdm-login-form.php:101
+msgid "Login failed! Please re-check login info."
+msgstr "Innlogging feilet! Sjekk innloggings-informasjon."
+
+#: tpls/wpdm-reg-form.php:45
+msgid "Full Name"
+msgstr "Fullt navn"
+
+#: tpls/wpdm-reg-form.php:58
+msgid "E-mail"
+msgstr "E-post"
+
+#: tpls/wpdm-reg-form.php:74
+msgid "Not Matched!"
+msgstr "Ingen treff!"
+
+#: tpls/wpdm-reg-form.php:74
+msgid "Confirm Password"
+msgstr "Bekreft passord"
+
+#: tpls/wpdm-reg-form.php:114
+msgid "Join Now!"
+msgstr "Bli med nå!"
+
+#: tpls/wpdm-reg-form.php:143
+msgid "Success! Redirecting..."
+msgstr "Suksess! Viderekobler..."
+
+#: tpls/wpdm-reg-form.php:153
+msgid "Registration is disabled!"
+msgstr "Registrering er deaktivert!"
+
+#: wpdm-core.php:105
+msgid "Select category"
+msgstr "Velg kategori"
+
+#: wpdm-core.php:190
+msgid ": Update Available"
+msgstr ": Oppdatering er tilgjengelig"
+
+#: wpdm-functions.php:142
+msgid "Permission Denied"
+msgstr "Tilgang ble avslått"
+
+#: wpdm-functions.php:288 wpdm-functions.php:292
+msgid "Wrong Password! Try Again."
+msgstr "Feil passord! Prøv igjen."
+
+#: wpdm-functions.php:305
+msgid "Password usages limit exceeded"
+msgstr "Passord kan ikke brukes flere ganger"
+
+#: wpdm-functions.php:641
+msgid "Sub-Categories"
+msgstr "Underkategorier"
+
+#: wpdm-functions.php:659
+msgid "Title"
+msgstr "Tittel"
+
+#: wpdm-functions.php:663
+msgid "Asc"
+msgstr "Stigende"
+
+#: wpdm-functions.php:664
+msgid "Desc"
+msgstr "Synkende"
+
+#: wpdm-functions.php:665
+msgid "Search"
+msgstr "Søk"
+
+#: wpdm-functions.php:666
+msgid "Order"
+msgstr "Rekkefølge"
+
+#: wpdm-functions.php:667
+msgid "Order By"
+msgstr "Sorter etter"
+
+#: wpdm-start-download.php:6
+msgid "Your IP address is blocked!"
+msgstr "Din IP-adresse er svartelistet!"
+
+#: wpdm-start-download.php:21
+msgid "Package is not available!"
+msgstr "Pakke er ikke tilgjengelig!"
+
+#: wpdm-start-download.php:49
+msgid "Sorry! Download is not available yet."
+msgstr "Beklager! Nedlastingen er foreløpig ikke tilgjengelig."
+
+#: wpdm-start-download.php:66
+msgid "Please activate \"zlib\" in your server"
+msgstr "Aktiver \"zlib\" på serveren din"
+
+#: wpdm-start-download.php:102
+msgid "No file found!"
+msgstr "Ingen fil ble funnet!"
