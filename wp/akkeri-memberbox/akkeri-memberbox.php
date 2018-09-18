@@ -41,6 +41,12 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 			return '';
 		}
 		
+		// Redirect to home on logout
+		public static function auto_redirect_after_logout(){
+			wp_redirect( home_url() );
+			exit();
+		}
+			
 		// Initialize Shortcodes
 		public static function shortcodes_init() 
 		{
@@ -158,11 +164,11 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 				}
 			}	
 			
-			$result = "";
+			$result = "<div>";
 			foreach ($users as $user) 
 			{			
 				$data = self::get_requested_member_data($user, $fields);
-				$result .= "<div class=\"container\"><div class=\"row\">";
+				$result .= "<p><div class=\"container\"><div class=\"row\">";
 				foreach ( $data as $field ) 
 				{
 					$key = array_keys($field)[0];
@@ -175,8 +181,11 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 						$result .= sprintf("<p class=\"amb-%s\" style=\"margin-bottom:0em; margin-top:0em\">%s</p>", $key, $field[$key]);
 					}
 				}
-				$result .= "</div></div></div>";
+				$result .= "</div></div></div></p>";
 			}
+			$result .= "</div>";
+			$result .= apply_filters('the_content', $content);
+			$result .= do_shortcode($content);
 			print_r($result);
 		}		
 	}
@@ -187,5 +196,8 @@ register_deactivation_hook( __FILE__, 'AkkeriMemberBox_Plugin::deactivate' );
 
 add_action('init', 'AkkeriMemberBox_Plugin::shortcodes_init');
 add_action( 'wp_enqueue_scripts', 'AkkeriMemberBox_Plugin::load_plugin_css', 10000 );
+
+// This should be its own plugin
+add_action('wp_logout','AkkeriMemberBox_Plugin::auto_redirect_after_logout');
 
 ?>

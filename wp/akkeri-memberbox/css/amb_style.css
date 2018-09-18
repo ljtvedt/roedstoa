@@ -69,6 +69,13 @@ p.amb-display_name {
 	font-weight: bold;
 }
 
+p.amb-telefon:before {
+	font-family: FontAwesome;
+	content: '\f095';
+	margin-right: 1em;
+	
+}
+
 p.amb-phone:before {
 	font-family: FontAwesome;
 	content: '\f095';
