@@ -16,6 +16,28 @@ defined( 'ABSPATH' ) or die( 'Do not execute this script outside WordPress!' );
 
 if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 	
+	class AkkeriMemberBox_Role
+	{
+		public $id;
+		public $description;
+		public $order;
+		
+		function __construct($order, $description) {
+			$this->order = $order;
+			$this->description = trim($description);
+			$this->id = str_replace(' ', '_', strtolower($this->description));
+		}
+
+		function compareTo($other) {
+			if ($this->order < $other->order) 
+				return -1;
+			elseif ($this->order < $this->order)
+				return 1;
+			else
+				return 0;
+		}
+	}
+	
 	class AkkeriMemberBox_Plugin
 	{			
 		const CSS_FILE = 'css/amb_style.css';
@@ -60,25 +82,40 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 			wp_enqueue_style( 'amb_style', $plugin_url . self::CSS_FILE );
 		}
 		
-		public static function role_array ($roles) {
-			return array_map(
-						function ($value) { 
-							return str_replace(' ', '_', trim(strtolower($value))); 
-						}, 
-						explode(",", $roles));
+		// Returns an array of a rich role representation, ordered as in the string
+		public static function ordered_roles ($roles) {
+			$order = 0;
+			$roleArray = [];
+			foreach (explode(",", $roles) as $role) {
+				$roleArray[] = new AkkeriMemberBox_Role($order++, trim($role));
+			}
+			return $roleArray;
 		}
 							
 		public static function get_users_with_roles ($roles) 
 		{
-			$roleArray = self::role_array($roles);
-			$user_query = new WP_User_Query( array( 'role__in' => $roleArray ) );
+			$roleArray = self::ordered_roles($roles);
+			$user_query = new WP_User_Query( 
+								array( 'role__in' => 
+										array_map(	
+											function($role) {
+												return $role->id;
+											},
+											$roleArray) ) );
 			
 			return  array_map(
-							function ($value) use($roles, $roleArray) { 
-								$userRoles = array_intersect($roleArray, array_keys($value->wp_capabilities));
-								$user = $value;
-								$user->roleSortOrder = array_keys($userRoles)[0];
-								$user->role = explode(',', $roles)[$user->roleSortOrder];
+							function ($user) use($roleArray) { 
+								$usersRoles = 	
+									array_filter($roleArray, 
+										function ($role) use ($user) {
+											return array_key_exists($role->id, $user->wp_capabilities);
+										});
+								uasort($usersRoles, 
+									function($a, $b) {
+										return ($a.compareTo($b));
+									});
+								reset($usersRoles);
+								$user->role	= current($usersRoles);
 								return $user; 
 							}, 
 							$user_query->get_results());							
@@ -131,7 +168,7 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 					elseif ($field === 'user_nicename') 
 						$member_data[] = [$field => $user->user_nicename];					
 					elseif ($field === 'role') 
-						$member_data[] = [$field => $user->role];					
+						$member_data[] = [$field => $user->role->description];					
 				}
 			}
 			unset($field);
@@ -149,7 +186,7 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 				$users = self::get_users_with_roles($roles);
 				usort($users, 
 					function($u1, $u2) { 
-						$order = $u1->roleSortOrder - $u2->roleSortOrder;
+						$order = $u1->role->order - $u2->role->order;
 						if ($order == 0) 
 							$order = strcasecmp($u1->last_name(), $u2->last_name());
 						if ($order == 0) 
@@ -186,7 +223,7 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 			$result .= "</div>";
 			$result .= apply_filters('the_content', $content);
 			$result .= do_shortcode($content);
-			print_r($result);
+			return($result);
 		}		
 	}
 }
