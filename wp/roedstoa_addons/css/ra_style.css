@@ -65,30 +65,30 @@ p[class^="amb-"] {
 	margin-top:1.0em;
 }
 
-p.amb-display_name {
+p.ra-display_name {
 	font-weight: bold;
 }
 
-p.amb-telefon:before {
+p.ra-telefon:before {
 	font-family: FontAwesome;
 	content: '\f095';
 	margin-right: 1em;
 	
 }
 
-p.amb-phone:before {
+p.ra-phone:before {
 	font-family: FontAwesome;
 	content: '\f095';
 	margin-right: 1em;
 }
 
-p.amb-user_email:before {
+p.ra-user_email:before {
 	font-family: FontAwesome;
 	content: '\f0e0';
 	margin-right: 1em;
 }
 
-p.amb-user_url:before {
+p.ra-user_url:before {
 	font-family: FontAwesome;
 	content: '\f0ac';
 	margin-right: 1em;

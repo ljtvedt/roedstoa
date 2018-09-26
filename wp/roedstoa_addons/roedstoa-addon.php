@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name:  Akkeri Member Box
-Plugin URI:   https://www.akkeri.no/wp/plugins/memberbox
-Description:  Displays information about you members
-Version:      2018-08-23
-Author:       akkeri
+Plugin Name:  Roedstoa AddOn
+Plugin URI:   https://www.roedstoa.no/
+Description:  Displays information about members based on roles, and other necessary adddons for the web page
+Version:      2018-09-26
+Author:       Lars Jørgen Tvedt
 Author URI:   https://www.akkeri.no/
 License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,9 +14,21 @@ Domain Path:  /languages
 
 defined( 'ABSPATH' ) or die( 'Do not execute this script outside WordPress!' );
 
-if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
+if ( !class_exists( 'RoedstoaAddon_Redirect' ) ) {
 	
-	class AkkeriMemberBox_Role
+	class RoedstoaAddon_Redirect
+	{
+		// Redirect to home on logout
+		public static function auto_redirect_after_logout(){
+			wp_redirect( home_url() );
+			exit();
+		}		
+	}
+}
+
+if ( !class_exists( 'RoedstoaAddon_Role' ) ) {
+	
+	class RoedstoaAddon_Role
 	{
 		public $id;
 		public $description;
@@ -37,11 +49,14 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 				return 0;
 		}
 	}
+}
+
+if ( !class_exists( 'RoedstoaAddon_MemberList' ) ) {
 	
-	class AkkeriMemberBox_Plugin
+	class RoedstoaAddon_MemberList
 	{			
-		const CSS_FILE = 'css/amb_style.css';
-		const MEMBERS_SHORTCUT = 'amb_members';
+		const CSS_FILE = 'css/ra_style.css';
+		const MEMBERS_SHORTCUT = 'ra_members';
 
 		const ATTR_LOGIN = 'login';
 		const ATTR_EMAIL = 'email';
@@ -63,16 +78,10 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 			return '';
 		}
 		
-		// Redirect to home on logout
-		public static function auto_redirect_after_logout(){
-			wp_redirect( home_url() );
-			exit();
-		}
-			
 		// Initialize Shortcodes
 		public static function shortcodes_init() 
 		{
-			add_shortcode( self::MEMBERS_SHORTCUT, array('AkkeriMemberBox_Plugin', 'members_func') );
+			add_shortcode( self::MEMBERS_SHORTCUT, array('RoedstoaAddon_MemberList', 'members_func') );
 			return '';
 		}
 		
@@ -87,7 +96,7 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 			$order = 0;
 			$roleArray = [];
 			foreach (explode(",", $roles) as $role) {
-				$roleArray[] = new AkkeriMemberBox_Role($order++, trim($role));
+				$roleArray[] = new RoedstoaAddon_Role($order++, trim($role));
 			}
 			return $roleArray;
 		}
@@ -108,14 +117,16 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 								$usersRoles = 	
 									array_filter($roleArray, 
 										function ($role) use ($user) {
-											return array_key_exists($role->id, $user->wp_capabilities);
+											$user_meta=get_userdata($user->ID);
+											$user_roles=$user_meta->roles;
+											return in_array($role->id, $user_roles);
 										});
 								uasort($usersRoles, 
 									function($a, $b) {
 										return ($a.compareTo($b));
 									});
 								reset($usersRoles);
-								$user->role	= current($usersRoles);
+								$user->richRole	= current($usersRoles);
 								return $user; 
 							}, 
 							$user_query->get_results());							
@@ -168,7 +179,7 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 					elseif ($field === 'user_nicename') 
 						$member_data[] = [$field => $user->user_nicename];					
 					elseif ($field === 'role') 
-						$member_data[] = [$field => $user->role->description];					
+						$member_data[] = [$field => $user->richRole->description];					
 				}
 			}
 			unset($field);
@@ -186,7 +197,7 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 				$users = self::get_users_with_roles($roles);
 				usort($users, 
 					function($u1, $u2) { 
-						$order = $u1->role->order - $u2->role->order;
+						$order = $u1->richRole->order - $u2->richRole->order;
 						if ($order == 0) 
 							$order = strcasecmp($u1->last_name(), $u2->last_name());
 						if ($order == 0) 
@@ -215,7 +226,7 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 					}
 					elseif (isset($key) AND isset($field[$key])) 
 					{
-						$result .= sprintf("<p class=\"amb-%s\" style=\"margin-bottom:0em; margin-top:0em\">%s</p>", $key, $field[$key]);
+						$result .= sprintf("<p class=\"ra-%s\" style=\"margin-bottom:0em; margin-top:0em\">%s</p>", $key, $field[$key]);
 					}
 				}
 				$result .= "</div></div></div></p>";
@@ -228,13 +239,12 @@ if ( !class_exists( 'AkkeriMemberBox_Plugin' ) ) {
 	}
 }
 
-register_activation_hook( __FILE__, 'AkkeriMemberBox_Plugin::activate' );
-register_deactivation_hook( __FILE__, 'AkkeriMemberBox_Plugin::deactivate' );
+register_activation_hook( __FILE__, 'RoedstoaAddon_MemberList::activate' );
+register_deactivation_hook( __FILE__, 'RoedstoaAddon_MemberList::deactivate' );
 
-add_action('init', 'AkkeriMemberBox_Plugin::shortcodes_init');
-add_action( 'wp_enqueue_scripts', 'AkkeriMemberBox_Plugin::load_plugin_css', 10000 );
+add_action('init', 'RoedstoaAddon_MemberList::shortcodes_init');
+add_action( 'wp_enqueue_scripts', 'RoedstoaAddon_MemberList::load_plugin_css', 10000 );
 
-// This should be its own plugin
-add_action('wp_logout','AkkeriMemberBox_Plugin::auto_redirect_after_logout');
+add_action('wp_logout','RoedstoaAddon_Redirect::auto_redirect_after_logout');
 
 ?>
