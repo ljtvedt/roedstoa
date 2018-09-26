@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name:  Roedstoa AddOn
-Plugin URI:   https://www.roedstoa.no/
+Plugin URI:   https://github.com/ljtvedt/roedstoa
 Description:  Displays information about members based on roles, and other necessary adddons for the web page
 Version:      2018-09-26
 Author:       Lars Jørgen Tvedt
