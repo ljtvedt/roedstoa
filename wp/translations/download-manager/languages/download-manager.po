@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Download Manager Pro v2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-12 13:30+0600\n"
-"PO-Revision-Date: 2018-03-12 13:30+0600\n"
+"POT-Creation-Date: 2018-11-21 17:26+0600\n"
+"PO-Revision-Date: 2018-11-21 17:26+0600\n"
 "Last-Translator: \n"
 "Language-Team: Shaon <proshaon@yahoo.com>\n"
 "Language: en_BD\n"
@@ -13,15 +13,15 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class.WordPressDownloadManagerAdmin.php:147
+#: admin/class.WordPressDownloadManagerAdmin.php:163
 #: admin/tpls/metaboxes/package-settings.php:6
 msgid "Package Settings"
 msgstr ""
 
-#: admin/class.WordPressDownloadManagerAdmin.php:148
+#: admin/class.WordPressDownloadManagerAdmin.php:164
 msgid "Attach File"
 msgstr ""
 
@@ -33,21 +33,37 @@ msgstr ""
 msgid "Add-Ons"
 msgstr ""
 
-#: admin/menus/class.Categories.php:48 admin/menus/class.Categories.php:77
+#: admin/menus/class.Categories.php:47 admin/menus/class.Categories.php:139
+msgid "Category Image:"
+msgstr ""
+
+#: admin/menus/class.Categories.php:49 admin/menus/class.Categories.php:141
+msgid "Image URL"
+msgstr ""
+
+#: admin/menus/class.Categories.php:49 admin/menus/class.Categories.php:141
+msgid "Select Category Image"
+msgstr ""
+
+#: admin/menus/class.Categories.php:49 admin/menus/class.Categories.php:141
+msgid "Insert From Media Library"
+msgstr ""
+
+#: admin/menus/class.Categories.php:106 admin/menus/class.Categories.php:199
 msgid "Access:"
 msgstr ""
 
-#: admin/menus/class.Categories.php:49 admin/menus/class.Categories.php:80
+#: admin/menus/class.Categories.php:107 admin/menus/class.Categories.php:202
 msgid ""
 "Select the roles who should have access to the packages under this category"
 msgstr ""
 
-#: admin/menus/class.Categories.php:52 admin/menus/class.Categories.php:91
+#: admin/menus/class.Categories.php:110 admin/menus/class.Categories.php:215
 #: admin/tpls/metaboxes/package-settings.php:67
 msgid "All Visitors"
 msgstr ""
 
-#: admin/menus/class.Packages.php:186
+#: admin/menus/class.Packages.php:190
 msgid "Direct Download"
 msgstr ""
 
@@ -59,9 +75,13 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: admin/menus/class.Settings.php:108 admin/menus/class.Settings.php:135
-#: admin/menus/class.Settings.php:190 admin/menus/class.Settings.php:205
-msgid "Invalid Token!"
+#: admin/menus/class.Settings.php:112 admin/menus/class.Settings.php:140
+#: admin/menus/class.Settings.php:196 admin/menus/class.Settings.php:212
+msgid "Security token is expired! Refresh the page and try again."
+msgstr ""
+
+#: admin/menus/class.Settings.php:282
+msgid "Privacy Settings Saved Successfully"
 msgstr ""
 
 #: admin/menus/class.Stats.php:25
@@ -72,12 +92,106 @@ msgstr ""
 msgid "History"
 msgstr ""
 
+#: admin/menus/class.Templates.php:21
+msgid "Templates &lsaquo; Download Manager"
+msgstr ""
+
+#: admin/menus/class.Templates.php:21 admin/tpls/email-template-editor.php:7
+#: admin/tpls/templates.php:7
+msgid "Templates"
+msgstr ""
+
+#: admin/menus/class.Templates.php:138
+msgid ""
+"No package found! Please create at least 1 package to see template preview"
+msgstr ""
+
 #: admin/tpls/addons-list.php:226
 msgid "WPDM Add-Ons"
 msgstr ""
 
 #: admin/tpls/addons-list.php:292
 msgid "Failed to connect with server!"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:12 admin/tpls/templates.php:12
+msgid "Link Templates"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:13 admin/tpls/templates.php:13
+msgid "Page Templates"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:14 admin/tpls/templates.php:14
+msgid "Email Templates"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:15
+msgid "Email Template Editor"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:27
+#, php-format
+msgid "To: %s"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:29
+#, php-format
+msgid "Editing: %s"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:39
+msgid "Email Subject"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:41
+msgid "Message"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:42
+msgid "Preview"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:60
+#: admin/tpls/email-template-editor.php:61
+msgid "Recipient's Email"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:72
+msgid "From Name"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:79
+msgid "From Email"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:90 admin/tpls/templates.php:184
+#: admin/tpls/templates.php:342
+msgid "Save Changes"
+msgstr ""
+
+#: admin/tpls/email-template-editor.php:115
+msgid "Template Variables"
+msgstr ""
+
+#: admin/tpls/emails-template.php:14
+msgid "Subscribers"
+msgstr ""
+
+#: admin/tpls/emails-template.php:15
+msgid "Export All"
+msgstr ""
+
+#: admin/tpls/emails-template.php:16
+msgid "Export Unique Emails"
+msgstr ""
+
+#: admin/tpls/emails-template.php:21
+msgid "Emails"
+msgstr ""
+
+#: admin/tpls/emails-template.php:22 admin/tpls/templates.php:104
+msgid "Email Template"
 msgstr ""
 
 #: admin/tpls/metaboxes/attach-file.php:6
@@ -101,10 +215,10 @@ msgid "URL"
 msgstr ""
 
 #: admin/tpls/metaboxes/attach-file.php:47
-msgid "Drop files here"
+msgid "Drop file here"
 msgstr ""
 
-#: admin/tpls/metaboxes/attach-file.php:69
+#: admin/tpls/metaboxes/attach-file.php:69 wpdm-functions.php:1301
 msgid "Allowed Files"
 msgstr ""
 
@@ -120,7 +234,7 @@ msgstr ""
 msgid "Delete Current File"
 msgstr ""
 
-#: admin/tpls/metaboxes/attach-file.php:196
+#: admin/tpls/metaboxes/attach-file.php:196 admin/tpls/templates.php:364
 msgid "Are you sure?"
 msgstr ""
 
@@ -237,11 +351,11 @@ msgstr ""
 msgid "This key can be used for direct download"
 msgstr ""
 
-#: admin/tpls/settings.php:7 admin/tpls/settings.php:35
+#: admin/tpls/settings.php:10 admin/tpls/settings.php:37
 msgid "Save Settings"
 msgstr ""
 
-#: admin/tpls/settings.php:7
+#: admin/tpls/settings.php:10
 msgid "Download Manager Settings"
 msgstr ""
 
@@ -250,7 +364,7 @@ msgid "Check For Updates"
 msgstr ""
 
 #: admin/tpls/settings/addon-update.php:3 libs/class.UserDashboard.php:19
-#: tpls/wpdm-login-form.php:41
+#: tpls/wpdm-login-form.php:44
 msgid "Logout"
 msgstr ""
 
@@ -258,74 +372,78 @@ msgstr ""
 msgid "Add-on Update"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:10
+#: admin/tpls/settings/addon-update.php:14
 #, php-format
 msgid "Enter your %s login info"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:34
+#: admin/tpls/settings/addon-update.php:33
+msgid "Click Save Settings Button To Login"
+msgstr ""
+
+#: admin/tpls/settings/addon-update.php:50
 msgid "Purchased Add-ons"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:35
+#: admin/tpls/settings/addon-update.php:51
 msgid "Free Add-ons"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:42
-#: admin/tpls/settings/addon-update.php:87
+#: admin/tpls/settings/addon-update.php:58
+#: admin/tpls/settings/addon-update.php:103
 msgid "Product Name"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:43
-#: admin/tpls/settings/addon-update.php:88
+#: admin/tpls/settings/addon-update.php:59
+#: admin/tpls/settings/addon-update.php:104
 msgid "Active(v)"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:44
-#: admin/tpls/settings/addon-update.php:89
+#: admin/tpls/settings/addon-update.php:60
+#: admin/tpls/settings/addon-update.php:105
 msgid "Latest(v)"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:45
-#: admin/tpls/settings/addon-update.php:90 libs/class.FileList.php:96
+#: admin/tpls/settings/addon-update.php:61
+#: admin/tpls/settings/addon-update.php:106 libs/class.FileList.php:96
 #: libs/class.FileList.php:98 libs/class.FileList.php:134
 #: libs/class.FileList.php:136 libs/class.FileList.php:201
 #: libs/class.FileList.php:248 libs/class.FileList.php:303
 #: libs/class.Package.php:72 libs/class.Package.php:150
-#: libs/class.Package.php:589 libs/class.Package.php:614
-#: libs/class.Package.php:681 libs/class.Package.php:764
-#: libs/class.Package.php:789 libs/class.Package.php:816
-#: libs/class.Package.php:1156 libs/class.PackageLocks.php:59
+#: libs/class.Package.php:642 libs/class.Package.php:667
+#: libs/class.Package.php:734 libs/class.Package.php:817
+#: libs/class.Package.php:842 libs/class.Package.php:869
+#: libs/class.Package.php:1234 libs/class.PackageLocks.php:59
 #: libs/class.PackageLocks.php:94 tpls/lock-options-iframe.php:204
-#: tpls/wpdm-all-downloads.php:146 wpdm-functions.php:100
+#: tpls/wpdm-all-downloads.php:152 wpdm-functions.php:100
 #: wpdm-functions.php:125 wpdm-functions.php:191
 msgid "Download"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:69
-#: admin/tpls/settings/addon-update.php:110
+#: admin/tpls/settings/addon-update.php:85
+#: admin/tpls/settings/addon-update.php:126
 msgid "Install"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:71
-#: admin/tpls/settings/addon-update.php:112
+#: admin/tpls/settings/addon-update.php:87
+#: admin/tpls/settings/addon-update.php:128
 msgid "Update"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:72
-#: admin/tpls/settings/addon-update.php:113
+#: admin/tpls/settings/addon-update.php:88
+#: admin/tpls/settings/addon-update.php:129
 msgid "Updated"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:74
+#: admin/tpls/settings/addon-update.php:90
 msgid "Expired"
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:128 tpls/wpdm-reg-form.php:135
+#: admin/tpls/settings/addon-update.php:144 tpls/wpdm-reg-form.php:134
 msgid "Please Wait..."
 msgstr ""
 
-#: admin/tpls/settings/addon-update.php:130
+#: admin/tpls/settings/addon-update.php:146
 msgid "Success!"
 msgstr ""
 
@@ -494,43 +612,81 @@ msgstr ""
 msgid "Front CSS"
 msgstr ""
 
-#: admin/tpls/settings/basic.php:211
+#: admin/tpls/settings/basic.php:210
+msgid "Google Font"
+msgstr ""
+
+#: admin/tpls/settings/basic.php:212
 msgid ""
 "Because, sometimes your theme may have those scripts/styles enqueued already"
 msgstr ""
 
-#: admin/tpls/settings/basic.php:215
+#: admin/tpls/settings/basic.php:216
 msgid "Login Page"
-msgstr ""
-
-#: admin/tpls/settings/basic.php:216 admin/tpls/settings/basic.php:222
-#: admin/tpls/settings/basic.php:227
-msgid "None Selected"
 msgstr ""
 
 #: admin/tpls/settings/basic.php:217 admin/tpls/settings/basic.php:223
 #: admin/tpls/settings/basic.php:228
+msgid "None Selected"
+msgstr ""
+
+#: admin/tpls/settings/basic.php:218 admin/tpls/settings/basic.php:224
+#: admin/tpls/settings/basic.php:229
 #, php-format
 msgid "The page where you used short-code %s"
 msgstr ""
 
-#: admin/tpls/settings/basic.php:221
+#: admin/tpls/settings/basic.php:222
 msgid "Register Page"
 msgstr ""
 
-#: admin/tpls/settings/basic.php:226
+#: admin/tpls/settings/basic.php:227
 msgid "Dashboard Page"
 msgstr ""
 
-#: admin/tpls/settings/basic.php:233
+#: admin/tpls/settings/basic.php:234
 msgid "Include Packages in Main RSS Feed"
 msgstr ""
 
-#: admin/tpls/settings/basic.php:234
+#: admin/tpls/settings/basic.php:235
 #, php-format
 msgid ""
 "Check this option if you want to show wpdm packages in your main <a target="
 "\"_blank\" href=\"%s\">RSS Feed</a>"
+msgstr ""
+
+#: admin/tpls/settings/privacy.php:9
+msgid "Privacy Settings"
+msgstr ""
+
+#: admin/tpls/settings/privacy.php:13
+msgid "Do not store visitor's IP"
+msgstr ""
+
+#: admin/tpls/settings/privacy.php:14
+msgid "Check this option if you do not want to store visitors IPs"
+msgstr ""
+
+#: admin/tpls/settings/privacy.php:19
+msgid "Delete download history when users close accounts"
+msgstr ""
+
+#: admin/tpls/settings/privacy.php:20
+msgid ""
+"If any user is deleted or close his/her own account, delete their download "
+"history too"
+msgstr ""
+
+#: admin/tpls/settings/privacy.php:35
+msgid "Cache & Stats"
+msgstr ""
+
+#: admin/tpls/settings/privacy.php:40
+msgid "Empty Cache Dir"
+msgstr ""
+
+#: admin/tpls/settings/privacy.php:41
+msgid "Delete All Stats Data"
 msgstr ""
 
 #: admin/tpls/stats.php:6
@@ -571,185 +727,261 @@ msgstr ""
 msgid "User/IP"
 msgstr ""
 
-#: download-manager.php:135 download-manager.php:147 wpdm-functions.php:641
-#: wpdm-functions.php:660
+#: admin/tpls/templates.php:19
+#, php-format
+msgid ""
+"Custom Template editor is available with <a target='_blank' "
+"href='%s'>WordPress Download Manager Pro</a>"
+msgstr ""
+
+#: admin/tpls/templates.php:27
+msgid "Template Name"
+msgstr ""
+
+#: admin/tpls/templates.php:28
+msgid "Template ID"
+msgstr ""
+
+#: admin/tpls/templates.php:30
+msgid "Actions"
+msgstr ""
+
+#: admin/tpls/templates.php:73
+msgid "To:"
+msgstr ""
+
+#: admin/tpls/templates.php:81
+msgid "Edit"
+msgstr ""
+
+#: admin/tpls/templates.php:121 admin/tpls/templates.php:122
+msgid "Logo URL"
+msgstr ""
+
+#: admin/tpls/templates.php:125 admin/tpls/templates.php:126
+msgid "Banner/Background Image URL"
+msgstr ""
+
+#: admin/tpls/templates.php:137
+msgid "Footer Text"
+msgstr ""
+
+#: admin/tpls/templates.php:141
+msgid "Facebook Page URL"
+msgstr ""
+
+#: admin/tpls/templates.php:145
+msgid "Twitter Profile URL"
+msgstr ""
+
+#: admin/tpls/templates.php:149
+msgid "Youtube Profile URL"
+msgstr ""
+
+#: admin/tpls/templates.php:199
+msgid "Template Preview"
+msgstr ""
+
+#: admin/tpls/templates.php:205
+msgid ""
+"This is a preview, original template color scheme may look little different, "
+"but structure will be same"
+msgstr ""
+
+#: admin/tpls/templates.php:338
+msgid "Saving..."
+msgstr ""
+
+#: download-manager.php:143 download-manager.php:155 wpdm-functions.php:685
+#: wpdm-functions.php:704
 msgid "Downloads"
 msgstr ""
 
-#: download-manager.php:136 libs/class.FileList.php:67
+#: download-manager.php:144 libs/class.FileList.php:67
 msgid "File"
 msgstr ""
 
-#: download-manager.php:137
+#: download-manager.php:145
 msgid "Add New"
 msgstr ""
 
-#: download-manager.php:138
+#: download-manager.php:146
 msgid "Add New File"
 msgstr ""
 
-#: download-manager.php:139
+#: download-manager.php:147
 msgid "Edit File"
 msgstr ""
 
-#: download-manager.php:140
+#: download-manager.php:148
 msgid "New File"
 msgstr ""
 
-#: download-manager.php:141
+#: download-manager.php:149
 msgid "All Files"
 msgstr ""
 
-#: download-manager.php:142
+#: download-manager.php:150
 msgid "View File"
 msgstr ""
 
-#: download-manager.php:143
+#: download-manager.php:151
 msgid "Search Files"
 msgstr ""
 
-#: download-manager.php:144
+#: download-manager.php:152
 msgid "No File Found"
 msgstr ""
 
-#: download-manager.php:145
+#: download-manager.php:153
 msgid "No Files found in Trash"
 msgstr ""
 
-#: download-manager.php:176 download-manager.php:186
-#: tpls/wpdm-all-downloads.php:144
+#: download-manager.php:184 download-manager.php:194
+#: tpls/wpdm-all-downloads.php:150
 msgid "Categories"
 msgstr ""
 
-#: download-manager.php:177
+#: download-manager.php:185
 msgid "Category"
 msgstr ""
 
-#: download-manager.php:178
+#: download-manager.php:186
 msgid "Search Categories"
 msgstr ""
 
-#: download-manager.php:179
+#: download-manager.php:187
 msgid "All Categories"
 msgstr ""
 
-#: download-manager.php:180
+#: download-manager.php:188
 msgid "Parent Category"
 msgstr ""
 
-#: download-manager.php:181
+#: download-manager.php:189
 msgid "Parent Category:"
 msgstr ""
 
-#: download-manager.php:182
+#: download-manager.php:190
 msgid "Edit Category"
 msgstr ""
 
-#: download-manager.php:183
+#: download-manager.php:191
 msgid "Update Category"
 msgstr ""
 
-#: download-manager.php:184
+#: download-manager.php:192
 msgid "Add New Category"
 msgstr ""
 
-#: download-manager.php:185
+#: download-manager.php:193
 msgid "New Category Name"
 msgstr ""
 
-#: libs/class.Apply.php:174 wpdm-functions.php:279
+#: libs/class.Apply.php:178 wpdm-functions.php:279
 msgid "Captcha Verification Failed!"
 msgstr ""
 
-#: libs/class.Apply.php:182 libs/class.Apply.php:183
+#: libs/class.Apply.php:186 libs/class.Apply.php:187
 msgid "Error: User registration is disabled!"
 msgstr ""
 
-#: libs/class.Apply.php:193
+#: libs/class.Apply.php:197
 msgid "Username is Empty!"
 msgstr ""
 
-#: libs/class.Apply.php:202
+#: libs/class.Apply.php:206
 msgid "Invalid Email Address!"
 msgstr ""
 
-#: libs/class.Apply.php:268
+#: libs/class.Apply.php:253
+msgid "New user registration on your site WordPress Download Manager:"
+msgstr ""
+
+#: libs/class.Apply.php:253 tpls/wpdm-login-form.php:64
+#: tpls/wpdm-reg-form.php:51
+msgid "Username"
+msgstr ""
+
+#: libs/class.Apply.php:253
+msgid "Email"
+msgstr ""
+
+#: libs/class.Apply.php:253 tpls/user-dashboard/download-history.php:11
+#: tpls/user-dashboard/profile.php:81
+msgid "IP"
+msgstr ""
+
+#: libs/class.Apply.php:253
+msgid "Edit User"
+msgstr ""
+
+#: libs/class.Apply.php:254
+#, php-format
+msgid "[%s] New User Registration"
+msgstr ""
+
+#: libs/class.Apply.php:278
 msgid "Email already exists."
 msgstr ""
 
-#: libs/class.Apply.php:277
+#: libs/class.Apply.php:287
 msgid "User already exists."
 msgstr ""
 
-#: libs/class.Apply.php:403
+#: libs/class.Apply.php:430
 msgid "You don't have permission to download this file"
 msgstr ""
 
-#: libs/class.Apply.php:410
+#: libs/class.Apply.php:437
 msgid "Download link is expired. Please get new download link."
 msgstr ""
 
-#: libs/class.Apply.php:412
+#: libs/class.Apply.php:439
 msgid "Download link is expired or not valid. Please get new download link."
 msgstr ""
 
-#: libs/class.Apply.php:419
+#: libs/class.Apply.php:446
 msgid "Stock Limit Reached"
 msgstr ""
 
-#: libs/class.Apply.php:425
+#: libs/class.Apply.php:452
 msgid "Invalid download link."
 msgstr ""
 
-#: libs/class.Apply.php:519
+#: libs/class.Apply.php:546
 msgid "Price"
 msgstr ""
 
-#: libs/class.Email.php:17
+#: libs/class.Email.php:20
 msgid "General Email Template"
 msgstr ""
 
-#: libs/class.Email.php:26
+#: libs/class.Email.php:29
 msgid "User Signup Notification"
 msgstr ""
 
-#: libs/class.Email.php:28
+#: libs/class.Email.php:32
 #, php-format
 msgid "Welcome to %s"
 msgstr ""
 
-#: libs/class.Email.php:35
+#: libs/class.Email.php:39
 msgid "Password Reset Notification"
 msgstr ""
 
-#: libs/class.Email.php:37
+#: libs/class.Email.php:42
 #, php-format
 msgid "Request to reset your %s password"
 msgstr ""
 
-#: libs/class.Email.php:43
-msgid "Email Lock Notification"
-msgstr ""
-
-#: libs/class.Email.php:45
-msgid "Download [#package_name#]"
-msgstr ""
-
-#: libs/class.Email.php:52 wpdm-core.php:188
-msgid "New Package Notification"
-msgstr ""
-
-#: libs/class.Email.php:54
-msgid "New Package is Added By [#name#]"
-msgstr ""
-
-#: libs/class.Email.php:153
+#: libs/class.Email.php:175
 msgid "Sample Package Name"
 msgstr ""
 
 #: libs/class.FileList.php:62 libs/class.FileList.php:94
 #: libs/class.FileList.php:132 libs/class.FileList.php:200
-#: tpls/wpdm-login-form.php:67 tpls/wpdm-reg-form.php:68
+#: tpls/wpdm-login-form.php:70 tpls/wpdm-reg-form.php:68
 msgid "Password"
 msgstr ""
 
@@ -786,8 +1018,8 @@ msgstr ""
 msgid "Thumbnail"
 msgstr ""
 
-#: libs/class.Package.php:162 libs/class.Package.php:598
-#: libs/class.Package.php:798 wpdm-functions.php:109 wpdm-start-download.php:23
+#: libs/class.Package.php:162 libs/class.Package.php:651
+#: libs/class.Package.php:851 wpdm-functions.php:109 wpdm-start-download.php:23
 msgid "Download Limit Exceeded"
 msgstr ""
 
@@ -796,13 +1028,13 @@ msgstr ""
 msgid "DOWNLOAD ERROR"
 msgstr ""
 
-#: libs/class.Package.php:170 libs/class.Package.php:602
-#: libs/class.Package.php:802 wpdm-functions.php:113
+#: libs/class.Package.php:170 libs/class.Package.php:655
+#: libs/class.Package.php:855 wpdm-functions.php:113
 msgid "Download was expired on"
 msgstr ""
 
-#: libs/class.Package.php:178 libs/class.Package.php:609
-#: libs/class.Package.php:810 wpdm-functions.php:120
+#: libs/class.Package.php:178 libs/class.Package.php:662
+#: libs/class.Package.php:863 wpdm-functions.php:120
 msgid "Download will be available from "
 msgstr ""
 
@@ -814,30 +1046,30 @@ msgstr ""
 msgid "I Agree"
 msgstr ""
 
-#: libs/class.Package.php:445
+#: libs/class.Package.php:468
 msgid "No File Attached!"
 msgstr ""
 
-#: libs/class.Package.php:604 libs/class.Package.php:611
-#: libs/class.Package.php:621 wpdm-functions.php:115 wpdm-functions.php:122
+#: libs/class.Package.php:657 libs/class.Package.php:664
+#: libs/class.Package.php:674 wpdm-functions.php:115 wpdm-functions.php:122
 #: wpdm-functions.php:132
 msgid "Download:"
 msgstr ""
 
-#: libs/class.Package.php:703 wpdm-functions.php:213
+#: libs/class.Package.php:756 wpdm-functions.php:213
 msgid "Download limit exceeded!"
 msgstr ""
 
-#: libs/class.Package.php:730
+#: libs/class.Package.php:783
 msgid "Verify CAPTCHA to Download"
 msgstr ""
 
-#: libs/class.Package.php:805 libs/class.Package.php:813
-#: libs/class.Package.php:823
+#: libs/class.Package.php:858 libs/class.Package.php:866
+#: libs/class.Package.php:876
 msgid "DOWNLOAD ERROR:"
 msgstr ""
 
-#: libs/class.Package.php:880
+#: libs/class.Package.php:933
 msgid "Limit Over!"
 msgstr ""
 
@@ -858,13 +1090,13 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: libs/class.Pagination.php:64 tpls/wpdm-all-downloads.php:121
-#: tpls/wpdm-all-downloads.php:313
+#: libs/class.Pagination.php:50 tpls/wpdm-all-downloads.php:121
+#: tpls/wpdm-all-downloads.php:325 wpdm-functions.php:1652
 msgid "Previous"
 msgstr ""
 
-#: libs/class.Pagination.php:65 tpls/wpdm-all-downloads.php:120
-#: tpls/wpdm-all-downloads.php:314
+#: libs/class.Pagination.php:51 tpls/wpdm-all-downloads.php:120
+#: tpls/wpdm-all-downloads.php:326 wpdm-functions.php:1653
 msgid "Next"
 msgstr ""
 
@@ -921,7 +1153,7 @@ msgstr ""
 msgid "Total Views"
 msgstr ""
 
-#: modules/widgets.php:360 modules/widgets.php:444 wpdm-functions.php:661
+#: modules/widgets.php:360 modules/widgets.php:444 wpdm-functions.php:705
 msgid "Publish Date"
 msgstr ""
 
@@ -945,7 +1177,7 @@ msgstr ""
 msgid "View Count"
 msgstr ""
 
-#: modules/widgets.php:445 wpdm-functions.php:662
+#: modules/widgets.php:445 wpdm-functions.php:706
 msgid "Update Date"
 msgstr ""
 
@@ -979,11 +1211,6 @@ msgstr ""
 
 #: tpls/simple-search-form.php:19 tpls/simple-search-form.php:23
 msgid "Loading"
-msgstr ""
-
-#: tpls/user-dashboard/download-history.php:11
-#: tpls/user-dashboard/profile.php:81
-msgid "IP"
 msgstr ""
 
 #: tpls/user-dashboard/edit-profile.php:21
@@ -1058,31 +1285,31 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: tpls/wpdm-all-downloads.php:145
+#: tpls/wpdm-all-downloads.php:151
 msgid "Create Date"
 msgstr ""
 
-#: tpls/wpdm-all-downloads.php:240
+#: tpls/wpdm-all-downloads.php:252
 msgid "file(s)"
 msgstr ""
 
-#: tpls/wpdm-all-downloads.php:246
+#: tpls/wpdm-all-downloads.php:258
 msgid "downloads"
 msgstr ""
 
-#: tpls/wpdm-all-downloads.php:246
+#: tpls/wpdm-all-downloads.php:258
 msgid "download"
 msgstr ""
 
-#: tpls/wpdm-all-downloads.php:252
+#: tpls/wpdm-all-downloads.php:264
 msgid "views"
 msgstr ""
 
-#: tpls/wpdm-all-downloads.php:252
+#: tpls/wpdm-all-downloads.php:264
 msgid "view"
 msgstr ""
 
-#: tpls/wpdm-all-downloads.php:292
+#: tpls/wpdm-all-downloads.php:304
 msgid "No Packages Found"
 msgstr ""
 
@@ -1110,51 +1337,51 @@ msgstr ""
 msgid "Generate"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:41
+#: tpls/wpdm-login-form.php:44
 msgid "You are already logged in."
 msgstr ""
 
-#: tpls/wpdm-login-form.php:41
+#: tpls/wpdm-login-form.php:44
 msgid "Go To Dashboard"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:53
+#: tpls/wpdm-login-form.php:56
 msgid "Login Failed!"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:61 tpls/wpdm-reg-form.php:51
-msgid "Username"
-msgstr ""
-
-#: tpls/wpdm-login-form.php:75
+#: tpls/wpdm-login-form.php:78
 msgid "Remember Me"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:76
+#: tpls/wpdm-login-form.php:79
 msgid "Forgot Password?"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:76
+#: tpls/wpdm-login-form.php:79
 msgid "Request Reset"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:79 tpls/wpdm-reg-form.php:116
+#: tpls/wpdm-login-form.php:81
 msgid "Login"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:81
+#: tpls/wpdm-login-form.php:83
+msgid "Don't have an account yet?"
+msgstr ""
+
+#: tpls/wpdm-login-form.php:83
 msgid "Sign Up"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:96
+#: tpls/wpdm-login-form.php:98
 msgid "Logging In..."
 msgstr ""
 
-#: tpls/wpdm-login-form.php:101
+#: tpls/wpdm-login-form.php:103
 msgid "ERROR!"
 msgstr ""
 
-#: tpls/wpdm-login-form.php:101
+#: tpls/wpdm-login-form.php:103
 msgid "Login failed! Please re-check login info."
 msgstr ""
 
@@ -1174,20 +1401,32 @@ msgstr ""
 msgid "Confirm Password"
 msgstr ""
 
-#: tpls/wpdm-reg-form.php:114
+#: tpls/wpdm-reg-form.php:113
 msgid "Join Now!"
 msgstr ""
 
-#: tpls/wpdm-reg-form.php:143
+#: tpls/wpdm-reg-form.php:116
+msgid "Already have an account?"
+msgstr ""
+
+#: tpls/wpdm-reg-form.php:116
+msgid "Log In"
+msgstr ""
+
+#: tpls/wpdm-reg-form.php:142
 msgid "Success! Redirecting..."
 msgstr ""
 
-#: tpls/wpdm-reg-form.php:153
+#: tpls/wpdm-reg-form.php:152
 msgid "Registration is disabled!"
 msgstr ""
 
 #: wpdm-core.php:105
 msgid "Select category"
+msgstr ""
+
+#: wpdm-core.php:188
+msgid "New Package Notification"
 msgstr ""
 
 #: wpdm-core.php:190
@@ -1198,40 +1437,52 @@ msgstr ""
 msgid "Permission Denied"
 msgstr ""
 
-#: wpdm-functions.php:288 wpdm-functions.php:292
+#: wpdm-functions.php:322 wpdm-functions.php:326
 msgid "Wrong Password! Try Again."
 msgstr ""
 
-#: wpdm-functions.php:305
+#: wpdm-functions.php:339
 msgid "Password usages limit exceeded"
 msgstr ""
 
-#: wpdm-functions.php:641
+#: wpdm-functions.php:685
 msgid "Sub-Categories"
 msgstr ""
 
-#: wpdm-functions.php:659
+#: wpdm-functions.php:703
 msgid "Title"
 msgstr ""
 
-#: wpdm-functions.php:663
+#: wpdm-functions.php:707
 msgid "Asc"
 msgstr ""
 
-#: wpdm-functions.php:664
+#: wpdm-functions.php:708
 msgid "Desc"
 msgstr ""
 
-#: wpdm-functions.php:665
+#: wpdm-functions.php:709
 msgid "Search"
 msgstr ""
 
-#: wpdm-functions.php:666
+#: wpdm-functions.php:710
 msgid "Order"
 msgstr ""
 
-#: wpdm-functions.php:667
+#: wpdm-functions.php:711
 msgid "Order By"
+msgstr ""
+
+#: wpdm-functions.php:1258
+msgid "Select Image"
+msgstr ""
+
+#: wpdm-functions.php:1283 wpdm-functions.php:1377
+msgid "SELECT IMAGE"
+msgstr ""
+
+#: wpdm-functions.php:1358
+msgid "Uploading"
 msgstr ""
 
 #: wpdm-start-download.php:6
