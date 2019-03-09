@@ -4,9 +4,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP-Members 2.6.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-03 17:37-0500\n"
-"PO-Revision-Date: 2016-05-03 17:37-0500\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2016-05-03 17:34-0500\n"
+"PO-Revision-Date: 2019-03-09 15:41+0100\n"
+"Last-Translator: Lars Jørgen Tvedt <l.j.tvedt@gmail.com>\n"
 "Language-Team: mikael.boldt@mail.dk\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_c\n"
 "X-Poedit-Basepath: D:/downloads/wp-members\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-SearchPath-0: D:/downloads/wp-members\n"
 
 #: admin/admin.php:72 admin/admin.php:143
@@ -38,7 +38,7 @@ msgid ""
 "register\" is unchecked."
 msgstr ""
 "Du kan %s endre dette her %s ved at sørge for boksen ved siden av \"Alle kan "
-"registrere \" er u-markert."
+"registrere seg\" er u-markert."
 
 #: admin/dialogs.php:106
 msgid ""
@@ -50,18 +50,18 @@ msgid ""
 "Settings."
 msgstr ""
 "Denne innstillingen tillater at en link på /wp-login.php siden for å la seg "
-"registrere ved hjelp av WP opprinnelige registreringsprossess slik at det "
-"omgår WP-Members registrering. I noen tilfeller passer dette til brukerenes "
-"ønsker/behov, men de fleste brukere bør fjerne markeringen av denne "
-"muligheten. Hvis du ikke endrer denne indstilling, kan du velge at ignorere "
-"disse advarsler i henhold til WP-medlemmer innstillinger."
+"registrere ved hjelp av WP sin opprinnelige registreringsprossess, slik at "
+"det omgår WP-Members registrering. I noen tilfeller passer dette til "
+"brukerenes ønsker/behov, men de fleste brukere bør fjerne markeringen av "
+"denne muligheten. Hvis du ikke endrer denne innstillingen, kan du velge å "
+"ignorere disse advarsler i henhold til WP-medlemmer innstillinger."
 
 #: admin/dialogs.php:110
 msgid ""
 "Your WP settings allow anyone to comment - this is not the recommended "
 "setting."
 msgstr ""
-"Dine WP innstillinger tillater alle at skrive kommentarer - denne "
+"Dine WP innstillinger tillater alle å skrive kommentarer - denne "
 "innstillingen er ikke anbefalt."
 
 #: admin/dialogs.php:111
@@ -70,8 +70,8 @@ msgid ""
 "You can %s change this here %s by checking the box next to \"Users must be "
 "registered and logged in to comment.\""
 msgstr ""
-"Du kan %s endre dette her %s ved at sørge for boksen ved siden av \"Brukere "
-"skal være registrerede og logget inn for at kommentere  \" er markert."
+"Du kan %s endre dette her %s ved å sørge for at boksen ved siden av "
+"\"Brukere skal være registrert og innlogget for å kommentere \" er markert."
 
 #: admin/dialogs.php:112
 msgid ""
@@ -98,8 +98,8 @@ msgid ""
 "You can %s change this here %s by changing \"For each article in a feed, show"
 "\" to \"Summary.\""
 msgstr ""
-"Du kan %s endre dette %s ved å endre \"For hvert innlegg, vis \" to \"Utdrag."
-"\""
+"Du kan %s endre dette %s ved å endre \"For hvert innlegg, vis \" til "
+"\"Utdrag.\""
 
 #: admin/dialogs.php:118
 msgid ""
@@ -121,9 +121,9 @@ msgid ""
 "under \"WP-Members Dialogs and Error Messages.\"  You should change this "
 "message to let users know they are pending approval."
 msgstr ""
-"men du har ikke endret standard melding for \"Registrering fullført\" under "
-"\"WP-Members Dialoger og feilmeldinger.\"  Du bør endre denne meldingen så "
-"brukerene vet at deres registrering er må godkjennes."
+"men du har ikke endret standardmelding for \"Registrering fullført\" under "
+"\"WP-Members Dialoger og feilmeldinger.\" Du bør endre denne meldingen så "
+"brukerne vet at deres registrering må godkjennes."
 
 #: admin/dialogs.php:127
 msgid "You have set WP-Members to turn off the registration process"
@@ -156,23 +156,23 @@ msgstr "Versjon:"
 
 #: admin/dialogs.php:158
 msgid "Quick Start Guide"
-msgstr ""
+msgstr "Komme igang"
 
 #: admin/dialogs.php:159
 msgid "Online User Guide"
-msgstr ""
+msgstr "Online bruksanvisning"
 
 #: admin/dialogs.php:160
 msgid "FAQs"
-msgstr ""
+msgstr "FAQs"
 
 #: admin/dialogs.php:167
 msgid "Thank you for using WP-Members"
-msgstr ""
+msgstr "Takk for at du bruker WP-Members"
 
 #: admin/dialogs.php:168
 msgid "A plugin developed by"
-msgstr ""
+msgstr "Et utvidelse utviklet av"
 
 #: admin/dialogs.php:169
 msgid "Follow"
@@ -180,11 +180,11 @@ msgstr "Følg"
 
 #: admin/dialogs.php:186 admin/dialogs.php:190
 msgid "Latest from RocketGeek"
-msgstr ""
+msgstr "Siste fra RocketGeek"
 
 #: admin/dialogs.php:207 admin/dialogs.php:220
 msgid "Latest from ButlerBlog"
-msgstr ""
+msgstr "Siste fra ButlerBlog"
 
 #: admin/includes/class-wp-members-admin-api.php:220
 msgid "Options"
@@ -220,7 +220,7 @@ msgstr "Kodeord nullstilt"
 
 #: admin/includes/class-wp-members-admin-api.php:269
 msgid "Retrieve Username"
-msgstr ""
+msgstr "Hent brukernavn"
 
 #: admin/includes/class-wp-members-admin-api.php:277
 msgid "Admin Notification"
@@ -228,48 +228,48 @@ msgstr "Admin melding"
 
 #: admin/post.php:51 admin/post.php:53 admin/tab-options.php:87
 msgid "Block"
-msgstr ""
+msgstr "Blokker"
 
 #: admin/post.php:52 admin/post.php:54
 msgid "Unblock"
-msgstr ""
+msgstr "Fjern blokkering"
 
 #: admin/post.php:188
 #, php-format
 msgid "%s Restriction"
-msgstr ""
+msgstr "%s restriksjon"
 
 #: admin/post.php:215
 #, php-format
 msgid "%s are blocked by default."
-msgstr ""
+msgstr "%s er i utgaangspunktet blokkert."
 
 #: admin/post.php:216
 #, php-format
 msgid "Unblock this %s"
-msgstr ""
+msgstr "Fjern blokkering av denne %s"
 
 #: admin/post.php:219
 #, php-format
 msgid "%s are not blocked by default."
-msgstr ""
+msgstr "%s er i utgangspunktet ikke blokkert."
 
 #: admin/post.php:220
 #, php-format
 msgid "Block this %s"
-msgstr ""
+msgstr "Blokker denne %s"
 
 #: admin/post.php:226 admin/tab-fields.php:282 admin/tab-fields.php:473
 msgid "Edit"
-msgstr ""
+msgstr "Rediger"
 
 #: admin/post.php:313
 msgid "Unblocked?"
-msgstr ""
+msgstr "Ublokkert?"
 
 #: admin/post.php:313
 msgid "Blocked?"
-msgstr ""
+msgstr "Blokkert?"
 
 #: admin/post.php:345 admin/post.php:346 admin/user-export.php:108
 msgid "Yes"
@@ -278,7 +278,7 @@ msgstr "Ja"
 #: admin/tab-captcha.php:42 admin/tab-dialogs.php:47 admin/tab-emails.php:80
 #: admin/tab-fields.php:44 admin/tab-options.php:58
 msgid "Need help?"
-msgstr ""
+msgstr "Trenger du hjelp?"
 
 #: admin/tab-captcha.php:53
 msgid "Manage reCAPTCHA Options"
@@ -317,6 +317,8 @@ msgid ""
 "reCAPTCHA requires an API key, consisting of a \"public\" and a \"private\" "
 "key. You can sign up for a %s free reCAPTCHA key%s"
 msgstr ""
+"reCAPTCHA  trenger en API-nøkkel som består av en \"offentlig\" og en "
+"\"privat\" nøkkel. Du kan registrere deg for en %s gratis reCAPTCHA -nøkkel%s"
 
 #: admin/tab-captcha.php:76
 msgid "Public Key"
@@ -352,68 +354,73 @@ msgid ""
 "reCAPTCHA requires an API key, consisting of a \"site\" and a \"secret\" "
 "key. You can sign up for a %s free reCAPTCHA key%s"
 msgstr ""
+"reCAPTCHA  trenger en API-nøkkel som består av en \"nettstednøkkel\" og en "
+"\"hemmelig\" nøkkel. Du kan registrere deg for en %s gratis reCAPTCHA -nøkkel"
+"%s"
 
 #: admin/tab-captcha.php:102
 msgid "Site Key"
-msgstr ""
+msgstr "Nettsted-nøkkel"
 
 #: admin/tab-captcha.php:103
 msgid "Secret Key"
-msgstr ""
+msgstr "Hemmelig nøkkel"
 
 #: admin/tab-captcha.php:134
 msgid "Characters for image"
-msgstr ""
+msgstr "Tegn for bilde"
 
 #: admin/tab-captcha.php:138
 msgid "Number of characters"
-msgstr ""
+msgstr "Antall tegn"
 
 #: admin/tab-captcha.php:142
 msgid "Image dimensions"
-msgstr ""
+msgstr "Bildedimensjon"
 
 #: admin/tab-captcha.php:143
 msgid "Width"
-msgstr ""
+msgstr "Bredde"
 
 #: admin/tab-captcha.php:143
 msgid "Height"
-msgstr ""
+msgstr "Høyde"
 
 #: admin/tab-captcha.php:146
 msgid "Font color of characters"
-msgstr ""
+msgstr "Tegnsett-farge for tegn"
 
 #: admin/tab-captcha.php:150
 msgid "Background color of image"
-msgstr ""
+msgstr "Bakrunnsfarge for bilde"
 
 #: admin/tab-captcha.php:154
 msgid "Font size"
-msgstr ""
+msgstr "Tegn-størrelse"
 
 #: admin/tab-captcha.php:158
 msgid "Width between characters"
-msgstr ""
+msgstr "Avstand mellom tegn"
 
 #: admin/tab-captcha.php:162
 msgid "Image type"
-msgstr ""
+msgstr "Bildetype"
 
 #: admin/tab-captcha.php:176
 msgid ""
 "To use Really Simple CAPTCHA, you must have the Really Simple CAPTCHA plugin "
 "installed and activated."
 msgstr ""
+"For å bruke Really Simple CAPTCHA må du installere og aktivere tillegget "
+"Really Simple CAPTCHA."
 
 #: admin/tab-captcha.php:200
 msgid "Update CAPTCHA Settings"
-msgstr ""
+msgstr "Oppdater innstillinger for CAPTCHA"
 
 #: admin/tab-captcha.php:271
 msgid "CAPTCHA was updated for WP-Members"
-msgstr ""
+msgstr "CAPTCHA  ble oppdatert for WP-Members"
 
 #: admin/tab-dialogs.php:32
 msgid "Restricted post (or page), displays above the login/registration form"
@@ -484,11 +491,11 @@ msgstr "E-post melding"
 
 #: admin/tab-emails.php:40
 msgid "You can customize the content of the emails sent by the plugin."
-msgstr "Du kan tilpasse innholdet av e-poster sendt fra denne plugin"
+msgstr "Du kan tilpasse innholdet av e-poster sendt fra denne utvidelsen."
 
 #: admin/tab-emails.php:42
 msgid "A list of shortcodes is available here."
-msgstr "liste med shortcodes kan ses her."
+msgstr "En liste med shortcodes kan ses her."
 
 #: admin/tab-emails.php:49
 msgid "Set a custom email address"
@@ -504,7 +511,7 @@ msgstr "Skriv din e-post her"
 
 #: admin/tab-emails.php:64
 msgid "Email Signature"
-msgstr ""
+msgstr "E-post-signatur"
 
 #: admin/tab-emails.php:72
 msgid "Update Emails"
@@ -532,11 +539,11 @@ msgstr ""
 
 #: admin/tab-fields.php:184
 msgid "Option Name must contain only letters, numbers, and underscores"
-msgstr ""
+msgstr "Opsjon-navn kan bare inneholde bokstaver, tall og understrekstegn"
 
 #: admin/tab-fields.php:191
 msgid "A field with that option name already exists"
-msgstr ""
+msgstr "Et felt med dette opsjonsnavnet finnes allerede"
 
 #: admin/tab-fields.php:197
 #, php-format
@@ -545,26 +552,30 @@ msgid ""
 "register_taxonomy#Reserved_Terms\" target=\"_blank\">reserved term</a>. "
 "Field was not added."
 msgstr ""
+"Beklager, \"%s\" er ett <a href=\"https://codex.wordpress.org/"
+"Function_Reference/register_taxonomy#Reserved_Terms\" target=\"_blank"
+"\">reservert begrep</a>. Feltet ble ikke lagt til."
 
 #: admin/tab-fields.php:215
 msgid "Checked value is required for checkboxes. Nothing was updated."
 msgstr ""
+"Avkrysningsverdi må registreres for sjekkbokser. Ingenting ble oppdatert."
 
 #: admin/tab-fields.php:245
 msgid "field was added"
-msgstr ""
+msgstr "felt ble lagt til"
 
 #: admin/tab-fields.php:263
 msgid "field was updated"
-msgstr ""
+msgstr "felt ble oppdatert"
 
 #: admin/tab-fields.php:309 admin/tab-fields.php:437
 msgid "Edit Field"
-msgstr ""
+msgstr "Redigeringsfelt"
 
 #: admin/tab-fields.php:309
 msgid "Add a Field"
-msgstr ""
+msgstr "Legg til felt"
 
 #: admin/tab-fields.php:315 admin/tab-fields.php:467
 msgid "Field Label"
@@ -572,7 +583,7 @@ msgstr "Felt Etikett"
 
 #: admin/tab-fields.php:317
 msgid "The name of the field as it will be displayed to the user."
-msgstr ""
+msgstr "Navnet på feltet slik det vil bli vist til bruker."
 
 #: admin/tab-fields.php:320 admin/tab-fields.php:468
 msgid "Option Name"
@@ -583,6 +594,8 @@ msgid ""
 "The database meta value for the field. It must be unique and contain no "
 "spaces (underscores are ok)."
 msgstr ""
+"Metaverdien for feltet i databasen. Dette må være unikt, og kan ikke "
+"inneholde blanke tegn (understrekstegn er ok)."
 
 #: admin/tab-fields.php:330 admin/tab-fields.php:469
 msgid "Field Type"
@@ -590,35 +603,35 @@ msgstr "Felt Type"
 
 #: admin/tab-fields.php:336
 msgid "text"
-msgstr "Tekst"
+msgstr "tekst"
 
 #: admin/tab-fields.php:337
 msgid "email"
-msgstr ""
+msgstr "e-post"
 
 #: admin/tab-fields.php:338
 msgid "textarea"
-msgstr "Tekstfelt"
+msgstr "tekstfelt"
 
 #: admin/tab-fields.php:339
 msgid "checkbox"
-msgstr "Avkryssningsboks"
+msgstr "avkryssningsboks"
 
 #: admin/tab-fields.php:340
 msgid "multiple checkbox"
-msgstr ""
+msgstr "multippel sjekkboks"
 
 #: admin/tab-fields.php:341
 msgid "select (dropdown)"
-msgstr ""
+msgstr "velg (nedtrekksliste)"
 
 #: admin/tab-fields.php:342
 msgid "multiple select"
-msgstr ""
+msgstr "multippelt valg"
 
 #: admin/tab-fields.php:343
 msgid "radio group"
-msgstr ""
+msgstr "radioknapp"
 
 #: admin/tab-fields.php:344
 msgid "password"
@@ -626,19 +639,19 @@ msgstr "passord"
 
 #: admin/tab-fields.php:345
 msgid "image"
-msgstr ""
+msgstr "bilde"
 
 #: admin/tab-fields.php:346
 msgid "file"
-msgstr ""
+msgstr "fil"
 
 #: admin/tab-fields.php:347
 msgid "url"
-msgstr ""
+msgstr "ulr"
 
 #: admin/tab-fields.php:348
 msgid "hidden"
-msgstr ""
+msgstr "skjult"
 
 #: admin/tab-fields.php:353 admin/tab-fields.php:470
 msgid "Display?"
@@ -650,31 +663,31 @@ msgstr "Obligatorisk?"
 
 #: admin/tab-fields.php:363
 msgid "Additional information for field upload fields"
-msgstr ""
+msgstr "Tilleggsinformasjon for feltets opplastingsfelt"
 
 #: admin/tab-fields.php:366
 msgid "Accepted file types:"
-msgstr ""
+msgstr "Aksepterte filtyper:"
 
 #: admin/tab-fields.php:371
 msgid "Accepted file types should be set like this: jpg|jpeg|png|gif"
-msgstr ""
+msgstr "Aksepterte filtyper må oppgis på formen: jpg|jpeg|png|gif"
 
 #: admin/tab-fields.php:378
 msgid "Additional information for checkbox fields"
-msgstr ""
+msgstr "Ekstra informasjon for sjekkboks-felt"
 
 #: admin/tab-fields.php:381
 msgid "Checked by default?"
-msgstr ""
+msgstr "Avkrysset som standard?"
 
 #: admin/tab-fields.php:385
 msgid "Stored value if checked:"
-msgstr ""
+msgstr "Lagret verdi dersom avkrysset:"
 
 #: admin/tab-fields.php:397
 msgid "Additional information for dropdown fields"
-msgstr ""
+msgstr "Tilleggsinformasjon for nedtrekksfelt"
 
 #: admin/tab-fields.php:400
 msgid "For dropdown, array of values:"
@@ -682,7 +695,7 @@ msgstr "Til Dropdown, liste med valg:"
 
 #: admin/tab-fields.php:425
 msgid "Options should be Option Name|option_value,"
-msgstr "Valg skal skrives Valg Navn|valg_værdi,"
+msgstr "Valg skal skrives Valg Navn|valg_verdi,"
 
 #: admin/tab-fields.php:429
 msgid "Visit plugin site for more information"
@@ -690,7 +703,7 @@ msgstr "Besøk Plugin side for mer informasjon"
 
 #: admin/tab-fields.php:437
 msgid "Add Field"
-msgstr ""
+msgstr "Legg til felt"
 
 #: admin/tab-fields.php:458
 msgid "Manage Fields"
@@ -702,11 +715,11 @@ msgid ""
 "all fields, both native WP fields and WP-Members custom fields."
 msgstr ""
 "Velg hvilke felter som skal vises og hvilke som er obligatoriske. Dette "
-"inkluderer både vanlige WP felter og WP-Member felter"
+"inkluderer både vanlige WP felter og WP-Member felter."
 
 #: admin/tab-fields.php:461
 msgid "(Note: Email is always mandatory and cannot be changed.)"
-msgstr ""
+msgstr "(Merk: E-post er påkrevd, og kan ikke bli endret i ettertid)"
 
 #: admin/tab-fields.php:466
 msgid "Add/Delete"
@@ -718,7 +731,7 @@ msgstr "Markering?"
 
 #: admin/tab-fields.php:474
 msgid "Users Screen"
-msgstr ""
+msgstr "Brukers skjerm"
 
 #: admin/tab-fields.php:486
 msgid "Delete"
@@ -730,19 +743,19 @@ msgstr "(E-post kan ikke slettes)"
 
 #: admin/tab-fields.php:518
 msgid "Registration Date"
-msgstr ""
+msgstr "Registreringsdato"
 
 #: admin/tab-fields.php:521
 msgid "native"
-msgstr ""
+msgstr "opprinnelig"
 
 #: admin/tab-fields.php:531
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #: admin/tab-fields.php:543
 msgid "Registration IP"
-msgstr ""
+msgstr "Registrerings-IP"
 
 #: admin/tab-fields.php:578
 msgid "Update Fields"
@@ -754,31 +767,31 @@ msgstr "Administrer valg"
 
 #: admin/tab-options.php:86
 msgid "Do not block"
-msgstr ""
+msgstr "Ikkje blokker"
 
 #: admin/tab-options.php:88
 msgid "Hide"
-msgstr ""
+msgstr "Skjul"
 
 #: admin/tab-options.php:99
 msgid "Show Excerpts"
-msgstr ""
+msgstr "Vis utdrag"
 
 #: admin/tab-options.php:100
 msgid "Show Login Form"
-msgstr ""
+msgstr "Vis innloggingsskjema"
 
 #: admin/tab-options.php:101
 msgid "Show Registration Form"
-msgstr ""
+msgstr "Vis registreringsskjema"
 
 #: admin/tab-options.php:102
 msgid "Auto Excerpt:"
-msgstr ""
+msgstr "Auto-utdrag:"
 
 #: admin/tab-options.php:122
 msgid "Number of words in excerpt:"
-msgstr ""
+msgstr "Antall ord i utdrag:"
 
 #: admin/tab-options.php:136
 msgid "Time-based expiration"
@@ -794,7 +807,7 @@ msgstr "Prøveperiode"
 
 #: admin/tab-options.php:137
 msgid "Allows for a trial period"
-msgstr "tillater en prøveperiode"
+msgstr "Tillater en prøveperiode"
 
 #: admin/tab-options.php:153
 msgid "Notify admin"
@@ -803,7 +816,7 @@ msgstr "Gi beskjed til admin"
 #: admin/tab-options.php:153
 #, php-format
 msgid "Notify %s for each new registration? %s"
-msgstr ""
+msgstr "Informer %s for hver ny registrering? %s"
 
 #: admin/tab-options.php:154
 msgid "Moderate registration"
@@ -823,57 +836,59 @@ msgstr "Ignorer WP-Members advarsel-meldinger i admin"
 
 #: admin/tab-options.php:167
 msgid "Attribution"
-msgstr ""
+msgstr "Anerkjennelse"
 
 #: admin/tab-options.php:169
 msgid ""
 "Attribution is appreciated!  Display \"powered by\" link on register form?"
 msgstr ""
+"Er takknemlig for anerkjennelse. Vise \"powered by\"-lenke på "
+"registreringsskjema?"
 
 #: admin/tab-options.php:172
 msgid "Enable CAPTCHA"
-msgstr ""
+msgstr "Aktivere CAPTCHA"
 
 #: admin/tab-options.php:174 admin/user-profile.php:97 inc/forms.php:806
 #: inc/users.php:70
 msgid "None"
-msgstr ""
+msgstr "Ingen"
 
 #: admin/tab-options.php:180
 msgid "Pages"
-msgstr ""
+msgstr "Sider"
 
 #: admin/tab-options.php:184
 msgid "Login Page:"
-msgstr ""
+msgstr "Logg inn-side:"
 
 #: admin/tab-options.php:187
 msgid "Specify a login page (optional)"
-msgstr ""
+msgstr "Velge en logg inn-side (valgfritt)"
 
 #: admin/tab-options.php:196
 msgid "Register Page:"
-msgstr ""
+msgstr "Registreingsside:"
 
 #: admin/tab-options.php:199
 msgid "For creating a register link in the login form"
-msgstr ""
+msgstr "For å opprette en registrerings-lenke i logg-inn-skjemaet"
 
 #: admin/tab-options.php:208
 msgid "User Profile Page:"
-msgstr ""
+msgstr "Brukerprofil-side:"
 
 #: admin/tab-options.php:211
 msgid "For creating a forgot password link in the login form"
-msgstr ""
+msgstr "For å opprette en glemt-passord-lenke  i logg-inn-skjemaet"
 
 #: admin/tab-options.php:217 admin/tab-options.php:219
 msgid "Stylesheet"
-msgstr ""
+msgstr "Stilark"
 
 #: admin/tab-options.php:228
 msgid "Custom Stylesheet:"
-msgstr ""
+msgstr "Tilpasset stilark:"
 
 #: admin/tab-options.php:234 admin/tab-options.php:260
 msgid "Update Settings"
@@ -881,11 +896,11 @@ msgstr "Oppdater innstillinger"
 
 #: admin/tab-options.php:241
 msgid "Custom Post Types"
-msgstr ""
+msgstr "Tilpasset post-typer"
 
 #: admin/tab-options.php:342
 msgid "Custom Post Type settings were updated"
-msgstr ""
+msgstr "Tilpasset post-typer er oppdatert"
 
 #: admin/tab-options.php:460
 msgid "WP-Members settings were updated"
@@ -893,11 +908,11 @@ msgstr "WP-Member innstillinger er oppdatert"
 
 #: admin/tab-options.php:530 admin/tab-options.php:559
 msgid "USE CUSTOM URL BELOW"
-msgstr ""
+msgstr "BRUK TILPASSET URL NEDENFOR"
 
 #: admin/tab-options.php:548
 msgid "Select a page"
-msgstr ""
+msgstr "Velg en side"
 
 #: admin/user-export.php:72
 msgid "Activated?"
@@ -930,7 +945,7 @@ msgstr "WP-Members Ekstra Felter"
 #: admin/user-profile.php:115 inc/users.php:90 inc/wp-registration.php:37
 #: inc/wp-registration.php:154
 msgid "(required)"
-msgstr ""
+msgstr "(påkrevd)"
 
 #: admin/user-profile.php:283
 msgid "Activate this user?"
@@ -938,11 +953,11 @@ msgstr "Aktiver bruker?"
 
 #: admin/user-profile.php:288
 msgid "Reactivate this user?"
-msgstr ""
+msgstr "Reaktiver denne brukeren?"
 
 #: admin/user-profile.php:293
 msgid "Deactivate this user?"
-msgstr ""
+msgstr "Deaktiver denne brukeren?"
 
 #: admin/user-profile.php:339
 msgid "IP @ registration"
@@ -958,11 +973,11 @@ msgstr "Eksporter"
 
 #: admin/users.php:66 admin/users.php:107
 msgid "Export All Users"
-msgstr ""
+msgstr "Eksporter alle brukere"
 
 #: inc/class-wp-members-widget.php:18
 msgid "Displays the WP-Members sidebar login."
-msgstr ""
+msgstr "Vis WP-Member logg-inn i sidefelt."
 
 #: inc/class-wp-members-widget.php:33 inc/class-wp-members-widget.php:76
 msgid "Login Status"
@@ -974,7 +989,7 @@ msgstr "Tittel:"
 
 #: inc/class-wp-members-widget.php:44
 msgid "Redirect to (optional):"
-msgstr ""
+msgstr "Omdiriger til (valgfritt):"
 
 #: inc/class-wp-members.php:388 inc/shortcodes.php:117 inc/shortcodes.php:386
 msgid "There was an error with the CAPTCHA form."
@@ -1022,7 +1037,7 @@ msgstr "E-post"
 
 #: inc/class-wp-members.php:556
 msgid "Confirm Email"
-msgstr ""
+msgstr "Bekreft e-post"
 
 #: inc/class-wp-members.php:557
 msgid "Website"
@@ -1039,7 +1054,7 @@ msgstr "Passord"
 
 #: inc/class-wp-members.php:560
 msgid "Confirm Password"
-msgstr ""
+msgstr "Bekreft passord"
 
 #: inc/class-wp-members.php:561
 msgid "TOS"
@@ -1056,11 +1071,11 @@ msgstr "Brukernavn"
 
 #: inc/class-wp-members.php:570
 msgid "Log In"
-msgstr ""
+msgstr "Logg inn"
 
 #: inc/class-wp-members.php:571
 msgid "Remember Me"
-msgstr ""
+msgstr "Husk meg"
 
 #: inc/class-wp-members.php:572
 msgid "Forgot password?"
@@ -1072,7 +1087,7 @@ msgstr "Klikk her for å nullstille"
 
 #: inc/class-wp-members.php:574
 msgid "New User?"
-msgstr "Ny bruker"
+msgstr "Ny bruker?"
 
 #: inc/class-wp-members.php:575
 msgid "Click here to register"
@@ -1080,11 +1095,11 @@ msgstr "Klikk her for å registrere"
 
 #: inc/class-wp-members.php:576
 msgid "Forgot username?"
-msgstr ""
+msgstr "Glemt brukernavn?"
 
 #: inc/class-wp-members.php:577
 msgid "Click here"
-msgstr ""
+msgstr "Klikk her"
 
 #: inc/class-wp-members.php:580 inc/class-wp-members.php:630
 msgid "Change Password"
@@ -1092,11 +1107,11 @@ msgstr "Endre passord"
 
 #: inc/class-wp-members.php:581
 msgid "New password"
-msgstr ""
+msgstr "Nytt passord"
 
 #: inc/class-wp-members.php:582
 msgid "Confirm new password"
-msgstr ""
+msgstr "Bekreft nytt passord"
 
 #: inc/class-wp-members.php:583
 msgid "Update Password"
@@ -1112,15 +1127,15 @@ msgstr "Nullstill passord"
 
 #: inc/class-wp-members.php:592 inc/class-wp-members.php:594
 msgid "Retrieve username"
-msgstr ""
+msgstr "Hent brukernavn"
 
 #: inc/class-wp-members.php:593
 msgid "Email Address"
-msgstr ""
+msgstr "E-post-adresse"
 
 #: inc/class-wp-members.php:597
 msgid "New User Registration"
-msgstr ""
+msgstr "Ny brukerregistrering"
 
 #: inc/class-wp-members.php:598
 msgid "Choose a Username"
@@ -1128,7 +1143,7 @@ msgstr "Velg et brukernavn"
 
 #: inc/class-wp-members.php:599
 msgid "Input the code:"
-msgstr ""
+msgstr "Skriv inn koden:"
 
 #: inc/class-wp-members.php:600
 #, php-format
@@ -1137,7 +1152,7 @@ msgstr "Kryss av for at du godtar %snettsidens vilkår %s"
 
 #: inc/class-wp-members.php:601
 msgid "Reset Form"
-msgstr ""
+msgstr "Nullstill skjema"
 
 #: inc/class-wp-members.php:602 inc/class-wp-members.php:648 inc/core.php:522
 msgid "Register"
@@ -1149,7 +1164,7 @@ msgstr "Påkrevede felt"
 
 #: inc/class-wp-members.php:607 inc/shortcodes.php:432
 msgid "Edit Your Information"
-msgstr "Rediger dine Opplysninger"
+msgstr "Rediger opplysningene dine"
 
 #: inc/class-wp-members.php:609
 msgid "Update Profile"
@@ -1157,7 +1172,7 @@ msgstr "Oppdater profil"
 
 #: inc/class-wp-members.php:610
 msgid "Update this file"
-msgstr ""
+msgstr "Oppdater fila"
 
 #: inc/class-wp-members.php:613
 msgid "Login Failed!"
@@ -1177,12 +1192,12 @@ msgstr "Kodeordsfelt kan ikke være tomt"
 
 #: inc/class-wp-members.php:617
 msgid "Sorry, that email address was not found."
-msgstr ""
+msgstr "Beklager, finner ikke e-post-adressen."
 
 #: inc/class-wp-members.php:618
 #, php-format
 msgid "An email was sent to %s with your username."
-msgstr ""
+msgstr "En e-post med brukernavnet ditt er sendt til%s."
 
 #: inc/class-wp-members.php:619
 #, php-format
@@ -1191,7 +1206,7 @@ msgstr "%s er påkrevet."
 
 #: inc/class-wp-members.php:620
 msgid "You must enter a valid email address."
-msgstr "Du må fylle inn en gyldig e-post. "
+msgstr "Du må fylle inn en gyldig e-post."
 
 #: inc/class-wp-members.php:621
 msgid "The username cannot include non-alphanumeric characters."
@@ -1203,11 +1218,11 @@ msgstr "Brukernavn er påkrevet"
 
 #: inc/class-wp-members.php:623
 msgid "Passwords did not match."
-msgstr ""
+msgstr "Passordene er ikke like."
 
 #: inc/class-wp-members.php:624
 msgid "Emails did not match."
-msgstr ""
+msgstr "E-post-adressene er ikke like."
 
 #: inc/class-wp-members.php:625
 msgid "You must complete the CAPTCHA form."
@@ -1215,7 +1230,7 @@ msgstr "Du må fylle inn CAPTCHA skjemaet."
 
 #: inc/class-wp-members.php:626
 msgid "CAPTCHA was not valid."
-msgstr ""
+msgstr "CAPTCHA er ikke gyldig."
 
 #: inc/class-wp-members.php:629
 msgid "Edit My Information"
@@ -1229,23 +1244,23 @@ msgstr "Du er logget på som %s"
 
 #: inc/class-wp-members.php:632
 msgid "Click to log out."
-msgstr ""
+msgstr "Klikk for å logge u."
 
 #: inc/class-wp-members.php:633
 msgid "Begin using the site."
-msgstr "Begynd å bruke siden"
+msgstr "Begynn å bruke siden."
 
 #: inc/class-wp-members.php:635
 msgid "Click to log out"
-msgstr ""
+msgstr "Klikk for å logge ut"
 
 #: inc/class-wp-members.php:637
 msgid "click to log out"
-msgstr ""
+msgstr "klikk for å logge ut"
 
 #: inc/class-wp-members.php:641
 msgid "click here to log out"
-msgstr ""
+msgstr "klikk her for å logge ut"
 
 #: inc/class-wp-members.php:642
 msgid "Login Failed!<br />You entered an invalid username or password."
@@ -1253,11 +1268,11 @@ msgstr "Login feilet! <br />Ugylding brukernavn eller passord."
 
 #: inc/class-wp-members.php:643
 msgid "You are not logged in."
-msgstr ""
+msgstr "Du er ikke logget inn."
 
 #: inc/class-wp-members.php:646
 msgid "log in"
-msgstr ""
+msgstr "logg inn"
 
 #: inc/class-wp-members.php:647
 msgid "Forgot?"
@@ -1268,6 +1283,9 @@ msgid ""
 "This content is restricted to site members.  If you are an existing user, "
 "please log in.  New users may register below."
 msgstr ""
+"Innholdet er bare tilgjengelig for medlemmer av webstedet. Logg inn dersom "
+"du er en eksisterende bruker. Nye brukere kan registrere seg i skjemaet "
+"nedenfor."
 
 #: inc/class-wp-members.php:652
 msgid "Sorry, that username is taken, please try another."
@@ -1283,6 +1301,8 @@ msgid ""
 "Congratulations! Your registration was successful.<br /><br />You may now "
 "log in using the password that was emailed to you."
 msgstr ""
+"Gratulerer, du er registrert som bruker.<br /><br />Du kan nå logge deg inn "
+"med passordet som du har fått tilsendt i e-post."
 
 #: inc/class-wp-members.php:655
 msgid "Your information was updated!"
@@ -1294,7 +1314,7 @@ msgstr "Passordene er ulike.<br /><br />Prøv igjen."
 
 #: inc/class-wp-members.php:657
 msgid "Password successfully changed!"
-msgstr ""
+msgstr "Passordet er endret!"
 
 #: inc/class-wp-members.php:658
 msgid "Either the username or email address do not exist in our records."
@@ -1305,14 +1325,16 @@ msgid ""
 "Password successfully reset!<br /><br />An email containing a new password "
 "has been sent to the email address on file for your account."
 msgstr ""
+"Passordet er endret. <br /><br />Det er sendt en e-post med ditt nye passord "
+"til din registrerte e-post-adresse."
 
 #: inc/core.php:106
 msgid "<strong>ERROR</strong>: User has not been activated."
-msgstr ""
+msgstr "<strong>FEIL</strong>: Brukere ble ikke aktivisert."
 
 #: inc/register.php:45
 msgid "There was an error processing the form."
-msgstr ""
+msgstr "Det oppstod en feil under behandlingen av innholdet i skjemaet."
 
 #: inc/register.php:557
 msgid "We were unable to validate the public key."
@@ -1338,28 +1360,27 @@ msgstr "Parameterene var ugyldige"
 msgid ""
 "reCAPTCHA API keys are tied to a specific domain name for security reasons."
 msgstr ""
-"På grunn av sikkerhet er reCAPTCHA API nøkkelen er knyttet til et domene-"
-"navn."
+"På grunn av sikkerhet er reCAPTCHA-API-nøkkelen knyttet til et domene-navn."
 
 #: inc/register.php:581
 msgid "The reCAPTCHA server was not reached.  Please try to resubmit."
-msgstr "reCAPTCHA serveren kunne ikke kontaktes.  Prøv igjen."
+msgstr "Kan ikke nå reCAPTCHA-tjeneren. Prøv igjen."
 
 #: inc/register.php:585
 msgid "You have entered an incorrect code value. Please try again."
-msgstr ""
+msgstr "Du har registrert en ugyldig kodeverdi. Prøv igjen."
 
 #: inc/shortcodes.php:346
 msgid "Click here to log out."
-msgstr ""
+msgstr "Klikk her for å logge ut."
 
 #: inc/users.php:37
 msgid "Additional Information"
-msgstr ""
+msgstr "Tilleggsinformasjon"
 
 #: inc/utilities.php:202
 msgid "(more&hellip;)"
-msgstr ""
+msgstr "(mer&hellip;)"
 
 #: wp-members-tos.php:23
 msgid "Terms of Service"
@@ -1391,6 +1412,11 @@ msgid ""
 "plugins/wp-members/quick-start-guide/\">Quick Start Guide</a> is also "
 "available. WP-Members(tm) is a trademark of butlerblog.com."
 msgstr ""
+"WP tilgangsbegrensning og brukerregistrering. For meir informasjon om "
+"funksjoner i utvidelsen, se <a href=\"http://rocketgeek.com/plugins/wp-"
+"members/users-guide/\">brukermanualen</a>. En <a href=\"http://rocketgeek."
+"com/plugins/wp-members/quick-start-guide/\">hurtigmanual</a> er også "
+"tilgjengelig. WP-Members(tm) er et registrert varemerke for butlerblog.com."
 
 #. Author of the plugin/theme
 msgid "Chad Butler"
