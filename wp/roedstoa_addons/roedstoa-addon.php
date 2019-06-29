@@ -58,6 +58,7 @@ if ( !class_exists( 'RoedstoaAddon_MemberList' ) ) {
 		const CSS_FILE = 'css/ra_style.css';
 		const MEMBERS_SHORTCUT = 'ra_members';
 
+		const ATTR_SHOW_WHEN ='showwhen';
 		const ATTR_LOGIN = 'login';
 		const ATTR_EMAIL = 'email';
 		const ATTR_ROLES = 'roles';
@@ -186,7 +187,8 @@ if ( !class_exists( 'RoedstoaAddon_MemberList' ) ) {
 			return $member_data;
 		}			
 
-		public static function members_func($atts = [], $content = null, $shortcode_tag)
+
+		public static function build_output($atts = [], $content = null, $shortcode_tag)
 		{
 			$email = array_key_exists(self::ATTR_EMAIL, $atts) ? $atts[self::ATTR_EMAIL] : NULL;
 			$login = array_key_exists(self::ATTR_LOGIN, $atts) ? $atts[self::ATTR_LOGIN] : NULL;
@@ -212,7 +214,9 @@ if ( !class_exists( 'RoedstoaAddon_MemberList' ) ) {
 				}
 			}	
 			
-			$result = "<div>";
+			$result = apply_filters('the_content', do_shortcode($content));
+			$result .= "<div>";
+			$showavatar = false;
 			foreach ($users as $user) 
 			{			
 				$data = self::get_requested_member_data($user, $fields);
@@ -222,6 +226,7 @@ if ( !class_exists( 'RoedstoaAddon_MemberList' ) ) {
 					$key = array_keys($field)[0];
 					if ($key === self::ATTR_FIELDS_AVATAR)
 					{
+						$showavatar = true;
 						$result .= sprintf("<div class=\"col-12 col-sm-4 text-center text-sm-left\">%s</div><div class=\"col col-sm-8 text-center text-sm-left\">", $field[$key]);
 					}
 					elseif (isset($key) AND isset($field[$key])) 
@@ -229,13 +234,27 @@ if ( !class_exists( 'RoedstoaAddon_MemberList' ) ) {
 						$result .= sprintf("<p class=\"ra-%s\" style=\"margin-bottom:0em; margin-top:0em\">%s</p>", $key, $field[$key]);
 					}
 				}
-				$result .= "</div></div></div></p>";
+				$result .= "</div></div></p>";
+				if ($showavatar) 
+				{
+					$result .= "</div>";
+				}
+				$result .= "</p>";
 			}
 			$result .= "</div>";
-			$result .= apply_filters('the_content', $content);
-			$result .= do_shortcode($content);
 			return($result);
 		}		
+
+		public static function members_func($atts = [], $content = null, $shortcode_tag)
+		{
+			$showwhen = array_key_exists(self::ATTR_SHOW_WHEN, $atts) ? $atts[self::ATTR_SHOW_WHEN] : NULL;
+			if (is_null($showwhen) || 
+			   ($showwhen == 'notloggedin' && !is_user_logged_in()) ||
+			   ($showwhen == 'loggedin' && is_user_logged_in()))
+			{				
+				return (self::build_output ($atts, $content, $shortcode_tag));
+			}
+		}
 	}
 }
 
