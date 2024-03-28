@@ -1,0 +1,1 @@
+# Kode for å ekstrahere data fra WP for å kunne laste inn i Styreweb
