@@ -48,8 +48,10 @@ type rss =
 
 [<EntryPoint>]
 let main args =
-    let reader = new StreamReader(@"redstavel.wordpress.2024-01-20.xml")
-    let rss = deserializeXml<rss> (reader.ReadToEnd())
+    let serializer = XmlSerializer(typeof<rss>);
+    use reader = new FileStream(@"redstavel.wordpress.2024-01-20.xml", FileMode.Open)
+    let rss = serializer.Deserialize(reader) :?> rss;
+
     printfn $"{rss.version}"
 
     rss.channel.item
