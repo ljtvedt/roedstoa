@@ -4,19 +4,16 @@ open System.IO
 open System.Xml.Serialization
 open FSharp.Collections
 
-let toBytes (x : string) = System.Text.Encoding.ASCII.GetBytes x
-
-let deserializeXml<'a> (xml : string) =
-    let xmlSerializer = new XmlSerializer(typeof<'a>)
-    use stream = new MemoryStream(toBytes xml)
-    xmlSerializer.Deserialize stream :?> 'a
-
 [<CLIMutable>]
 [<XmlRoot("item")>] 
 type Item = {
         [<XmlElement("title")>]
         title: string
-        [<XmlElement("post_type")>]
+        [<XmlElement("pubDate")>]
+        pubDate:string
+        [<XmlElement("creator", Namespace = "http://purl.org/dc/elements/1.1/")>]
+        creator: string
+        [<XmlElement("post_type", Namespace = "http://wordpress.org/export/1.2/")>]
         post_type: string
 }
 
@@ -55,6 +52,6 @@ let main args =
     printfn $"{rss.version}"
 
     rss.channel.item
-    |> Array.iter (fun x -> printfn $"{x.title}")
+    |> Array.iter (fun x -> printfn $"{x.title}: {x.post_type}: {x.creator}")
 
     0
