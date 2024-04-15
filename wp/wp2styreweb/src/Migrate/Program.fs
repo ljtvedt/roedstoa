@@ -15,6 +15,8 @@ type Item = {
         creator: string
         [<XmlElement("post_type", Namespace = "http://wordpress.org/export/1.2/")>]
         post_type: string
+        [<XmlElement("encoded", Namespace = "http://purl.org/rss/1.0/modules/content/")>]
+        content_encoded: string
 }
 
 [<CLIMutable>]
@@ -52,6 +54,6 @@ let main args =
     printfn $"{rss.version}"
 
     rss.channel.item
-    |> Array.iter (fun x -> printfn $"{x.title}: {x.post_type}: {x.creator}")
+    |> Array.iter (fun x -> printfn $"{x.title}: {x.post_type}: {x.creator}: {x.content_encoded}")
 
     0
