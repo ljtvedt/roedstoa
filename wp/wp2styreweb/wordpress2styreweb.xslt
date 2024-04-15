@@ -19,9 +19,15 @@
     
     <xsl:template match="rss/channel">
         <posts>
-            <xsl:apply-templates select="item">
-                <xsl:sort select="wp:post_type, wp:post_date_gmt"/>
-            </xsl:apply-templates> 
+            <xsl:for-each select="item[generate-id(.)=generate-id(key('post_type', wp:post_type))]">
+                <xsl:sort select="wp:post_type"/>
+                <xsl:for-each select="key('post_type', wp:post_type)">
+                    <xsl:sort select="wp:post_date_gmt"/>
+                    <xsl:apply-templates select="item">
+                        <xsl:sort select="wp:post_date_gmt"/>
+                    </xsl:apply-templates>     
+                </xsl:for-each>        
+            </xsl:for-each>
         </posts>
     </xsl:template>
     
@@ -41,11 +47,11 @@
     </xsl:template>
     
 </xsl:stylesheet>
-
-<!-- Må handtere wpdmpro, lenker til desse, og lenker til andre downloads
-     [wpdm_package, [wpdm_direct, [wpdm_category....]
-     Korleis skal vi handtere kategoriar opp mot hierarkisk modell????
-     
-     Content kan innehalde lenker som er av type rel="attachment wp-att-805" og <img src class"wp-image-809"
--->
+    
+    <!-- Må handtere wpdmpro, lenker til desse, og lenker til andre downloads
+         [wpdm_package, [wpdm_direct, [wpdm_category....]
+         Korleis skal vi handtere kategoriar opp mot hierarkisk modell????
+         
+         Content kan innehalde lenker som er av type rel="attachment wp-att-805" og <img src class"wp-image-809"
+    -->
 

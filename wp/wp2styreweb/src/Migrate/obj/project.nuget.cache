@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "On8Ap+c2ObqXRifcB+ZfZa0YBcF4F9noxNKkbyQOJ2T8AogCWu9ZuWTFJgtWkTG8ODC8Byq8uT2bP4JUvZJdlg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ljtve\\Documents\\GitHub\\roedstoa\\wp\\wp2styreweb\\src\\Migrate\\Migrate.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ljtve\\.nuget\\packages\\fsharp.core\\6.0.7\\fsharp.core.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
