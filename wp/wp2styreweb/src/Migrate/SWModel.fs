@@ -19,6 +19,23 @@ module SWModel =
           postedDate: DateTimeOffset
           creator: string
           wpUrl: string
+          wpAttachedFile: string
+          wpPostId: int
+          wpParentPostId: int
+          wpPostName: string
+          wpStatus: string
+          wpPostType: string
+          category: Category []
+          parentCategories: Category []
+          tags: Tag []
+          parentTags: Tag [] }
+
+    type Post =
+        { title: string
+          publicationDate: DateTimeOffset
+          postedDate: DateTimeOffset
+          creator: string
+          wpUrl: string
           wpPostId: int
           wpParentPostId: int
           wpPostName: string

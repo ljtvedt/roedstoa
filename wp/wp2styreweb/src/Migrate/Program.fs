@@ -18,16 +18,32 @@ let toSwCategories (category: WpModel.Category []) =
               nicename = x.nicename
               name = x.name })
 
-let getItemCategories (itemMap: Map<int,WpModel.Item>) (itemId: int) = 
-  match itemMap |> Map.tryFind itemId with
-  | Some i -> i.categories |> toSwCategories
-  | None -> [||]
+let getItemCategories (itemMap: Map<int, WpModel.Item>) (itemId: int) =
+    match itemMap |> Map.tryFind itemId with
+    | Some i -> i.categories |> toSwCategories
+    | None -> [||]
 
 let toSwTags (postmetas: (WpModel.PostMeta [])) =
     postmetas
     |> Array.map (fun x ->
         { Tag.key = x.meta_key
           value = x.meta_value })
+
+let getMetas (key: string) (postmetas: WpModel.PostMeta []) =
+    postmetas
+    |> Array.filter (fun x -> x.meta_key = key)
+    |> Array.map (fun x -> x.meta_value)
+
+let getMeta (key: string) (postmetas: WpModel.PostMeta []) =
+    getMetas key postmetas
+    |> Array.find (fun x -> true)
+
+let getAttachedFile = getMeta "_wp_attached_file"
+
+let getWpdmFiles postmetas =
+    let fileString = getMeta "__wpdm_files" postmetas
+    // TODO: Filter ut det vi treng av td. "a:1:{i:0;s:25:"Infoskriv-sommer-2019.pdf";}"
+    String.fileString
 
 [<EntryPoint>]
 let main args =
@@ -52,6 +68,7 @@ let main args =
               postedDate = DateTimeOffset.Parse(x.post_date_gmt + " +000")
               creator = x.creator
               wpUrl = x.attachment_url
+              wpAttachedFile = x.postmetas |> getAttachedFile
               wpPostId = x.post_id
               wpParentPostId = x.post_parent
               wpPostName = x.post_name
@@ -71,11 +88,8 @@ let main args =
               publicationDate = x.pubDate |> parsePublicationDate
               postedDate = DateTimeOffset.Parse(x.post_date_gmt + " +000")
               creator = x.creator
-              wpUrl =
-                x.postmetas
-                |> Array.filter (fun x -> x.meta_key = "__wpdm_files")
-                |> Array.map (fun x -> x.meta_value)
-                |> Array.find (fun x -> true)
+              wpUrl = x.postmetas |> getWpdmFiles
+              wpAttachedFile = x.postmetas |> getWpdmFiles
               wpPostId = x.post_id
               wpParentPostId = x.post_parent
               wpPostName = x.post_name
@@ -86,11 +100,12 @@ let main args =
               tags = x.postmetas |> toSwTags
               parentTags = [||] })
 
-    wpdmDocuments
-    |> Array.filter (fun x -> x.title = "Årsmøtereferat 2019")
-    |> Array.iter (fun x -> printfn $"{x}")
+    // wpdmDocuments
+    // |> Array.filter (fun x -> x.title = "Årsmøtereferat 2019")
+    // |> Array.iter (fun x -> printfn $"{x}")
 
-    attachmentDocuments |> Array.iter (fun x -> printfn $"{x}")
+    wpdmDocuments
+    |> Array.iter (fun x -> printfn $"{x}")
 
     // rss.channel.item
     // |> Array.filter (fun x -> x.post_type = "wpdmpro")
