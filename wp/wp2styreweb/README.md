@@ -20,4 +20,10 @@ Finne alle attachment, og kople dei til post/page. Slå saman kategoriane for be
 
 
 
-
+## Post-typer
+* attachment
+* nav_menu_item
+* custom_css
+* page
+* post
+* wpdmpro
