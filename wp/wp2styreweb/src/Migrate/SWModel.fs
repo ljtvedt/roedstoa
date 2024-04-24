@@ -20,12 +20,13 @@ module SWModel =
           creator: string
           wpUrl: string
           wpAttachedFile: string
+          newPath: string
           wpPostId: int
           wpParentPostId: int
           wpPostName: string
           wpStatus: string
           wpPostType: string
-          category: Category []
+          categories: Category []
           parentCategories: Category []
           tags: Tag []
           parentTags: Tag [] }

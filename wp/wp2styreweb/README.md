@@ -27,3 +27,6 @@ Finne alle attachment, og kople dei til post/page. Slå saman kategoriane for be
 * page
 * post
 * wpdmpro
+
+## Category-mapping
+Lag mapping fra alle Wp-categori-typer til SW-category med prioritering. Bruk denne ved mapping til SW-modell, og bruk så desse til å berekne nye fil-stiar (basert på prioiritet)

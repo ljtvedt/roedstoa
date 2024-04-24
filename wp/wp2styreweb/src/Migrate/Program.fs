@@ -1,9 +1,9 @@
 ﻿// For more information see https://aka.ms/fsharp-console-apps
 open System
+open System.Text.RegularExpressions
 open FSharp.Collections
 open Migrate
 open SWModel
-
 
 let parsePublicationDate (d: string) =
     DateTimeOffset.ParseExact(d, "ddd, dd MMM yyyy HH:mm:ss zzzz", null)
@@ -42,9 +42,12 @@ let getAttachedFile = getMeta "_wp_attached_file"
 
 let getWpdmFiles postmetas =
     let fileString = getMeta "__wpdm_files" postmetas
-    // TODO: Filter ut det vi treng av td. "a:1:{i:0;s:25:"Infoskriv-sommer-2019.pdf";}"
-    String.fileString
+    let extracted = Regex.Replace(fileString, "a:1:{i:\d+;s:\d+:\"*([^\";]*)\"*;}", "download-manager-files/$1")
+    extracted.Replace("download-manager-files//home/roedsrcr/public_html/wp//wp-content/uploads", "")
 
+let newPath (categories: SWModel.Category array) (parentCategories: SWModel.Category array) (attachedFile: string) =
+    ""
+    
 [<EntryPoint>]
 let main args =
     let rss = WpModel.deserialize @"redstavel.wordpress.2024-01-20.xml"
@@ -63,19 +66,25 @@ let main args =
         |> Array.filter (fun x -> x.status <> "draft")
         |> Array.filter (fun x -> x.post_type = "attachment")
         |> Array.map (fun x ->
+            let categories = x.categories |> toSwCategories
+            let parentCategories = x.post_parent |> getItemCategories
+            let wpAttachedFile = x.postmetas |> getAttachedFile
+            let newPath = newPath categories parentCategories wpAttachedFile
+
             { Dokument.title = x.title
               publicationDate = x.pubDate |> parsePublicationDate
               postedDate = DateTimeOffset.Parse(x.post_date_gmt + " +000")
               creator = x.creator
               wpUrl = x.attachment_url
-              wpAttachedFile = x.postmetas |> getAttachedFile
+              wpAttachedFile = wpAttachedFile
+              newPath = newPath
               wpPostId = x.post_id
               wpParentPostId = x.post_parent
               wpPostName = x.post_name
               wpStatus = x.status
               wpPostType = x.post_type
-              category = x.categories |> toSwCategories
-              parentCategories = x.post_parent |> getItemCategories
+              categories = categories
+              parentCategories = parentCategories
               tags = x.postmetas |> toSwTags
               parentTags = [||] })
 
@@ -84,19 +93,25 @@ let main args =
         |> Array.filter (fun x -> x.status <> "draft")
         |> Array.filter (fun x -> x.post_type = "wpdmpro")
         |> Array.map (fun x ->
+            let categories = x.categories |> toSwCategories
+            let parentCategories = x.post_parent |> getItemCategories
+            let wpAttachedFile = x.postmetas |> getWpdmFiles
+            let newPath = newPath categories parentCategories wpAttachedFile
+
             { Dokument.title = x.title
               publicationDate = x.pubDate |> parsePublicationDate
               postedDate = DateTimeOffset.Parse(x.post_date_gmt + " +000")
               creator = x.creator
               wpUrl = x.postmetas |> getWpdmFiles
-              wpAttachedFile = x.postmetas |> getWpdmFiles
+              wpAttachedFile = wpAttachedFile
+              newPath = ""
               wpPostId = x.post_id
               wpParentPostId = x.post_parent
               wpPostName = x.post_name
               wpStatus = x.status
               wpPostType = x.post_type
-              category = x.categories |> toSwCategories
-              parentCategories = x.post_parent |> getItemCategories
+              categories = categories
+              parentCategories = parentCategories
               tags = x.postmetas |> toSwTags
               parentTags = [||] })
 
@@ -104,8 +119,17 @@ let main args =
     // |> Array.filter (fun x -> x.title = "Årsmøtereferat 2019")
     // |> Array.iter (fun x -> printfn $"{x}")
 
-    wpdmDocuments
-    |> Array.iter (fun x -> printfn $"{x}")
+// TODO: Lag ei liste basert på alle items, slik at vi kan lage ei komplett mapping
+    let usedCategories =
+        wpdmDocuments
+        |> Array.collect (fun x -> 
+            [x.categories; x.parentCategories]
+            |> Array.concat)
+        |> Array.distinct
+        |> Array.sortBy (fun x -> x.name)
+    
+    usedCategories |> Array.iter (fun x -> printfn $"{x.nicename} : {x.domain} : {x.name}")
+
 
     // rss.channel.item
     // |> Array.filter (fun x -> x.post_type = "wpdmpro")
