@@ -137,7 +137,15 @@ let main args =
               tags = x.postmetas |> toSwTags
               parentTags = [||] })
 
-    wpdmDocuments
+    let allDocuments = [| wpdmDocuments; attachmentDocuments |]
+
+    // allDocuments
+    // |> Array.collect id
+    // |> Array.iter (fun x -> printfn $"{x.title}\t{x.wpUrl}\t{x.newPath}")
+
+    allDocuments
+    |> Array.collect id
+    |> Array.filter (fun x -> Option. isNone x.newPath)
     |> Array.iter (fun x -> printfn $"{x.title}\t{x.wpUrl}\t{x.newPath}")
 
 // TODO: Lag ei liste basert på alle items, slik at vi kan lage ei komplett mapping
