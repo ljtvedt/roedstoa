@@ -8,11 +8,6 @@ module SWModel =
 
     type Tag = { key: string; value: string }
 
-    type Category =
-        { domain: string
-          nicename: string
-          name: string }
-
     type CategoryMapping = {
       domain: string
       nicename: string
@@ -24,7 +19,6 @@ module SWModel =
     type Dokument =
         { title: string
           publicationDate: DateTimeOffset
-          postedDate: DateTimeOffset
           creator: string
           wpUrl: string
           wpAttachedFile: string
@@ -57,9 +51,9 @@ module SWModel =
 
 
     let categoryMapList = [
-      {domain = "wpdmcategory"; nicename = "formelt"; swCategoryName="Organisasjon"; swCategoryPriority=0; swCategoryFilePath="/Felles/Organisasjon"};
-      {domain = "wpdmcategory"; nicename = "infoskriv"; swCategoryName="Informasjonsskriv"; swCategoryPriority=10; swCategoryFilePath="/Felles/Informasjonsskriv"};
-      {domain = "post_tag"; nicename = "infoskriv"; swCategoryName="Informasjonsskriv"; swCategoryPriority=10; swCategoryFilePath="/Felles/Informasjonsskriv"};
+      {domain = "wpdmcategory"; nicename = "formelt"; swCategoryName="Organisasjon"; swCategoryPriority = -1; swCategoryFilePath="/Felles/Organisasjon"};
+      {domain = "wpdmcategory"; nicename = "infoskriv"; swCategoryName="Informasjonsskriv"; swCategoryPriority=0; swCategoryFilePath="/Felles/Informasjonsskriv"};
+      {domain = "post_tag"; nicename = "infoskriv"; swCategoryName="Informasjonsskriv"; swCategoryPriority=0; swCategoryFilePath="/Felles/Informasjonsskriv"};
       {domain = "wpdmcategory"; nicename = "komiteer"; swCategoryName="Komite"; swCategoryPriority=100; swCategoryFilePath="/Felles/Komiteer"};
       {domain = "post_tag"; nicename = "rsva"; swCategoryName="Vann- og avløpsprosjektet"; swCategoryPriority=5; swCategoryFilePath="/Felles/Vann- og avløpsprosjektet"};
       {domain = "wpdmcategory"; nicename = "styremote"; swCategoryName="Styremøte"; swCategoryPriority=2; swCategoryFilePath="/Felles/Styret/{year}"};
@@ -89,6 +83,8 @@ module SWModel =
       {domain = "wpdmcategory"; nicename = "arsmote2023"; swCategoryName="Årsmøte 2023"; swCategoryPriority=1; swCategoryFilePath="/Felles/Årsmøter/Årsmøte 2023"};
       {domain = "post_tag"; nicename = "arsmote-2023"; swCategoryName="Årsmøte 2023"; swCategoryPriority=1; swCategoryFilePath="/Felles/Årsmøter/Årsmøte 2023"};
       {domain = "wpdmcategory"; nicename = "arsmote2023"; swCategoryName="Årsmøte 2023"; swCategoryPriority=1; swCategoryFilePath="/Felles/Årsmøter/Årsmøte 2023"};
+      {domain = "category"; nicename = "styret"; swCategoryName="Styret"; swCategoryPriority=2; swCategoryFilePath="/Felles/Styret/{year}"};
+      {domain = "post_tag"; nicename = "info-fra-styret"; swCategoryName="Informasjonsskriv"; swCategoryPriority=0; swCategoryFilePath="/Felles/Informasjonsskriv"};
     ]
 
     let categoryMap  =

@@ -22,7 +22,12 @@ let toSwCategories (category: WpModel.Category []) =
 let getItemCategories (itemMap: Map<int, WpModel.Item>) (itemId: int) =
     match itemMap |> Map.tryFind itemId with
     | Some i -> i.categories |> toSwCategories
-    | None -> [||]
+    | _ -> [||]
+
+let getItemTitle (itemMap: Map<int, WpModel.Item>) (itemId: int) =
+    match itemMap |> Map.tryFind itemId with
+    | Some i -> i.title |> Some
+    | None -> None
 
 let toSwTags (postmetas: (WpModel.PostMeta [])) =
     postmetas
@@ -78,6 +83,7 @@ let main args =
 
     let itemMap =
         items
+        |> Array.filter (fun x -> x.status <> "draft")
         |> Array.map (fun x -> (x.post_id, x))
         |> Map.ofArray
 
@@ -87,6 +93,7 @@ let main args =
         items
         |> Array.filter (fun x -> x.status <> "draft")
         |> Array.filter (fun x -> x.post_type = "attachment")
+        |> Array.filter (fun x -> itemMap |> Map.containsKey x.post_parent)
         |> Array.map (fun x ->
             let categories = x.categories |> toSwCategories
             let parentCategories = x.post_parent |> getItemCategories
@@ -95,7 +102,6 @@ let main args =
 
             { Dokument.title = x.title
               publicationDate = x.pubDate |> parsePublicationDate
-              postedDate = DateTimeOffset.Parse(x.post_date_gmt + " +000")
               creator = x.creator
               wpUrl = x.attachment_url
               wpAttachedFile = wpAttachedFile
@@ -118,11 +124,10 @@ let main args =
             let categories = x.categories |> toSwCategories
             let parentCategories = x.post_parent |> getItemCategories
             let wpAttachedFile = x.postmetas |> getWpdmFiles
-            let newPath = newWpdmPath categories parentCategories wpAttachedFile (x.post_date_gmt.Substring(0, 4))
+            let newPath = newWpdmPath categories parentCategories wpAttachedFile (x.post_date.Substring(0, 4))
 
             { Dokument.title = x.title
               publicationDate = x.pubDate |> parsePublicationDate
-              postedDate = DateTimeOffset.Parse(x.post_date_gmt + " +000")
               creator = x.creator
               wpUrl = x.postmetas |> getWpdmFiles
               wpAttachedFile = wpAttachedFile
@@ -137,26 +142,24 @@ let main args =
               tags = x.postmetas |> toSwTags
               parentTags = [||] })
 
-    let allDocuments = [| wpdmDocuments; attachmentDocuments |]
+    let allDocuments = [| wpdmDocuments; attachmentDocuments |] |> Array.collect id
 
     // allDocuments
-    // |> Array.collect id
     // |> Array.iter (fun x -> printfn $"{x.title}\t{x.wpUrl}\t{x.newPath}")
 
+    // Mangler path (og dermed sannsynlegvis kategoriar)
     allDocuments
-    |> Array.collect id
     |> Array.filter (fun x -> Option. isNone x.newPath)
-    |> Array.iter (fun x -> printfn $"{x.title}\t{x.wpUrl}\t{x.newPath}")
+    |> Array.iter (fun x -> printfn $"ParentTitle: {x.wpParentPostId |> getItemTitle itemMap }/{x.wpParentPostId}\t Title: {x.title}/{x.wpPostId}\t{x.wpUrl}\t{x.newPath}")
 
-// TODO: Lag ei liste basert på alle items, slik at vi kan lage ei komplett mapping
+    //  Skriv ut alle kategoriar vi har brukt
     // let usedCategories =
-    //     wpdmDocuments
+    //     allDocuments
     //     |> Array.collect (fun x ->
     //         [x.categories; x.parentCategories]
     //         |> Array.concat)
     //     |> Array.distinct
-    //     |> Array.sortBy (fun x -> x.name)
-
+    //     |> Array.sortBy (fun x -> sprintf "{x.domain}#{x.nicename}")
     // usedCategories
     // |> Array.iter (fun x ->
     //     printfn $"""{{domain = "{x.domain}"; nicename = "{x.nicename}"; swCategoryName=""; swCategoryPriority=""; swCategoryFilePath=""}}; """)

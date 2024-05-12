@@ -3785,13 +3785,13 @@
 .header-filter::before { background-color: transparent; }
 
 .section-image.hestia-about:after,
-.section-image.hestia-contact:after { 
-background-color: rgba(0, 0, 0, 0.39); 
+.section-image.hestia-contact:after {
+background-color: rgba(0, 0, 0, 0.39);
 }
 
 .section-image.hestia-about:after,
-.section-image.hestia-contact:after { 
-background-color: transparent; 
+.section-image.hestia-contact:after {
+background-color: transparent;
 }
 
 .widget.widget_recent_entries {background-color: rgba(255, 255, 255,0.7)}]]></content:encoded>
