@@ -74,10 +74,15 @@ let newAttachedPath (categories: SWModel.CategoryMapping array) (parentCategorie
     | None, Some f -> (sprintf $"{f}/{filename}").Replace("{year}", year) |> Some
     | _ -> None
 
+let moveDocuments (sourceDirectory: string) (targetDirectory: string) (documents: Dokument array) =
+    documents
+    |> Array.map (fun x -> (x.wpAttachedFile, x.newPath))
+    |> Array.map (fun (oldPath, newPath) -> (Path.Combine(sourceDirectory, oldPath), newPath |> Option.map(fun x -> Path.Combine(targetDirectory, x))))
+    |> Array.iter (fun (oldPath, newPath) -> match (oldPath, newPath) with | (oP, Some nP) -> printfn $"{oP} -> {nP}" | (_, None) -> printfn "${oP} -> VERT IKKJE FLYTTA")
 
 [<EntryPoint>]
 let main args =
-    let rss = WpModel.deserialize @"redstavel.wordpress.2024-01-20.xml"
+    let rss = WpModel.deserialize @"redstavel.wordpress.2024-05-13.xml"
 
     let items = rss.channel.item
 
@@ -144,13 +149,17 @@ let main args =
 
     let allDocuments = [| wpdmDocuments; attachmentDocuments |] |> Array.collect id
 
+    let sourceDirectory = """C:\Users\n638510\Privat\git\roedstoa\wp\wp2styreweb\roedstoaUploads"""
+    let targetDirectory = """C:\Users\n638510\Privat\git\roedstoa\wp\wp2styreweb\newPath"""
+    allDocuments |> moveDocuments sourceDirectory targetDirectory
+
     // allDocuments
     // |> Array.iter (fun x -> printfn $"{x.title}\t{x.wpUrl}\t{x.newPath}")
 
     // Mangler path (og dermed sannsynlegvis kategoriar)
-    allDocuments
-    |> Array.filter (fun x -> Option. isNone x.newPath)
-    |> Array.iter (fun x -> printfn $"ParentTitle: {x.wpParentPostId |> getItemTitle itemMap }/{x.wpParentPostId}\t Title: {x.title}/{x.wpPostId}\t{x.wpUrl}\t{x.newPath}")
+    // allDocuments
+    // |> Array.filter (fun x -> Option. isNone x.newPath)
+    // |> Array.iter (fun x -> printfn $"ParentTitle: {x.wpParentPostId |> getItemTitle itemMap }/{x.wpParentPostId}\t Title: {x.title}/{x.wpPostId}\t{x.wpUrl}\t{x.newPath}")
 
     //  Skriv ut alle kategoriar vi har brukt
     // let usedCategories =

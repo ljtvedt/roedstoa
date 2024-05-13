@@ -1,5 +1,21 @@
 # Kode for å ekstrahere data fra WP for å kunne laste inn i Styreweb
 
+## Laste ned innhaldet fra WP-site
+
+### WP-sider, poster, ...
+* Logg inn på roedstoa.no med rette prvilegiar
+* Velg Verktøy->Eksporter
+* Klikk "Last ned eksportfilen"
+
+### Opplasta filer
+* Logg på http://cpanel.roedstoa.no/
+* Opne "File Manager"
+* Naviger til public_html/wp/wp-content/Uploads
+* Marker alle katalogane du vil laste ned, høgreklikk, og velg "Compress"
+* Marker den komprimerte file, og frå menyen, velg Download
+
+
+
 Må handtere wpdmpro, lenker til desse, og lenker til andre downloads
 
     [wpdm_package, [wpdm_direct, [wpdm_category....]
@@ -7,7 +23,7 @@ Må handtere wpdmpro, lenker til desse, og lenker til andre downloads
 
     Content kan innehalde lenker som er av type rel="attachment wp-att-805" og <img src class"wp-image-809"
 
-Type for 
+Type for
 
 * Attachments
 * Images
