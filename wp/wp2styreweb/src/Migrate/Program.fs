@@ -77,7 +77,7 @@ let newAttachedPath (categories: SWModel.CategoryMapping array) (parentCategorie
 let moveDocuments (sourceDirectory: string) (targetDirectory: string) (documents: Dokument array) =
     documents
     |> Array.map (fun x -> (x.wpAttachedFile, x.newPath))
-    |> Array.map (fun (oldPath, newPath) -> (Path.Combine(sourceDirectory, oldPath), newPath |> Option.map(fun x -> Path.Combine(targetDirectory, x))))
+    |> Array.map (fun (oldPath, newPath) -> (Path.Join(sourceDirectory, oldPath), newPath |> Option.map(fun x -> Path.Join(targetDirectory, x))))
     |> Array.iter (fun (oldPath, newPath) -> match (oldPath, newPath) with | (oP, Some nP) -> printfn $"{oP} -> {nP}" | (_, None) -> printfn "${oP} -> VERT IKKJE FLYTTA")
 
 [<EntryPoint>]
