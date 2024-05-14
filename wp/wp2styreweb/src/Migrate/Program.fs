@@ -74,11 +74,23 @@ let newAttachedPath (categories: SWModel.CategoryMapping array) (parentCategorie
     | None, Some f -> (sprintf $"{f}/{filename}").Replace("{year}", year) |> Some
     | _ -> None
 
+let moveFile (source: string) (target: string) =
+    Directory.CreateDirectory(Path.GetDirectoryName target) |> ignore
+    try
+        if File.Exists(source) then
+            File.Move(source, target)
+        else
+            ()
+    with exp -> printfn $"Duplikat filnamn {target}"
+
 let moveDocuments (sourceDirectory: string) (targetDirectory: string) (documents: Dokument array) =
     documents
     |> Array.map (fun x -> (x.wpAttachedFile, x.newPath))
     |> Array.map (fun (oldPath, newPath) -> (Path.Join(sourceDirectory, oldPath), newPath |> Option.map(fun x -> Path.Join(targetDirectory, x))))
-    |> Array.iter (fun (oldPath, newPath) -> match (oldPath, newPath) with | (oP, Some nP) -> printfn $"{oP} -> {nP}" | (_, None) -> printfn "${oP} -> VERT IKKJE FLYTTA")
+    |> Array.iter (fun (oldPath, newPath) ->
+        match (oldPath, newPath) with
+        | (oP, Some nP) when oP.Length > 0 -> moveFile oP nP
+        | _ -> printfn $"{oldPath} -> VERT IKKJE FLYTTA")
 
 [<EntryPoint>]
 let main args =
