@@ -36,7 +36,7 @@ module SWModel =
     type Post =
         { title: string
           publicationDate: DateTimeOffset
-          postedDate: DateTimeOffset
+          content: string
           creator: string
           wpUrl: string
           wpPostId: int
@@ -44,8 +44,9 @@ module SWModel =
           wpPostName: string
           wpStatus: string
           wpPostType: string
-          category: CategoryMapping []
+          categories: CategoryMapping []
           parentCategories: CategoryMapping []
+          attachedDocuments: Dokument array
           tags: Tag []
           parentTags: Tag [] }
 

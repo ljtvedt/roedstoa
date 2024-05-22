@@ -6,6 +6,7 @@ open Migrate
 open SWModel
 open System.Globalization
 open System.IO
+open System.Text.RegularExpressions;
 
 let parsePublicationDate (d: string) =
     let usCulture = CultureInfo("en-US");
@@ -83,7 +84,7 @@ let moveFile (source: string) (target: string) =
             ()
     with exp -> printfn $"Duplikat filnamn {target}"
 
-let moveDocuments (sourceDirectory: string) (targetDirectory: string) (documents: Dokument array) =
+let moveDocument (sourceDirectory: string) (targetDirectory: string) (documents: Dokument array) =
     documents
     |> Array.map (fun x -> (x.wpAttachedFile, x.newPath))
     |> Array.map (fun (oldPath, newPath) -> (Path.Join(sourceDirectory, oldPath), newPath |> Option.map(fun x -> Path.Join(targetDirectory, x))))
@@ -91,6 +92,60 @@ let moveDocuments (sourceDirectory: string) (targetDirectory: string) (documents
         match (oldPath, newPath) with
         | (oP, Some nP) when oP.Length > 0 -> moveFile oP nP
         | _ -> printfn $"{oldPath} -> VERT IKKJE FLYTTA")
+
+let getDocument (documents: Dokument array) (id: int) =
+    documents
+    |> Array.filter (fun x -> x.wpPostId = id)
+    |> Array.tryHead
+
+let replaceWpdmDirectLinks (getDocument: int -> Dokument option) (content: string) =
+    let matches = Regex.Matches(content, @"(\[wpdm_direct_link\sid=(\d+) label=""([^""]*)""\])")
+    let commands =
+        matches
+        |> Seq.map (fun x ->
+            let vedleggDokument =
+                x.Groups[2].Value |> int |> getDocument |> Option.map (fun x -> x.title) |> Option.defaultValue "Ukjent"
+            (x.Index, x.Length, $"{x.Groups[3].Value} (se vedlegg {vedleggDokument})")
+            )
+    let documents =
+        matches
+        |> Seq.choose (fun x -> x.Groups[2].Value |> int |> getDocument)
+        |> Array.ofSeq
+    let newContent =
+        Seq.foldBack (fun (start, length, newString) (acc: string) -> acc.Remove(start, length).Insert(start,newString) ) commands content
+    (newContent, documents)
+
+let parseContent (getDocument: int -> Dokument option) (content: string) : (string * Dokument array) =
+    let directLinksReplaced = replaceWpdmDirectLinks getDocument content
+    directLinksReplaced
+
+let toPost getItemCategories getDocument (wpPost: WpModel.Item) =
+    let categories = wpPost.categories |> toSwCategories
+    let parentCategories = wpPost.post_parent |> getItemCategories
+    let attachedDocument =
+    // TODO: Denne er blitt feil. Skal søke etter dokument md parent-id lik denne ID
+        match getDocument wpPost.post_id with
+        | Some d -> [|d|]
+        | _ -> [||]
+    let contentAndLinks = parseContent getDocument wpPost.content_encoded
+
+    {
+        Post.title = wpPost.title
+        publicationDate = wpPost.pubDate |> parsePublicationDate
+        content = fst (contentAndLinks)
+        creator = wpPost.creator
+        wpUrl = wpPost.attachment_url
+        wpPostId = wpPost.post_id
+        wpParentPostId = wpPost.post_parent
+        wpPostName = wpPost.post_name
+        wpStatus = wpPost.status
+        wpPostType = wpPost.post_type
+        categories = categories
+        parentCategories = parentCategories
+        attachedDocuments = [|attachedDocument; snd (contentAndLinks)|] |> Array.collect id
+        tags = wpPost.postmetas |> toSwTags
+        parentTags = [||] }
+
 
 [<EntryPoint>]
 let main args =
@@ -105,6 +160,11 @@ let main args =
         |> Map.ofArray
 
     let getItemCategories = getItemCategories itemMap
+
+    let posts =
+        items
+        |> Array.filter (fun x -> x.status <> "draft")
+        |> Array.filter (fun x -> x.post_type = "post")
 
     let attachmentDocuments =
         items
@@ -161,9 +221,21 @@ let main args =
 
     let allDocuments = [| wpdmDocuments; attachmentDocuments |] |> Array.collect id
 
-    let sourceDirectory = """C:\Users\n638510\Privat\git\roedstoa\wp\wp2styreweb\roedstoaUploads"""
-    let targetDirectory = """C:\Users\n638510\Privat\git\roedstoa\wp\wp2styreweb\newPath"""
-    allDocuments |> moveDocuments sourceDirectory targetDirectory
+    // Bygg ny dokumentstruktur
+    // let sourceDirectory = """C:\Users\n638510\Privat\git\roedstoa\wp\wp2styreweb\roedstoaUploads"""
+    // let targetDirectory = """C:\Users\n638510\Privat\git\roedstoa\wp\wp2styreweb\newPath"""
+    // allDocuments |> moveDocument sourceDirectory targetDirectory
+
+    let getDocument = getDocument allDocuments
+    let toPost = toPost getItemCategories getDocument
+
+    let swPosts =
+        posts
+        |> Array.map toPost
+
+    swPosts
+    |> Array.filter (fun x -> x.attachedDocuments.Length > 0)
+    |> Array.iter (fun x -> printfn $"{x.title} --- {x.content} --- {x.attachedDocuments}")
 
     // allDocuments
     // |> Array.iter (fun x -> printfn $"{x.title}\t{x.wpUrl}\t{x.newPath}")
