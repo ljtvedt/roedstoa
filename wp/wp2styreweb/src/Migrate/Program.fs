@@ -98,6 +98,38 @@ let getDocument (documents: Dokument array) (id: int) =
     |> Array.filter (fun x -> x.wpPostId = id)
     |> Array.tryHead
 
+let getAttachedDocuments (documents: Dokument array) (id: int) =
+    documents
+    |> Array.filter (fun x -> x.wpParentPostId = id)
+
+// TODO: Fungerer ikkje fordi ein del bilder er pakka inn i ref. Koden jobber no berre på dette eine dokumentet
+let replace (source: string) (oldString: string) (newString: string) = source.Replace(oldString, newString)
+
+let replaceHrefsWithWpAttribute (getDocument: int -> Dokument option) (content: string) =
+    let matches = Regex.Matches(content, @"(<a href=[^<]*wp-att-(\d*)[^<]*>([^<]*)<\/a>)", options = RegexOptions.Multiline)
+    let commands =
+        matches
+        |> Seq.map (fun x ->
+            let vedleggDokument =
+                x.Groups[2].Value |> int |> getDocument |> Option.map (fun x -> x.title) |> Option.defaultValue "Ukjent"
+            ($"{x.Groups[1].Value}", $"(se vedlegg '{vedleggDokument}')")
+            )
+    commands
+    |> Seq.iter (fun x -> printfn $"{snd x}")
+
+    let documents =
+        matches
+        |> Seq.choose (fun x -> x.Groups[2].Value |> int |> getDocument)
+        |> Array.ofSeq
+    let newContent =
+        Seq.fold(fun (acc: string) (oldString, newString) ->
+            printfn $"ACC: {acc}"
+            printfn $"OLD: {oldString}"
+            printfn $"NEW: {newString}"
+            let s = replace acc oldString newString
+            s) content commands
+    (newContent, documents)
+
 let replaceWpdmDirectLinks (getDocument: int -> Dokument option) (content: string) =
     let matches = Regex.Matches(content, @"(\[wpdm_direct_link\sid=(\d+) label=""([^""]*)""\])")
     let commands =
@@ -116,17 +148,14 @@ let replaceWpdmDirectLinks (getDocument: int -> Dokument option) (content: strin
     (newContent, documents)
 
 let parseContent (getDocument: int -> Dokument option) (content: string) : (string * Dokument array) =
+    let hrefsReplaced = replaceHrefsWithWpAttribute getDocument content
     let directLinksReplaced = replaceWpdmDirectLinks getDocument content
     directLinksReplaced
 
-let toPost getItemCategories getDocument (wpPost: WpModel.Item) =
+let toPost getItemCategories getDocument getAttachedDocuments (wpPost: WpModel.Item) =
     let categories = wpPost.categories |> toSwCategories
     let parentCategories = wpPost.post_parent |> getItemCategories
-    let attachedDocument =
-    // TODO: Denne er blitt feil. Skal søke etter dokument md parent-id lik denne ID
-        match getDocument wpPost.post_id with
-        | Some d -> [|d|]
-        | _ -> [||]
+    let attachedDocument = getAttachedDocuments wpPost.post_id
     let contentAndLinks = parseContent getDocument wpPost.content_encoded
 
     {
@@ -149,7 +178,7 @@ let toPost getItemCategories getDocument (wpPost: WpModel.Item) =
 
 [<EntryPoint>]
 let main args =
-    let rss = WpModel.deserialize @"redstavel.wordpress.2024-05-13.xml"
+    let rss = WpModel.deserialize @"c:\Users\n638510\Privat\git\roedstoa\wp\wp2styreweb\redstavel.wordpress.2024-05-13.xml"
 
     let items = rss.channel.item
 
@@ -227,15 +256,22 @@ let main args =
     // allDocuments |> moveDocument sourceDirectory targetDirectory
 
     let getDocument = getDocument allDocuments
-    let toPost = toPost getItemCategories getDocument
+    let getAttachedDocuments = getAttachedDocuments allDocuments
+    let toPost = toPost getItemCategories getDocument getAttachedDocuments
 
     let swPosts =
         posts
+        |> Array.filter (fun x -> x.post_id = 785)
         |> Array.map toPost
 
     swPosts
     |> Array.filter (fun x -> x.attachedDocuments.Length > 0)
-    |> Array.iter (fun x -> printfn $"{x.title} --- {x.content} --- {x.attachedDocuments}")
+    |> Array.iter (fun x ->
+        let attached =
+            x.attachedDocuments
+            |> Array.map (fun x -> x.newPath |> Option.defaultValue "")
+            |> Array.fold (fun s x  -> s + "\n" + x) ""
+        printfn $"{x.title} --- {x.content} --- {attached}")
 
     // allDocuments
     // |> Array.iter (fun x -> printfn $"{x.title}\t{x.wpUrl}\t{x.newPath}")
