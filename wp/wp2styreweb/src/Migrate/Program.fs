@@ -93,6 +93,9 @@ let moveDocument (sourceDirectory: string) (targetDirectory: string) (documents:
         | (oP, Some nP) when oP.Length > 0 -> moveFile oP nP
         | _ -> printfn $"{oldPath} -> VERT IKKJE FLYTTA")
 
+let getAuthorByLogin (authors: Map<string, string>) (email: string) =
+    authors.TryFind email
+
 let getDocumentById (documents: Dokument array) (id: int) =
     documents
     |> Array.filter (fun x -> x.wpPostId = id)
@@ -163,17 +166,27 @@ let parseContent (getDocument: int -> Dokument option) (getDocumentByPath: strin
     let r4 = fst r3 |> replaceSimpleHrefs getDocumentByPath
     r4
 
-let toPost getItemCategories getDocumentById getDocumentByPath getAttachedDocuments (wpPost: WpModel.Item) =
+let toPost getItemCategories getDocumentById getDocumentByPath getAttachedDocuments getAuthorByLogin (wpPost: WpModel.Item) =
     let categories = wpPost.categories |> toSwCategories
-    let parentCategories = wpPost.post_parent |> getItemCategories
+    let parentCategories = wpPost.post_id |> getItemCategories
     let attachedDocument = getAttachedDocuments wpPost.post_id
-    let contentAndLinks = parseContent getDocumentById getDocumentByPath wpPost.content_encoded
+    let contentAndLinks =
+        parseContent getDocumentById getDocumentByPath wpPost.content_encoded
+    let creatorName = getAuthorByLogin wpPost.creator |> Option.defaultValue "Ukjent"
+    let publicationDate = wpPost.pubDate |> parsePublicationDate
+    let dateFormatInTitle = "d. MMMM yyyy"
+    let dateFormatShort = "dd.MM.yyyy"
+    let noCulture = CultureInfo("nb-NO");
+    let convertHeading = $"<p align=\"right\"><i>Opprinnelig publisert {publicationDate.ToString(dateFormatInTitle, noCulture)} av {creatorName}</i></p>\n"
+    let content = "<p>" + ((fst contentAndLinks).Replace("\n", "</p>\n<p>")) + "</p>"
 
     {
-        Post.title = wpPost.title
-        publicationDate = wpPost.pubDate |> parsePublicationDate
-        content = fst (contentAndLinks)
+        Post.title = $"{wpPost.title} - ({publicationDate.ToString(dateFormatInTitle, noCulture)})"
+        publicationDate = publicationDate
+        publicationDateString = $"{publicationDate.ToString(dateFormatShort, noCulture)}"
+        content = convertHeading + content
         creator = wpPost.creator
+        creatorName = creatorName
         wpUrl = wpPost.attachment_url
         wpPostId = wpPost.post_id
         wpParentPostId = wpPost.post_parent
@@ -193,10 +206,17 @@ let main args =
 
     let items = rss.channel.item
 
+    let authors = rss.channel.author
+
     let itemMap =
         items
         |> Array.filter (fun x -> x.status <> "draft")
         |> Array.map (fun x -> (x.post_id, x))
+        |> Map.ofArray
+
+    let authorMap =
+        authors
+        |> Array.map (fun x -> (x.author_login, x.author_display_name))
         |> Map.ofArray
 
     let getItemCategories = getItemCategories itemMap
@@ -269,7 +289,8 @@ let main args =
     let getDocumentById = getDocumentById allDocuments
     let getDocumentByPath = getDocumentByPath allDocuments
     let getAttachedDocuments = getAttachedDocuments allDocuments
-    let toPost = toPost getItemCategories getDocumentById getDocumentByPath getAttachedDocuments
+    let getAuthorByLogin = getAuthorByLogin authorMap
+    let toPost = toPost getItemCategories getDocumentById getDocumentByPath getAttachedDocuments getAuthorByLogin
 
     let swPosts =
         posts
@@ -287,7 +308,12 @@ let main args =
             |> Array.map (fun x -> x.newPath |> Option.defaultValue "")
             |> Array.distinct
             |> Array.fold (fun s x  -> s + "\n" + x) ""
-        sw.WriteLine $"\n\n\n\n\n--TITTEL--\n{x.title}\n\n--INNHALD--\n\n{x.content}\n\n--VEDLEGG--\n{attached}")
+        let categories =
+            x.categories
+            |> Array.sortBy (fun x -> x.swCategoryPriority)
+            |> Array.map (fun x -> x.swCategoryName)
+            |> Array.fold (fun s x -> s + ", " + x) ""
+        sw.WriteLine $"\n\n\n\n\n--TITTEL--\n{x.title}\n\n--PUBLISERING--\n{x.publicationDateString}\n{x.creatorName}\n\n--KATEGORIER--\n{categories}\n\n--INNHALD--\n\n{x.content}\n\n--VEDLEGG--\n{attached}")
     sw.Flush()
 
     // allDocuments

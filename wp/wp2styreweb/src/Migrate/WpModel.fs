@@ -43,6 +43,15 @@ module WpModel =
           name: string }
 
     [<CLIMutable>]
+    [<XmlRoot("author", Namespace = xmlns_wp)>]
+    type Author =
+        { [<XmlElement("author_display_name", Namespace = xmlns_wp)>]
+          author_display_name: string
+
+          [<XmlElement("author_login", Namespace = xmlns_wp)>]
+          author_login: string}
+
+    [<CLIMutable>]
     [<XmlRoot("item")>]
     type Item =
         { [<XmlElement("title")>]
@@ -121,7 +130,11 @@ module WpModel =
           link: string
 
           [<XmlElement("item")>]
-          item: Item [] }
+          item: Item []
+
+          [<XmlElement("author", Namespace = xmlns_wp)>]
+          author: Author [] }
+
 
     [<CLIMutable>]
     [<XmlRootAttribute(ElementName = "rss")>]

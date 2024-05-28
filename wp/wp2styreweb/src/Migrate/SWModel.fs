@@ -36,8 +36,10 @@ module SWModel =
     type Post =
         { title: string
           publicationDate: DateTimeOffset
+          publicationDateString: string
           content: string
           creator: string
+          creatorName: string
           wpUrl: string
           wpPostId: int
           wpParentPostId: int
