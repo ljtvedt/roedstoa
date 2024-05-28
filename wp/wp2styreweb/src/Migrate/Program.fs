@@ -93,70 +93,81 @@ let moveDocument (sourceDirectory: string) (targetDirectory: string) (documents:
         | (oP, Some nP) when oP.Length > 0 -> moveFile oP nP
         | _ -> printfn $"{oldPath} -> VERT IKKJE FLYTTA")
 
-let getDocument (documents: Dokument array) (id: int) =
+let getDocumentById (documents: Dokument array) (id: int) =
     documents
     |> Array.filter (fun x -> x.wpPostId = id)
+    |> Array.tryHead
+
+let getDocumentByPath (documents: Dokument array) (path: string) =
+    documents
+    |> Array.filter (fun x -> x.wpUrl = path)
     |> Array.tryHead
 
 let getAttachedDocuments (documents: Dokument array) (id: int) =
     documents
     |> Array.filter (fun x -> x.wpParentPostId = id)
 
-// TODO: Fungerer ikkje fordi ein del bilder er pakka inn i ref. Koden jobber no berre på dette eine dokumentet
 let replace (source: string) (oldString: string) (newString: string) = source.Replace(oldString, newString)
 
-let replaceHrefsWithWpAttribute (getDocument: int -> Dokument option) (content: string) =
-    let matches = Regex.Matches(content, @"(<a href=[^<]*wp-att-(\d*)[^<]*>([^<]*)<\/a>)", options = RegexOptions.Multiline)
+let replaceRegexpMatch (getDocument: int -> Dokument option) (regexp: string) (documentIdGroup: int) (wholeMatchGroup: int) (content: string) =
+    let matches = Regex.Matches(content, regexp, options = RegexOptions.Multiline)
     let commands =
         matches
         |> Seq.map (fun x ->
             let vedleggDokument =
-                x.Groups[2].Value |> int |> getDocument |> Option.map (fun x -> x.title) |> Option.defaultValue "Ukjent"
-            ($"{x.Groups[1].Value}", $"(se vedlegg '{vedleggDokument}')")
+                x.Groups[documentIdGroup].Value |> int |> getDocument |> Option.map (fun x -> x.title) |> Option.defaultValue "Ukjent"
+            ($"{x.Groups[wholeMatchGroup].Value}", $"(se vedlegg '{vedleggDokument}')")
             )
-    commands
-    |> Seq.iter (fun x -> printfn $"{snd x}")
-
     let documents =
         matches
-        |> Seq.choose (fun x -> x.Groups[2].Value |> int |> getDocument)
+        |> Seq.choose (fun x -> x.Groups[documentIdGroup].Value |> int |> getDocument)
         |> Array.ofSeq
     let newContent =
-        Seq.fold(fun (acc: string) (oldString, newString) ->
-            printfn $"ACC: {acc}"
-            printfn $"OLD: {oldString}"
-            printfn $"NEW: {newString}"
-            let s = replace acc oldString newString
-            s) content commands
+        Seq.fold( fun (acc: string) (oldString, newString) -> replace acc oldString newString ) content commands
     (newContent, documents)
+
+let replaceRegexpMatchByPath (getDocument: string -> Dokument option) (regexp: string) (documentIdGroup: int) (wholeMatchGroup: int) (content: string) =
+    let matches = Regex.Matches(content, regexp, options = RegexOptions.Multiline)
+    let commands =
+        matches
+        |> Seq.map (fun x ->
+            let vedleggDokument =
+                x.Groups[documentIdGroup].Value |> getDocument |> Option.map (fun x -> x.title) |> Option.defaultValue "Ukjent"
+            ($"{x.Groups[wholeMatchGroup].Value}", $"(se vedlegg '{vedleggDokument}')")
+            )
+    let documents =
+        matches
+        |> Seq.choose (fun x -> x.Groups[documentIdGroup].Value |> getDocument)
+        |> Array.ofSeq
+    let newContent =
+        Seq.fold( fun (acc: string) (oldString, newString) -> replace acc oldString newString ) content commands
+    (newContent, documents)
+
 
 let replaceWpdmDirectLinks (getDocument: int -> Dokument option) (content: string) =
-    let matches = Regex.Matches(content, @"(\[wpdm_direct_link\sid=(\d+) label=""([^""]*)""\])")
-    let commands =
-        matches
-        |> Seq.map (fun x ->
-            let vedleggDokument =
-                x.Groups[2].Value |> int |> getDocument |> Option.map (fun x -> x.title) |> Option.defaultValue "Ukjent"
-            (x.Index, x.Length, $"{x.Groups[3].Value} (se vedlegg {vedleggDokument})")
-            )
-    let documents =
-        matches
-        |> Seq.choose (fun x -> x.Groups[2].Value |> int |> getDocument)
-        |> Array.ofSeq
-    let newContent =
-        Seq.foldBack (fun (start, length, newString) (acc: string) -> acc.Remove(start, length).Insert(start,newString) ) commands content
-    (newContent, documents)
+    replaceRegexpMatch getDocument @"(\[wpdm_direct_link\sid=(\d+) label=""([^""]*)""\])" 2 1 content
 
-let parseContent (getDocument: int -> Dokument option) (content: string) : (string * Dokument array) =
-    let hrefsReplaced = replaceHrefsWithWpAttribute getDocument content
-    let directLinksReplaced = replaceWpdmDirectLinks getDocument content
-    directLinksReplaced
+let replaceHrefsWithWpAttribute (getDocument: int -> Dokument option) (content: string) =
+    replaceRegexpMatch getDocument @"(<a href=[^<]*wp-att-(\d*)[^<]*>([^<]*)<\/a>)" 2 1 content
 
-let toPost getItemCategories getDocument getAttachedDocuments (wpPost: WpModel.Item) =
+let replaceHrefsAndImgsWithWpAttribute (getDocument: int -> Dokument option) (content: string) =
+    replaceRegexpMatch getDocument @"(<a href=[^<]*wp-att-(\d*)""><img[^<]*>[^<]*<\/a>)" 2 1 content
+
+let replaceSimpleHrefs (getDocument: string -> Dokument option) (content: string) =
+    replaceRegexpMatchByPath getDocument @"(<a href=""([^""]*)"">([^<]*)<\/a>)" 2 1 content
+
+let parseContent (getDocument: int -> Dokument option) (getDocumentByPath: string -> Dokument option) (content: string) : (string * Dokument array) =
+    let r1 =  content |> replaceWpdmDirectLinks getDocument
+    let r2 = fst r1 |> replaceHrefsWithWpAttribute getDocument
+    let r3 = fst r2 |> replaceHrefsAndImgsWithWpAttribute getDocument
+    let r4 = fst r3 |> replaceSimpleHrefs getDocumentByPath
+    r4
+
+let toPost getItemCategories getDocumentById getDocumentByPath getAttachedDocuments (wpPost: WpModel.Item) =
     let categories = wpPost.categories |> toSwCategories
     let parentCategories = wpPost.post_parent |> getItemCategories
     let attachedDocument = getAttachedDocuments wpPost.post_id
-    let contentAndLinks = parseContent getDocument wpPost.content_encoded
+    let contentAndLinks = parseContent getDocumentById getDocumentByPath wpPost.content_encoded
 
     {
         Post.title = wpPost.title
@@ -255,23 +266,29 @@ let main args =
     // let targetDirectory = """C:\Users\n638510\Privat\git\roedstoa\wp\wp2styreweb\newPath"""
     // allDocuments |> moveDocument sourceDirectory targetDirectory
 
-    let getDocument = getDocument allDocuments
+    let getDocumentById = getDocumentById allDocuments
+    let getDocumentByPath = getDocumentByPath allDocuments
     let getAttachedDocuments = getAttachedDocuments allDocuments
-    let toPost = toPost getItemCategories getDocument getAttachedDocuments
+    let toPost = toPost getItemCategories getDocumentById getDocumentByPath getAttachedDocuments
 
     let swPosts =
         posts
-        |> Array.filter (fun x -> x.post_id = 785)
+        |> Array.sortBy (fun x -> x.post_date)
         |> Array.map toPost
 
+
+    let sw = File.CreateText("posts.txt")
     swPosts
-    |> Array.filter (fun x -> x.attachedDocuments.Length > 0)
+    // |> Array.filter (fun x -> x.attachedDocuments.Length > 0)
+    // |> Array.truncate 1
     |> Array.iter (fun x ->
         let attached =
             x.attachedDocuments
             |> Array.map (fun x -> x.newPath |> Option.defaultValue "")
+            |> Array.distinct
             |> Array.fold (fun s x  -> s + "\n" + x) ""
-        printfn $"{x.title} --- {x.content} --- {attached}")
+        sw.WriteLine $"\n\n\n\n\n--TITTEL--\n{x.title}\n\n--INNHALD--\n\n{x.content}\n\n--VEDLEGG--\n{attached}")
+    sw.Flush()
 
     // allDocuments
     // |> Array.iter (fun x -> printfn $"{x.title}\t{x.wpUrl}\t{x.newPath}")
