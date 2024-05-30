@@ -164,7 +164,7 @@ let parseContent (getDocument: int -> Dokument option) (getDocumentByPath: strin
     let r2 = fst r1 |> replaceHrefsWithWpAttribute getDocument
     let r3 = fst r2 |> replaceHrefsAndImgsWithWpAttribute getDocument
     let r4 = fst r3 |> replaceSimpleHrefs getDocumentByPath
-    r4
+    (fst r4, [|snd r1; snd r2; snd r3; snd r4|] |> Array.collect id |> Array.distinct)
 
 let toPost getItemCategories getDocumentById getDocumentByPath getAttachedDocuments getAuthorByLogin (wpPost: WpModel.Item) =
     let categories = wpPost.categories |> toSwCategories
@@ -178,7 +178,8 @@ let toPost getItemCategories getDocumentById getDocumentByPath getAttachedDocume
     let dateFormatShort = "dd.MM.yyyy"
     let noCulture = CultureInfo("nb-NO");
     let convertHeading = $"<p align=\"right\"><i>Opprinnelig publisert {publicationDate.ToString(dateFormatInTitle, noCulture)} av {creatorName}</i></p>\n"
-    let content = "<p>" + ((fst contentAndLinks).Replace("\n", "</p>\n<p>")) + "</p>"
+    let content =
+        ("<p>" + ((fst contentAndLinks).Replace("\n", "</p>\n<p>")) + "</p>").Replace("<p></p>", "").Replace("<p><div></div></p>", "").Replace("<p></div></p>","")
 
     {
         Post.title = $"{wpPost.title} - ({publicationDate.ToString(dateFormatInTitle, noCulture)})"
@@ -295,6 +296,7 @@ let main args =
     let swPosts =
         posts
         |> Array.sortBy (fun x -> x.post_date)
+        // |> Array.filter (fun x -> x.post_id = 439)
         |> Array.map toPost
 
 

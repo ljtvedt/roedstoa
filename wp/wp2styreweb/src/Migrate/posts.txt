@@ -139,7 +139,7 @@ admin
 <p>Svar på spørsmål som ble stilt på informasjonsmøtet og som prosjektgruppen skulle komme tilbake på, er nå lagt ut på roedstoa.no under "Dokumenter".</p>
 <p>Prosjektgruppen oppfordret på møtet medlemmene å sende evt. spørsmål som en savnet svar på til petterssveen@hotmail.com, uten at noe er innkommet så langt. Det er fortsatt ikke for sent, så bare send inn hvis dere har noe på hjertet.</p>
 <p>Spørreundersøkelse nr. 2 blir sendt ut til hytteeierne i løpet av de nærmeste dagene, med svarfrist 1.mars. Som tidligere blir disse sendt på mail til alle untatt de som mottar annen info pr.post.</p>
-<p></p>
+
 <p>2 styremedlemmer er på valg i 2017. Valgkomiteen har foreløpig en god kandidat som er positiv til å stille, men vil gjerne ha innspill på flere. Kan du tenke deg å stille, eller har forslag til kandidater vil valgkomiteen ved Merete Tobiassen (me-tobi@online.no) eller Ellen Ellingsgard (ellen.ellingsgard@gmail.com) gjerne ha dette.</p>
 <p>Dette er en fin måte å bli bedre kjent i vellet på, og en mulighet til å påvirke. Hyggelig er det også:-). Blir det besluttet å etablere et VA lag på årsmøtet i mai, vil det få et eget styre uavhengig av velforeningen.</p>
 
@@ -244,7 +244,7 @@ admin
 
 <p align="right"><i>Opprinnelig publisert 13. mars 2017 av admin</i></p>
 <p>Hei. Vi var en snartur på hytta i går, søndag 12.3. Det er ca en måned siden sist vi var der. Nå var et vindu brukket opp og hytta gjennomsøkt. Ikke noe var borte, men skyvedør og vindu sto åpne. Vi vet ikke hvor lenge og vet derfor heller ikke om det har blitt noen frostskader. Vi sjekket hyttene rundt oss og der var alt ok. Det burde kanskje gå ut et varsel til hytteeierne. Det er ikke trolig at de bare har forsøkt et sted mente politiet.</p>
-<p></p>
+
 <p>Mvh Åse Berit Waag og Morten Fjeldstad</p>
 
 --VEDLEGG--
@@ -268,12 +268,12 @@ admin
 
 <p align="right"><i>Opprinnelig publisert 23. mars 2017 av admin</i></p>
 <p>30.mars la trefellingskomiteen ved Knut Alstad ut informasjon om plan for trefelling i vellet 2017. Informasjonen ble lagt ut på vellets facebookside, roedstoa.no, samt distribuert pr.mail. Informasjonen ble gjentatt på årsmøtet 15.mai. Fristen for å melde inn kontaktperson pr. hytteområde, samt hvilke 10 trær på fellesområde hytteeierne i hvert område ønsket å prioritere, utløp 1.6.</p>
-<p></p>
+
 <p>Pr.18.6 har 4 av 6 hytteområder meldt inn kontaktperson og prioritert trær.</p>
-<p></p>
+
 <p>Det er i dag sendt ut purring til hytteeiere i de 2 områdene som ennå ikke har meldt inn hvem som tar ansvar som kontaktperson.</p>
 <p>Hvis ikke kontaktperson for disse to hytteområdene har meldt inn hvilke trær området har prioritert til 1.juli, vil det ikke bli felt trær på vellets regning i 2017 (i disse to områdene).</p>
-<p></p>
+
 <p>Trefellingskomiteen har ikke kapasitet til koordinering for de ulike områder. Det er derfor avgjørende at kontaktperson tar dette ansvaret.</p>
 <p>Som følge av forsinket innmelding, vil innhenting av tilbud fra trefellere måtte gjøres i høst</p>
 
@@ -298,12 +298,12 @@ admin
 
 <p align="right"><i>Opprinnelig publisert 18. juni 2017 av admin</i></p>
 <p>30.mars la trefellingskomiteen ved Knut Alstad ut informasjon om plan for trefelling i vellet 2017. Informasjonen ble lagt ut på vellets facebookside, roedstoa.no, samt distribuert pr.mail. Informasjonen ble gjentatt på årsmøtet 15.mai. Fristen for å melde inn kontaktperson pr. hytteområde, samt hvilke 10 trær på fellesområde hytteeierne i hvert område ønsket å prioritere, utløp 1.6.</p>
-<p></p>
+
 <p>Pr.18.6 har 4 av 6 hytteområder meldt inn kontaktperson og prioritert trær.</p>
-<p></p>
+
 <p>Det er i dag sendt ut purring til hytteeiere i de 2 områdene som ennå ikke har meldt inn hvem som tar ansvar som kontaktperson.</p>
 <p>Hvis ikke kontaktperson for disse to hytteområdene har meldt inn hvilke trær området har prioritert til 1.juli, vil det ikke bli felt trær på vellets regning i 2017 (i disse to områdene).</p>
-<p></p>
+
 <p>Trefellingskomiteen har ikke kapasitet til koordinering for de ulike områder. Det er derfor avgjørende at kontaktperson tar dette ansvaret.</p>
 <p>Som følge av forsinket innmelding, vil innhenting av tilbud fra trefellere måtte gjøres i høst</p>
 
@@ -422,11 +422,12 @@ admin
 
 <p align="right"><i>Opprinnelig publisert 30. november 2017 av admin</i></p>
 <p>Nytt (se vedlegg 'Infoskriv - Høst 2017') fra styret er lagt ut på dokumentoversikten.</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
 
+/Felles/Informasjonsskriv/2017/Infoskriv-Høst-2017.pdf
 
 
 
@@ -475,17 +476,17 @@ admin
 <p> 	<li>Lars Jørgen Tvedt - hytte nr. 93 (På valg i 2019)</li></p>
 <p></ul></p>
 <p>Einar Kosberg ønsker gjenvalg som leder for en ny periode. Tom Arild Deraas ønsker ikke gjenvalg da han er tungt engasjert i VA-utbyggingen.</p>
-<p></p>
+
 <p>Vi ønsker derfor innen 1. april kandidater som ønsker å stille til valg som styremedlem.</p>
-<p></p>
+
 <p>Valgperioden er to år.</p>
-<p></p>
+
 <p>Det ville være svært ønskelig å kunne innstille en kvinnelig kandidat fra valgkomitéen.</p>
-<p></p>
+
 <p>Ta gjerne kontakt med valgkomiteen:</p>
-<p></p>
+
 <p>Eva-Margrethe Alstad, emalstad@gmail.com, tlf. 90606014</p>
-<p></p>
+
 <p>Even Ungersness, even.ungersness@hafslund.no, tlf. 90738843</p>
 
 --VEDLEGG--
@@ -556,6 +557,7 @@ admin
 
 --VEDLEGG--
 
+/Felles/Informasjonsskriv/2018/Infoskriv-fra-styret-høsten-2018.pdf
 
 
 
@@ -597,7 +599,7 @@ admin
 
 <p align="right"><i>Opprinnelig publisert 1. oktober 2018 av admin</i></p>
 <p>Ny web-side er underveis, men selv om dere alt har tilgang til siden, er det en del som gjenstår, både innholdsmessig og med brukeropplevelse.</p>
-<p></p>
+
 <p>Håper dere har litt tolmodighet, så skal vi forhåpentligvis få mer på plass i løpet av de kommende ukene.</p>
 
 --VEDLEGG--
@@ -621,11 +623,11 @@ Lars Jørgen Tvedt
 
 <p align="right"><i>Opprinnelig publisert 26. februar 2019 av Lars Jørgen Tvedt</i></p>
 <p>Årsmøtet i vellet vil bli avholdt 11. mai 2019, kl. 10.00 på <span>Klubbhuset til Tofte Fremad IF, Fremadbanen</span>.</p>
-<p></p>
+
 <p>Frist for å melde saker til årsmøtet er 28. februar 2019.</p>
-<p></p>
+
 <p>Mer informasjon om årsmøtet finner du på siden (se vedlegg 'Ukjent').</p>
-<p></p>
+
 <p>Her vil du også fortløpende kunne finne dokumenter og annen informasjon.</p>
 
 --VEDLEGG--
@@ -649,11 +651,11 @@ Lars Jørgen Tvedt
 
 <p align="right"><i>Opprinnelig publisert 9. mars 2019 av Lars Jørgen Tvedt</i></p>
 <p>Styret har lagt ut et nytt infoskriv i dokumentsamlinga.</p>
-<p></p>
+
 <p>Vinterens skriv handler om VA-anlegget, bommer, vann, vei, og ikke minst årsmøtet 2019.</p>
-<p></p>
+
 <p>Du kan laste det ned her: [wpdm_package id=502 template="link-template-default.php"]</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -699,9 +701,9 @@ Lars Jørgen Tvedt
 
 <p align="right"><i>Opprinnelig publisert 12. april 2019 av Lars Jørgen Tvedt</i></p>
 <p>Vannet ble satt på lørdag den 6/4 (kl. 11.00 – 13.00). Vi oppdaget fire lekkasjer. To av disse var hyttekraner som vi hadde oversett/glemt å stenge. De to andre var sprekk på en hytteslange og ei hyttekran som var i stykker. Disse skadene ble reparert av de ansvarlige hytteeierne selv. Ellers skal alt være klart til ny hyttesesong på Røedstøa.</p>
-<p></p>
+
 <p>God sommer på hytta ønsker vi dere alle.</p>
-<p></p>
+
 <p>Hilsen oss i vannkomiteen</p>
 <p>v/ Egil Nilsen.</p>
 
@@ -748,7 +750,7 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 3. juli 2019 av Einar Kosberg</i></p>
 <p>3.juli 2019</p>
-<p></p>
+
 <p>Kjære alle hytteeiere!<span> </span>Da er det straks fellesferie, og styret vil få informere om følgende:</p>
 <p><ul></p>
 <p> 	<li>VA prosjektet</li></p>
@@ -762,79 +764,79 @@ Einar Kosberg
 <p> 	<li>Bytte av regnskapsfører</li></p>
 <p></ul></p>
 <p><strong>VA prosjektet</strong></p>
-<p></p>
+
 <p>Siden Årsmøtet har et nytt medlem meldt seg på, og det er nå 104 av 108 hytter og 3 tomter som har meldt seg på.</p>
-<p></p>
+
 <p>RSVA informerte i forrige uke om følgende status:</p>
-<p></p>
+
 <p><em>På årsmøte i mai informerte styret i RSVA om at godkjennelse på søknaden skulle være rett rundt hjørnet og at Habex skulle sette opp en anleggsrigg i løpet av juni og komme i gang med befaringer med medlemmene. Dessverre lar søknaden vente på seg. Fylkesmannen har kommet tilbake til oss og ønsket en ytterligere søknad rundt mudringstillatelse ifbm. tilkobling til sjøkabelen. Når den er godkjent forventer vi at vi er i mål.</em></p>
-<p></p>
+
 <p><em>I et møte<span> </span><span>med Habex forrige uke har vi blitt enige om at det er mest hensiktsmessig å vente med å sette opp anleggsriggen til august da den vil oppta flere parkeringsplasser. Dette vil ikke forsinke fremdriften og vi ønsker ikke at tomme brakker skal gjøre parkering mer krevende i ferieavviklingen.</span></em></p>
-<p></p>
+
 <p><em>Habex kommer til å gjennomføre en befaring 4. og 5. juli. Her vil vi prioritere styret i RSVA for å bli enige om de siste detaljene slik at vi kan enes om fremdriftsplan og prisoppsett, samt styret i vellet for å bli enige om evt. utbedringer på veiene.</em></p>
-<p></p>
+
 <p><em>Dersom det er noen det haster for å få gjennomført en befaring på egen tomt, og som ikke kan vente til august, så kan vi få til noen befaringer med enkelte medlemmer. Disse må ta kontakt med oss på styret@rsva.no så raskt som mulig.</em></p>
-<p></p>
+
 <p><em>Alle vil få tilbud om befaring til høsten, så dette gjelder kun de som av en eller annen grunn ikke kan vente.</em></p>
-<p></p>
+
 <p>Velstyret og RSVA styret har blitt enige om at all informasjon om fremdrift i prosjektet fra RSVA legges på vellets facebookside.<span>  </span>RSVA har også egen hjemmeside – rsva.no.</p>
-<p></p>
+
 <p><strong>Private anleggsarbeider i ferietiden</strong></p>
-<p></p>
+
 <p>Det har kommet forespørsel fra en hytteeiers entreprenør om feriebestemmelser og sprengningsarbeid. Det står ikke noe i vedtektene våre om dette.<span> </span>Velstyret har derfor besluttet at fra fellesferien starter (uke 2 i juli) og de neste 5 ukene som hovedregel bør være fredet for slikt arbeid.<span>  </span>Skulle det være arbeider som i liten grad forstyrrer bør dette være ok, så lenge nabovarsel er sendt uten innvendinger. Nabovarsel bør uansett sendes.</p>
-<p></p>
+
 <p><strong>Kantklipping</strong></p>
-<p></p>
+
 <p>Målsettingen har vært å gjennomføre kantklipping i Støaveien og Sevjedammen før St.Hans helgen.<span>  </span>Som følge av utilgjengelighet/sykdom, har dette dessverre blitt utsatt. Veikomiteen har undersøkt et tredje alternativ, men siden dette viste seg dyrere, valgte de å avvente. Kantklipping er nå bestilt torsdag 4.7, og ferdigstilles senest fredag 5.7.</p>
-<p></p>
+
 <p><strong>Bommene</strong></p>
-<p></p>
+
 <p>Bommene i Støaveien og Sevjedammen har stort sett fungert tilfredsstillende denne våren.<span>  </span>I Støaveien har bommen i det siste stått noe oppe. Ifølge bomansvarlig Even Ungersness, har det vært noe feil med telefonåpningen etter siste tordenværet. Leverandøren har informert Even om at den skulle fixes i dag, 3.7.</p>
-<p></p>
+
 <p><strong>Tilgang til Sevjedammen via parkering nye boliger</strong></p>
-<p></p>
+
 <p>Nye boliger øverst i Sevjedammen har anlagt parkering inntil veien etter bommen. Det gjør det mulig å kjøre inn i hyttefeltet via parkeringen. Styrets varamedlem Annette Eriksson Johansen har påtatt seg å kontakte noen som bor i de nye boligene.<span>  </span>Dette for å avklare hvem som har vært entreprenør, og søke å få disse til å sørge for nødvendig stengsel som store steiner etc.</p>
-<p></p>
+
 <p><strong>Nettsidene og facebook</strong></p>
-<p></p>
+
 <p>Roedstoa.no kom ut i ny drakt høsten 2018.<span>  </span>Denne siden er vesentlig enklere å drifte enn den forrige.<span> </span>Vi oppfordrer alle medlemmer til å registrere seg på denne siden, med mailadresse. Det forenkler utsendelse av mail til medlemmene. På nettsidene finner dere kontaktinfo til styret og komitemedlemmer, <span> </span>oversikt over hytteeiere, nyhetsbrev og dokumentasjon ifm. årsmøter, styremøter etc.</p>
-<p></p>
+
 <p>Styremedlem Anna de Bilderling har påtatt seg å oppgradere sidene med bilder og aktivitet.<span>  </span>Ta gjerne kontakt om dere har ideer og tips til Anna.</p>
-<p></p>
+
 <p><strong>Historier fra Røedstøa</strong></p>
-<p></p>
+
 <p>Som nevnt på årsmøtet hadde det vært spennende å samle gode historier og bilder fra Røedstøas utvikling.<span>  </span>Anna har i denne forbindelse påtatt seg å kontakte noen av de som har lengst fartstid i Røedstøa/Sevjedammen, eller som vi tror kan sitte på artige materiale.<span>  </span>Har dere tips til hvem vi bør snakke med, er det fint om dere sender dette til Anna, evt. styret@roedstoa.no.</p>
-<p></p>
+
 <p><strong>Stupebrettet</strong></p>
-<p></p>
+
 <p>Som dere vet forsvant noen av lemmene på det nye stupebrettet med høststormen i fjor.</p>
-<p></p>
+
 <p>Nye lemmer skal nå være på plass.</p>
-<p></p>
+
 <p><strong>Bytte av regnskapsfører</strong></p>
-<p></p>
+
 <p>Fra 1.7 er vellets regnskapfører Regnskapspartner AS. Vellets postadresse blir da:</p>
-<p></p>
+
 <p>Røedstøa Vel</p>
-<p></p>
+
 <p>v/Regnskapspartner AS,</p>
-<p></p>
+
 <p>Hovinmovegen 4</p>
-<p></p>
+
 <p>2060 Gardermoen.<span>  </span></p>
-<p></p>
+
 <p>Rolf Inge Orholm blir vår kontaktperson.</p>
-<p></p>
+
 <p>Kontaktinfo: rolf@regnskapspartner.no, tlf 46632442.</p>
-<p></p>
+
 <p>Fakturering av velavgift og dugnadsgebyr for 2019 gjennomføres av Amphibia før overføring / avstemming.<span>  </span></p>
-<p></p>
+
 <p>Styret vil få benytte anledningen til å ønske alle en riktig god sommer!</p>
-<p></p>
+
 <p>Mvh.</p>
-<p></p>
+
 <p>Einar Kosberg</p>
-<p></p>
+
 <p>Styreleder</p>
 
 --VEDLEGG--
@@ -858,11 +860,11 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 8. juli 2019 av Einar Kosberg</i></p>
 <p><span>Gledelige nyheter til alle medlemmer i RSVA. Forrige uke mottok vi tillatelsen til å bygge VA anlegg fra Hurum kommune og vi satser på oppstart i løpet av august. Forrige uke gjennomførte vi også en befaring med Habex for å gi de et mer detaljert grunnlag til å komme med et oppdatert prisoppsett og fremdriftsplan. Vi kommer tilbake til dere med flere detaljer når fremdriftsplanen foreligger og hva dette innebærer.</span></p>
-<p></p>
+
 <p><span>Vi har også opprettet driftsselskapet og er igang med å søke om mva fritak for RSVA.</span></p>
-<p></p>
+
 <p><span>Med dette ønsker vi dere en riktig god sommer og takker dere for tålmodigheten.</span></p>
-<p></p>
+
 <p><span>Mvh,</span></p>
 <p><span>Styret i RSVA</span></p>
 
@@ -887,13 +889,13 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 2. oktober 2019 av Einar Kosberg</i></p>
 <p>I disse dager har Habex startet anleggsarbeidet. De har startet med å anlegge riggplass ved innkjøringen til Sevjedammen. De vil deretter jobbe seg fra riggplassen og ned mot pumpestasjonen via skogholt mellom riggplassen og Støaveien for å anlegge en anleggsvei. Dette for å slippe å kjøre rundt. Deretter vil de prioritere pumpestasjonen og sjøledningen, så vil forholdene avgjøre hvilken vei de går videre.</p>
-<p></p>
+
 <p>Både Støaveien og Sevjedammen vil foreløpig v<span class="text_exposed_show">ære fremkommelige. RSVA vil gi nærmere beskjed når veiene må holdes stengt.</span></p>
 <p><div class="text_exposed_show"></p>
-<p></p>
+
 <p>RSVA la forøvrig ut infoskriv på sin hjemmeside 10.9.</p>
-<p></p>
-<p></div></p>
+
+
 
 --VEDLEGG--
 
@@ -938,7 +940,7 @@ Lars Jørgen Tvedt
 
 <p align="right"><i>Opprinnelig publisert 27. oktober 2019 av Lars Jørgen Tvedt</i></p>
 <p>Nå er vannet stengt.</p>
-<p></p>
+
 <p>Flere reduksjonsventiler er ikke demontert. Vi anbefaler sterkt at hytteeiere tar inn disse, da de kan fryse i løpet av vinteren.</p>
 
 --VEDLEGG--
@@ -1056,7 +1058,7 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 18. mars 2020 av Einar Kosberg</i></p>
 <p>Myndighetene oppfordrer i disse dager tilreisende hytteeiere å holde seg til sine hjemkommuner. Asker Kommune har i dag sendt ut en pressemelding hvor de minner om overnevnte. I den anledning vil Velstyret oppfordre medlemmene om å sette seg inn i FHI´s retningslinjer og myndighetenes tilrådning.</p>
-<p></p>
+
 <p>Når det gjelder arbeidet knyttet til nytt VA anlegg, har Habex informert om at Corona kan medføre force majeure. De har iverksatt tiltak for å forhindre eventuell smittespredning, og enn så lenge pågår arbeidet for fullt</p>
 
 --VEDLEGG--
@@ -1172,9 +1174,9 @@ Einar Kosberg
 <p align="right"><i>Opprinnelig publisert 1. juni 2020 av Einar Kosberg</i></p>
 <p><img src="http://www.roedstoa.no/wp/wp-content/uploads/2020/06/2E7B24A4-74AA-40B6-A824-25F918F67AEA-169x300.png" alt="" width="169" height="300" class="alignnone size-medium wp-image-729" /></p>
 <p>Habex skal begynne på siste rest i Sevjedammen, og må derfor stenge deler av Sevjedammen allerede tirsdag 2.juni. Se vedlagt bilde. Deretter vil de ha løpende drift oppover Sevjedammen mot brakkeriggen, frem mot 1/7. RSVA beklager at denne beskjeden kommer sent, men det skyldes at de selv ble informert sent. Ved spørsmål ta kontakt med RSVA.</p>
-<p></p>
+
 <p><span>Habex klager forøvrig over at folk parkerer anleggsmaskinene deres inne, slik at de ikke får begynt å jobbe om morgenen. Dette gjelder typisk mandag morgen. </span></p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -1267,23 +1269,23 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 2. juli 2020 av Einar Kosberg</i></p>
 <p><div>Info fra RSVA:</div></p>
-<p><div></div></p>
+
 <p><div>Hei alle sammen. Her kommer litt info rundt veiene i sommer.</div></p>
-<p><div></div></p>
+
 <p><div>Sevjedammen åpnes igjen for ferdsel imorgen, fredag kl 16. Alle som har hytte i Sevjedammen skal da benytte denne veien som normalt.</div></p>
-<p><div></div></p>
+
 <p><div>Beredsskapsveien og stien/veien gjennom Brattbakken og Sevjedammen skal ikke brukes til bilkjøring. Dette for å ikke sjenere de hyttene som grenser til disse områdene.</div></p>
-<p><div></div></p>
+
 <p><div>Med andre ord, all bilferdsel mellom Støaveien og Sevjedammen er forbudt! Slik vil det også være fremover når bommen kommer på plass.</div></p>
-<p><div></div></p>
+
 <p><div>Veiene har blitt delvis ødelagt av regnværet de siste dagene. Habex vil prioritere å reparere dette neste uke, det vil derfor være litt anleggsvirksomhet ifbm. med dette. De vil også reparere veiene gjennom ferien og salte ved behov.</div></p>
-<p><div></div></p>
+
 <p><div>Veistandarden er ikke god pga. anleggsarbeidene så vi oppfordere alle til å anpasse farten etter forholdene å kjøre rolig.</div></p>
-<p><div></div></p>
+
 <p><div>Mandag 3. august er Habex tilbake fra ferie og begynner såvidt med arbeidene igjen. F.o.m den datoen må det beregnes mer anleggsvirksomhet igjen.</div></p>
-<p><div></div></p>
+
 <p><div>Med dette ønsker vi alle en god sommerferie og trygg og rolig ferdsel på feltet.</div></p>
-<p><div></div></p>
+
 <p><div>Mvh,</div></p>
 <p><div>Styret i RSVA</div></p>
 
@@ -1311,6 +1313,7 @@ Einar Kosberg
 
 --VEDLEGG--
 
+/Felles/Styret/2020/200609-Referat-styremøte-.pdf
 
 
 
@@ -1330,9 +1333,9 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 24. juli 2020 av Einar Kosberg</i></p>
 <p>(se vedlegg '200724 Vedtekter oppdatert etter årsmøte 2019')</p>
-<p></p>
+
 <p>Endring gjelder varamedlem i styre</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -1357,17 +1360,17 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 7. august 2020 av Einar Kosberg</i></p>
 <p>(se vedlegg '200804 Årsmøteinnkalling 2020')</p>
-<p></p>
+
 <p>(se vedlegg 'Signert Regnskap 2019')</p>
-<p></p>
+
 <p>(se vedlegg 'Noter til regnskapet 2019')</p>
-<p></p>
+
 <p>(se vedlegg '200820 Fremdriftsplan samleledninger og stikkledninger') (se vedlegg '200820 Trase oversikt 001') (se vedlegg '200820 Trase oversikt 002')</p>
-<p></p>
+
 <p>Årsmøtet blir i år tilpasset Corona situasjon.  Dugnad erstattes av lokale tiltak, og vi velger å utsette festen til 2021.</p>
-<p></p>
+
 <p>&nbsp;</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -1399,15 +1402,15 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 18. august 2020 av Einar Kosberg</i></p>
 <p>Adresse: Skogveien 10, 3482 Tofte</p>
-<p></p>
+
 <p>Bakgrunnen er at det er varslet regnvær, noe som gjør møte utendørs uaktuelt.  Klubbhuset på Tofte er større, noe som er bedre ift. smittevernshensyn.</p>
-<p></p>
+
 <p>Mvh.</p>
-<p></p>
+
 <p>Styret</p>
-<p></p>
+
 <p>(se vedlegg '200817 Veibeskrivelse')</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -1435,6 +1438,9 @@ Einar Kosberg
 
 --VEDLEGG--
 
+/Felles/Styret/2020/200820-Fremdriftsplan-samleledninger-og-stikkledninger.pdf
+/Felles/Styret/2020/Trase-oversikt-002.png
+/Felles/Styret/2020/Trase-oversikt-001.png
 
 
 
@@ -1523,9 +1529,9 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 26. november 2020 av Einar Kosberg</i></p>
 <p>(se vedlegg '201126 Infoskriv høst 2020')</p>
-<p></p>
+
 <p>Her kan dere bl.a. lese om status VA prosjekt, utbedringstiltak vei/parkering/strand, vann for 2021,</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -1666,11 +1672,11 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 6. mai 2021 av Einar Kosberg</i></p>
 <p>Under finner dere informasjonsskriv fra RSVA om nytt anlegg m.m:</p>
-<p></p>
+
 <p>(se vedlegg '210506 Informasjonsskriv-mai-2021 fra RSVA')</p>
-<p></p>
+
 <p>&nbsp;</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -1695,9 +1701,9 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 20. juni 2021 av Einar Kosberg</i></p>
 <p>På Tofte Fremads Klubbhus (Tofte).</p>
-<p></p>
+
 <p>Dokumentasjon sendes ut senest to uker før.</p>
-<p></p>
+
 <p>RSVA vil avholde sitt årsmøte i forlengelsen av Vellets møte.</p>
 
 --VEDLEGG--
@@ -1744,17 +1750,17 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 18. august 2021 av Einar Kosberg</i></p>
 <p>Årsmøtet finner sted på Tofte Fremads klubbhus (Tofte) lørdag 28.august kl.10-12.</p>
-<p></p>
+
 <p>RSVA vil avholde generalforsamling i forlengelsen av vårt møte.</p>
-<p></p>
+
 <p>Dugnad finner sted samme dag kl.15.</p>
-<p></p>
+
 <p><strong>Under finner dere dokumentasjon til møtet.</strong>  Det oppfordres til å bringe med seg en kopi av dokumentasjonen, da det ikke vil bli distribuert kopier grunnet smittevern.</p>
-<p></p>
+
 <p>(se vedlegg '210818 Årsmøteinnkalling 2021')</p>
-<p></p>
+
 <p>(se vedlegg 'Årsregnskap 2020 og budsjett 2021')</p>
-<p></p>
+
 <p>(se vedlegg 'Noter til årsregnskap 2020 og budsjett 2021')</p>
 
 --VEDLEGG--
@@ -1804,7 +1810,7 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 14. september 2021 av Einar Kosberg</i></p>
 <p>Her er hytteeiere, ajourført 15.9.2021</p>
-<p></p>
+
 <p>[wpdm_package id=456 template="link-template-default.php"]</p>
 
 --VEDLEGG--
@@ -1831,14 +1837,14 @@ Einar Kosberg
 <p><p>Hei igjen, her kommer vårt tilbud til de av hytteeierne som ønsker vår hjelp til å stenge/tappe og å sette på vannet til våren.</p></p>
 <p><p>Her er de datoene som er aktuelle: Stenge/tappe vann, 16/10- eller 23/10-21, sette på vannet, 26/3-, eller 2/4-22, høst og vår tidene vil selvfølgelig avhenge av event. kuldegrader. Blir det aktuelt med andre datoer pga. kulde, vil aktuelle hytteeiere, bli informert.</p></p>
 <p><strong> </strong></p>
-<p></p>
+
 <p><strong>Vårt tilbud, (Per Kristian Larsen og Egil Nilsen) er følgende: </strong></p>
 <p><p>Vann ledning frem til hytte, blir stengt og tappet for vann, om høsten. Vann blir satt på igjen til våren. Mangler det siler på aktuelle koblinger utendørs, vil dette bli satt på. Alt som har med vann å gjøre, innenfor hyttas vegger, er hytteeiers ansvar, om ikke annet er avtalt med meg. For utført oppdrag, pr. gang, vil dette medføre en kostnad på kr. 800,00/pr. hytte, pr. gang. (Høst/vår).</p></p>
 <p><p>De hytteeierne som vil benytte seg av vårt tilbud, tar direkte kontakt med meg, undertegnede. Tlf. 413 11993.</p></p>
 <p><p><!--more--><strong>Styret vil få tillegge at medlemmene bør vurdere kostnad i tilbudet opp mot det å ha på noe strøm i rom med vannmåler/bad gjennom vinterhalvåret.</strong></p></p>
-<p><p></p></p>
-<p><p></p></p>
-<p><p></p></p>
+<p></p>
+<p></p>
+<p></p>
 
 --VEDLEGG--
 
@@ -1884,9 +1890,9 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 26. oktober 2021 av Einar Kosberg</i></p>
 <p>Det blir om kort tid sendt ut mail til hytteeierne om nytt telefonnummer til bommen i Sevjedammen. Det nye nummeret er</p>
-<p></p>
+
 <p>+47 580000524375</p>
-<p></p>
+
 <p>Nummeret settes i drift når melding er sendt.</p>
 
 --VEDLEGG--
@@ -1912,7 +1918,7 @@ Einar Kosberg
 <p><p>Bommen på Sevjedammen har fått nytt telefonnummer. Fra og med mandag 8. november er nummeret til bommen:</p></p>
 <p><strong><span>+47 </span></strong><strong><span>580000524375</span></strong></p>
 <p><p>Med vennlig hilsen Styret i Røedstøa Vel</p></p>
-<p></p>
+
 <p><!--more--></p>
 
 --VEDLEGG--
@@ -1937,22 +1943,22 @@ Einar Kosberg
 <p align="right"><i>Opprinnelig publisert 15. november 2021 av Einar Kosberg</i></p>
 <p><div class="kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql ii04i59q"></p>
 <p><div dir="auto"></div></p>
-<p></div></p>
+
 <p><div class="o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql ii04i59q"></p>
 <p><div dir="auto">RSVA har fått spørsmål om strømforbruket til ledningen (watt pr.meter). Er den selvregulerende i forhold til temperatur rundt ledningen?</div></p>
-<p></div></p>
+
 <p><div class="o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql ii04i59q"></p>
 <p><div dir="auto"></div></p>
 <p><div dir="auto">Svar:</div></p>
 <p><div dir="auto">Kabelen som er levert er selvregulerende og gir 8 watt pr.meter ved full effekt.</div></p>
-<p></div></p>
+
 <p><div class="o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql ii04i59q"></p>
 <p><div dir="auto">En selvregulerende varmekabelen består av to parallelle ledninger støpt i et halvledermateriale som tilpasser effekten etter omgivelsestemperaturen. Når temperaturen endres, endres materialets egenskaper. Ved temperaturøkning synker effekten, og når den kjøles, øker effekten.</div></p>
-<p></div></p>
+
 <p><div class="o9v6fnle cxmmr5t8 oygrvhab hcukyx3x c1et5uql ii04i59q"></p>
 <p><div dir="auto"></div></p>
 <p><div dir="auto">En selvregulerende kabel vil alltid trekke noe strøm, ønsker man å unngå dette må man avtale <span>med sin elektriker som kan gi råd rundt ekstra styringsutstyr.</span></div></p>
-<p></div></p>
+
 
 --VEDLEGG--
 
@@ -2044,19 +2050,19 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 21. mars 2022 av Einar Kosberg</i></p>
 <p>Kjære medlem av Røedstøa Vel!</p>
-<p></p>
+
 <p>På vegne av Styret i Røedstøa Vel innkalles herved til Årsmøte lørdag 21.mai 2022 kl.10.</p>
-<p></p>
+
 <p>Merk at årets møte avholdes på <strong>Filtvet Fremads klubbhus</strong> på Filtvet (ikke på Tofte hvor vi avholdt i fjor).</p>
-<p></p>
+
 <p>I forlengelsen av Årsmøte blir det arrangert dugnad i hytteområdet.</p>
-<p></p>
+
 <p>Saksdokumenter vil distribueres senest 14 dager før Årsmøtet.</p>
-<p></p>
+
 <p>Velkommen!</p>
-<p></p>
+
 <p>Mvh.</p>
-<p></p>
+
 <p>Styret i Røedstøa Vel</p>
 
 --VEDLEGG--
@@ -2151,15 +2157,15 @@ Einar Kosberg
 
 <p align="right"><i>Opprinnelig publisert 7. mai 2022 av Einar Kosberg</i></p>
 <p>Vedlagt følger Årsmøteinnkalling 21.5.2022 kl.10-11.30, regnskap og noter 2021 og budsjett 2022.</p>
-<p></p>
+
 <p>Dokumentasjonen ble sendt medlemmene pr.mail i går 6.5.</p>
-<p></p>
+
 <p>(se vedlegg '220505 Årsmøteinnkalling 2022')</p>
-<p></p>
+
 <p>(se vedlegg 'Regnskap Røedstøa Vel 2021 signert')</p>
-<p></p>
+
 <p>(se vedlegg 'Noter Regnskap 2021')</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -2210,9 +2216,9 @@ Rune Skånøy
 
 <p align="right"><i>Opprinnelig publisert 3. desember 2022 av Rune Skånøy</i></p>
 <p>(se vedlegg 'Ukjent')</p>
-<p></p>
+
 <p>&nbsp;</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -2260,9 +2266,9 @@ Rune Skånøy
 
 <p align="right"><i>Opprinnelig publisert 13. april 2023 av Rune Skånøy</i></p>
 <p><span>Merk at Årsmøtet avholdes i år på Tofte klubbhus (ikke på Filtvet som i fjor). I forlengelsen av møtet blir det dugnad på hytteområdet. </span></p>
-<p></p>
+
 <p><span>Saksdokumenter vil distribueres senest 14 dager før møtet. Om noen har innkomne saker bees de tilsendt styret senest 1.5.23</span></p>
-<p></p>
+
 <p><span>Velkommen!</span></p>
 <p><span>Mvh. Styret i Røedstøa Vel</span></p>
 
@@ -2371,14 +2377,14 @@ Rune Skånøy
 
 <p align="right"><i>Opprinnelig publisert 26. mai 2023 av Rune Skånøy</i></p>
 <p>Vedlagt følger Årsmøteinnkalling lørdag 10.6.2023 kl.1000-1200, regnskap og noter 2022 og budsjett 2023. Dokumentasjonen blir også sendt medlemmene pr.mail fra regnskapsfører.</p>
-<p></p>
+
 <p>(se vedlegg 'Årsmøteinnkalling 2023')</p>
 <p>(se vedlegg 'Noter Regnskap 2022')</p>
-<p></p>
+
 <p>(se vedlegg 'Resultat RØEDSTØA VEL 2022')</p>
-<p></p>
+
 <p>(se vedlegg 'Noter Regnskap 2022')</p>
-<p></p>
+
 <p>&nbsp;</p>
 
 --VEDLEGG--
@@ -2429,9 +2435,9 @@ Rune Skånøy
 
 <p align="right"><i>Opprinnelig publisert 17. mars 2024 av Rune Skånøy</i></p>
 <p><span>Vi forventer at møtet avholdes fra kl10-10, i forlengelsen av møtet blir det dugnad på hytteområdet. </span></p>
-<p></p>
+
 <p><span>Saksdokumenter vil distribueres senest 14 dager før møtet. Om noen har innkomne saker bees de tilsendt styret senest 15.4.23</span></p>
-<p></p>
+
 <p><span>Velkommen!</span></p>
 <p><span>Mvh. Styret i Røedstøa Vel</span></p>
 
@@ -2456,7 +2462,7 @@ Rune Skånøy
 
 <p align="right"><i>Opprinnelig publisert 25. mars 2024 av Rune Skånøy</i></p>
 <p>&nbsp;</p>
-<p></p>
+
 <p>(se vedlegg '130324 styremøte')</p>
 
 --VEDLEGG--
